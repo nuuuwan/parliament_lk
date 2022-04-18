@@ -10,7 +10,8 @@ from parliament_lk._utils import log
 def get_url(c):
     return os.path.join(
         'https://www.parliament.lk',
-        'en/members-of-parliament',
+        'en',
+        'members-of-parliament',
         'directory-of-members',
         f'?cletter={c}',
     )
