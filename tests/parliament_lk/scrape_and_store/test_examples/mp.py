@@ -1,5 +1,5 @@
 
-from parliament_lk.scrape_and_store import scrape_mem
+from parliament_lk.scrape_and_store import scrape_mp
 
 TEST_URL_NUM = 1234
 TEST_URL = 'https://www.parliament.lk' \
@@ -21,7 +21,7 @@ TEST_HTML_DATE_OF_BIRTH = '''
 
 TEST_HTML_EMAIL = f'''
 <tr>
-    <td><img src="{scrape_mem.IMG_SRC_EMAIL}"/></td>
+    <td><img src="{scrape_mp.IMG_SRC_EMAIL}"/></td>
     <td>
         <a>albert@einstein.org</a>
     </td>
@@ -37,11 +37,11 @@ TEST_HTML_CONTACT = f'''
         <td>
             <table>
                 <tr>
-                    <td><img src="{scrape_mem.IMG_SRC_PHONE}"/></td>
+                    <td><img src="{scrape_mp.IMG_SRC_PHONE}"/></td>
                     <td>0123456789</td>
                 </tr>
                 <tr>
-                    <td><img src="{scrape_mem.IMG_SRC_ADDRESS}"/></td>
+                    <td><img src="{scrape_mp.IMG_SRC_ADDRESS}"/></td>
                     <td>Princeton, NJ</td>
                 </tr>
             </table>
@@ -49,11 +49,11 @@ TEST_HTML_CONTACT = f'''
         <td>
             <table>
                 <tr>
-                    <td><img src="{scrape_mem.IMG_SRC_PHONE}"/></td>
+                    <td><img src="{scrape_mp.IMG_SRC_PHONE}"/></td>
                     <td>0149779419</td>
                 </tr>
                 <tr>
-                    <td><img src="{scrape_mem.IMG_SRC_ADDRESS}"/></td>
+                    <td><img src="{scrape_mp.IMG_SRC_ADDRESS}"/></td>
                     <td>
                         123 Home Street
                         </br>

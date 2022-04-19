@@ -154,5 +154,5 @@ def parse_html(html, source_url, url_num):
 
 def scrape(url_num):
     html, source_url, url_num = scrape_html(url_num)
-    member_info = parse_html(html, source_url, url_num)
-    return member_info
+    mp_info = parse_html(html, source_url, url_num)
+    return mp_info

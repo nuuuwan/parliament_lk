@@ -4,7 +4,7 @@ from unittest.mock import MagicMock
 
 from utils import filex, www
 
-from parliament_lk.scrape_and_store import scrape_mem
+from parliament_lk.scrape_and_store import scrape_mp
 
 TEST_URL_NUMS = []
 
@@ -149,13 +149,13 @@ class TestCase(unittest.TestCase):
         ]:
             html_file = os.path.join(
                 'tests/parliament_lk/scrape_and_store',
-                'test_examples/mem_real',
+                'test_examples/real_mps',
                 f'{url_num}.html',
             )
             html = filex.read(html_file)
             www.read = MagicMock(return_value=html)
 
-            actual_info = scrape_mem.scrape(url_num)
+            actual_info = scrape_mp.scrape(url_num)
             print(actual_info)
 
             self.assertEqual(

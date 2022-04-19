@@ -3,13 +3,13 @@ import unittest
 from unittest.mock import MagicMock
 
 from bs4 import BeautifulSoup
-from test_examples.mem import (TEST_HTML, TEST_HTML_CONTACT,
-                               TEST_HTML_DATE_OF_BIRTH, TEST_HTML_DIV_CONTENT,
-                               TEST_HTML_EMAIL, TEST_HTML_PARTY, TEST_URL,
-                               TEST_URL_NUM)
+from test_examples.mp import (TEST_HTML, TEST_HTML_CONTACT,
+                              TEST_HTML_DATE_OF_BIRTH, TEST_HTML_DIV_CONTENT,
+                              TEST_HTML_EMAIL, TEST_HTML_PARTY, TEST_URL,
+                              TEST_URL_NUM)
 from utils import www
 
-from parliament_lk.scrape_and_store import scrape_mem
+from parliament_lk.scrape_and_store import scrape_mp
 
 
 class TestCase(unittest.TestCase):
@@ -19,7 +19,7 @@ class TestCase(unittest.TestCase):
     def test_get_url(self):
         self.assertEqual(
             TEST_URL,
-            scrape_mem.get_url(TEST_URL_NUM)
+            scrape_mp.get_url(TEST_URL_NUM)
         )
 
     def test_clean(self):
@@ -29,7 +29,7 @@ class TestCase(unittest.TestCase):
             ['Presidents House, Colombo 10', 'Presidents House, Colombo 10'],
             ['Colombo\n  Sri Lanka', 'Colombo Sri Lanka'],
         ]:
-            self.assertEqual(expected_output, scrape_mem.clean(s))
+            self.assertEqual(expected_output, scrape_mp.clean(s))
 
     def test_clean_and_remove_empty(self):
         for [s, expected_output] in [
@@ -39,34 +39,34 @@ class TestCase(unittest.TestCase):
         ]:
             self.assertEqual(
                 expected_output,
-                scrape_mem.clean_and_remove_empty(s),
+                scrape_mp.clean_and_remove_empty(s),
             )
 
     def test_scrape_html(self):
         self.assertEqual(
             [TEST_HTML, TEST_URL, TEST_URL_NUM],
-            scrape_mem.scrape_html(TEST_URL_NUM),
+            scrape_mp.scrape_html(TEST_URL_NUM),
         )
 
     def test_extract_name(self):
         div_content = BeautifulSoup(TEST_HTML_DIV_CONTENT, 'html.parser')
         self.assertEqual(
             'Albert Einstein',
-            scrape_mem.extract_name(div_content),
+            scrape_mp.extract_name(div_content),
         )
 
     def test_extract_image_url(self):
         div_content = BeautifulSoup(TEST_HTML_DIV_CONTENT, 'html.parser')
         self.assertEqual(
             'profile.png',
-            scrape_mem.extract_image_url(div_content),
+            scrape_mp.extract_image_url(div_content),
         )
 
     def test_extract_pic_kv(self):
         tr = BeautifulSoup(TEST_HTML_EMAIL, 'html.parser')
         self.assertEqual(
-            (scrape_mem.IMG_SRC_EMAIL, 'albert@einstein.org'),
-            scrape_mem.extract_pic_kv(tr),
+            (scrape_mp.IMG_SRC_EMAIL, 'albert@einstein.org'),
+            scrape_mp.extract_pic_kv(tr),
         )
 
     def test_extract_table_kvs(self):
@@ -78,21 +78,21 @@ class TestCase(unittest.TestCase):
                 '1-/images/phone_ico.png': '0149779419',
                 '1-/images/address.png': '123 Home Street Princeton, NJ',
             },
-            scrape_mem.extract_table_kvs(table),
+            scrape_mp.extract_table_kvs(table),
         )
 
     def test_extract_two_line_kv(self):
         td = BeautifulSoup(TEST_HTML_PARTY, 'html.parser')
         self.assertEqual(
             ('Party', 'United National Party (UNP)'),
-            scrape_mem.extract_two_line_kv(td),
+            scrape_mp.extract_two_line_kv(td),
         )
 
     def test_extract_one_line_kv(self):
         td = BeautifulSoup(TEST_HTML_DATE_OF_BIRTH, 'html.parser')
         self.assertEqual(
             ('Date of Birth', '1234-05-06'),
-            scrape_mem.extract_one_line_kv(td),
+            scrape_mp.extract_one_line_kv(td),
         )
 
     def test_parse_html(self):
@@ -116,7 +116,7 @@ class TestCase(unittest.TestCase):
                 email='albert@einstein.org',
                 source_url='www.albert.com',
             ),
-            scrape_mem.parse_html(TEST_HTML, 'www.albert.com', TEST_URL_NUM),
+            scrape_mp.parse_html(TEST_HTML, 'www.albert.com', TEST_URL_NUM),
         )
 
 

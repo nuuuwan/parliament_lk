@@ -39,15 +39,15 @@ def parse_html(html):
     return list(map(parse_li, div.find_all('li')))
 
 
-def scrape_all():
-    mem_dir_info_list = []
+def scrape_all_indices():
+    mp_idx_info_list = []
     for c in string.ascii_uppercase:
         html = scrape_html(c)
-        mem_dir_info_list_for_letter = parse_html(html)
-        n_members = len(mem_dir_info_list_for_letter)
+        mp_idx_info_list_for_letter = parse_html(html)
+        n_members = len(mp_idx_info_list_for_letter)
         log.debug(f'Scraped {n_members} infos for {c}')
-        mem_dir_info_list += mem_dir_info_list_for_letter
+        mp_idx_info_list += mp_idx_info_list_for_letter
 
-    n_members = len(mem_dir_info_list)
+    n_members = len(mp_idx_info_list)
     log.info(f'Scraped {n_members} infos in total')
-    return mem_dir_info_list
+    return mp_idx_info_list
