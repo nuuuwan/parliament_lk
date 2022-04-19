@@ -6,6 +6,7 @@ from parliament_lk import scrape_mem, scrape_mem_dir
 from parliament_lk._utils import log
 from utils_future.gitx import Git
 
+URL_GIT = 'https://github.com/nuuuwan/parliament_lk'
 DIR_GIT_DATA = '/tmp/parliament_lk.data'
 DIR_MEMBER_INFO = os.path.join(DIR_GIT_DATA, 'member_info')
 DIR_MEMBER_IMAGES = os.path.join(DIR_GIT_DATA, 'member_images')
@@ -47,7 +48,6 @@ def download_image(member_info):
         www.download_binary(image_url, image_file)
 
 
-URL_GIT = 'https://github.com/nuuuwan/parliament_lk'
 if __name__ == '__main__':
     git = git_download()
 
