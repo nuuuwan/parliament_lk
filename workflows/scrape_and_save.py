@@ -1,10 +1,10 @@
 import os
-import shutil
 
 from utils import jsonx, timex, www
 
 from parliament_lk import scrape_mem, scrape_mem_dir
 from parliament_lk._utils import log
+from utils_future.gitx import Git
 
 DIR_GIT_DATA = '/tmp/parliament_lk.data'
 DIR_MEMBER_INFO = os.path.join(DIR_GIT_DATA, 'member_info')
@@ -13,31 +13,21 @@ GIT_UPLOAD_FREQUENCY = 10
 
 
 def git_download():
-    if os.path.exists(DIR_GIT_DATA):
-        shutil.rmtree(DIR_GIT_DATA)
-    os.system(f'git clone {URL_GIT} {DIR_GIT_DATA}')
-    os.system(' &&'.join([
-        f'cd {DIR_GIT_DATA}',
-        'git checkout data',
-    ]))
+    git = Git(URL_GIT, 'data', DIR_GIT_DATA)
+    git.clone_and_checkout()
 
     if not os.path.exists(DIR_MEMBER_INFO):
         os.mkdir(DIR_MEMBER_INFO)
     if not os.path.exists(DIR_MEMBER_IMAGES):
         os.mkdir(DIR_MEMBER_IMAGES)
     log.info('git_download: complete.')
+    return git
 
 
-def git_upload():
+def git_upload(git):
     time_id = timex.get_time_id()
     message = f'[scrape_and_save] {time_id}'
-
-    os.system(' &&'.join([
-        f'cd {DIR_GIT_DATA}',
-        'git add .',
-        f'git commit -m "{message}"',
-        'git push origin data',
-    ]))
+    git.stage_commit_and_push(message)
     log.info('git_upload: complete.')
 
 
@@ -59,7 +49,7 @@ def download_image(member_info):
 
 URL_GIT = 'https://github.com/nuuuwan/parliament_lk'
 if __name__ == '__main__':
-    git_download()
+    git = git_download()
 
     mem_dir_info_list = scrape_mem_dir.scrape_all()
     n_members = len(mem_dir_info_list)
@@ -70,7 +60,7 @@ if __name__ == '__main__':
         store_member(member_info)
         download_image(member_info)
         if i % GIT_UPLOAD_FREQUENCY == 0:
-            git_upload()
+            git_upload(git)
 
-    git_upload()
-    shutil.rmtree(DIR_GIT_DATA)
+    git_upload(git)
+    git.cleanup()

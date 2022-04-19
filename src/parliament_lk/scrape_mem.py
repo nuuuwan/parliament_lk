@@ -3,6 +3,9 @@ import re
 
 from bs4 import BeautifulSoup
 from utils import www
+from utils.cache import cache
+
+from parliament_lk._constants import CACHE_NAME, CACHE_TIMEOUT
 
 IMG_SRC_EMAIL = '/images/email_ico.png'
 IMG_SRC_PHONE = '/images/phone_ico.png'
@@ -152,6 +155,7 @@ def parse_html(html, source_url, url_num):
     )
 
 
+@cache(CACHE_NAME, CACHE_TIMEOUT)
 def scrape(url_num):
     html, source_url, url_num = scrape_html(url_num)
     member_info = parse_html(html, source_url, url_num)

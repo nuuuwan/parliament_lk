@@ -3,7 +3,9 @@ import string
 
 from bs4 import BeautifulSoup
 from utils import www
+from utils.cache import cache
 
+from parliament_lk._constants import CACHE_NAME, CACHE_TIMEOUT
 from parliament_lk._utils import log
 
 
@@ -17,6 +19,7 @@ def get_url(c):
     )
 
 
+@cache(CACHE_NAME, CACHE_TIMEOUT)
 def scrape_html(c):
     url = get_url(c)
     html = www.read(url, use_selenium=True)
@@ -39,6 +42,7 @@ def parse_html(html):
     return list(map(parse_li, div.find_all('li')))
 
 
+@cache(CACHE_NAME, CACHE_TIMEOUT)
 def scrape_all():
     mem_dir_info_list = []
     for c in string.ascii_uppercase:
