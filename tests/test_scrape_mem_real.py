@@ -29,7 +29,22 @@ class TestCase(unittest.TestCase):
                 address_sitting=None,
                 email='wickremesinghe_r@parliament.lk',
             )],
+            [1482, dict(
+                name='Hon. (Mrs.) Thalatha Athukorala, M.P.',
+                party='Samagi Jana Balawegaya (SJB)',
+                electoral_district='Ratnapura',
 
+                date_of_birth='30-05-1963',
+                civil_status='Married',
+                religion='Buddhism',
+                profession='Attorney-at-Law',
+
+                phone='0452274287',
+                address='No. 231/1,Stanley Tilekeratne Mawatha,Nugegoda.',
+                phone_sitting='0452274287',
+                address_sitting=None,
+                email='atukorale_t@parliament.lk',
+            )],
             [3306, dict(
                 name='Hon. Amarakeerthi Athukorala, M.P.',
                 party='Sri Lanka Podujana Peramuna (SLPP)',
