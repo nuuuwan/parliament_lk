@@ -39,7 +39,7 @@ def get_url(url_num):
 
 def scrape_html(url_num):
     url = get_url(url_num)
-    return www.read(url)
+    return www.read(url, use_selenium=True)
 
 
 def extract_name(div_content):
