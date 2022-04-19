@@ -1,13 +1,14 @@
 import os
 import shutil
 
-from utils import jsonx, timex
+from utils import jsonx, timex, www
 
 from parliament_lk import scrape_mem, scrape_mem_dir
 from parliament_lk._utils import log
 
 DIR_GIT_DATA = '/tmp/parliament_lk.data'
 DIR_MEMBER_INFO = os.path.join(DIR_GIT_DATA, 'member_info')
+DIR_MEMBER_IMAGES = os.path.join(DIR_GIT_DATA, 'member_images')
 
 
 def git_download():
@@ -21,24 +22,38 @@ def git_download():
 
     if not os.path.exists(DIR_MEMBER_INFO):
         os.mkdir(DIR_MEMBER_INFO)
+    if not os.path.exists(DIR_MEMBER_IMAGES):
+        os.mkdir(DIR_MEMBER_IMAGES)
+    log.info('git_download: complete.')
 
 
-def git_upload(url_num):
+def git_upload(member_info):
+    url_num = member_info['url_num']
+    name = member_info['name']
     time_id = timex.get_time_id()
-    message = f'[scrape_and_save] Added MP {url_num} ({time_id})'
+    message = f'[scrape_and_save] Added {name} ({url_num}) [{time_id}]'
+
     os.system(' &&'.join([
         f'cd {DIR_GIT_DATA}',
         'git add .',
         f'git commit -m "{message}"',
         'git push origin data',
     ]))
+    log.info('git_upload: complete.')
 
 
 def store_member(member_info):
     url_num = member_info['url_num']
     member_info_file = os.path.join(DIR_MEMBER_INFO, f'{url_num}.json')
     jsonx.write(member_info_file, member_info)
-    log.info(f'Stored MP {url_num} to {member_info_file}')
+    log.info(f'Stored member {url_num} to {member_info_file}')
+
+
+def download_image(member_info):
+    image_url = member_info['image_url']
+    url_num = member_info['url_num']
+    image_file = os.path.join(DIR_MEMBER_IMAGES, f'{url_num}.jpg')
+    www.download_binary(image_url, image_file)
 
 
 URL_GIT = 'https://github.com/nuuuwan/parliament_lk'
@@ -51,6 +66,7 @@ if __name__ == '__main__':
         url_num = info['url_num']
         member_info = scrape_mem.scrape(url_num)
         store_member(member_info)
-        git_upload(url_num)
+        download_image(member_info)
+        git_upload(member_info)
 
     shutil.rmtree(DIR_GIT_DATA)
