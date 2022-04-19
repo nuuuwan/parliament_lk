@@ -66,9 +66,9 @@ class TestCase(unittest.TestCase):
         self.assertEqual(
             {
                 '0-/images/phone_ico.png': '0123456789',
-                '0-/images/address_png.png': 'Princeton, NJ',
+                '0-/images/address.png': 'Princeton, NJ',
                 '1-/images/phone_ico.png': '0149779419',
-                '1-/images/address_png.png': '123 Home Street Princeton, NJ',
+                '1-/images/address.png': '123 Home Street Princeton, NJ',
             },
             scrape_mem.extract_table_kvs(table),
         )

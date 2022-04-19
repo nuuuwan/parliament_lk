@@ -66,7 +66,6 @@ def extract_table_kvs(table):
             kv = extract_pic_kv(tr1)
             if kv:
                 d[f'{i}-' + kv[0]] = kv[1]
-    print(d)
     return d
 
 
@@ -100,6 +99,12 @@ def parse_html(html):
         if kvs:
             d |= kvs
             continue
+
+        for td in table.find_all('td'):
+            kv = extract_two_line_kv(td)
+            if kv:
+                d |= dict([kv])
+                continue
 
         for tr in div_content.find_all('tr'):
             kv = extract_pic_kv(tr)

@@ -11,7 +11,24 @@ TEST_URL_NUMS = []
 
 class TestCase(unittest.TestCase):
     def test(self):
+
         for url_num, expected_info in [
+            [1244, dict(
+                name='Hon. Ranil Wickremesinghe, M.P.',
+                party='United National Party (UNP)',
+                electoral_district='Colombo',
+
+                date_of_birth='24-03-1949',
+                civil_status='Married',
+                religion='Buddhism',
+                profession='Attorney-at-Law',
+
+                phone='2573974',
+                address='No. 117, 5th Lane,Colombo 03.',
+                phone_sitting='0112573308',
+                address_sitting=None,
+                email='wickremesinghe_r@parliament.lk',
+            )],
             [3438, dict(
                 name='Hon. Yadamini Gunawardena, M.P.',
                 party='Sri Lanka Podujana Peramuna (SLPP)',

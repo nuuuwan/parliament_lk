@@ -67,23 +67,23 @@ TEST_HTML_CONTACT = f'''
 TEST_HTML_DIV_CONTENT = f'''
 <div class="components-wrapper">
     <h2>Albert Einstein</h2>
-    {TEST_HTML_PARTY}
-    <tr>
+    <table>
+        {TEST_HTML_PARTY}
         <td>
             <div>Electoral District / National List</div>
             <a>Colombo</a>
         </td>
-    </tr>
 
-    {TEST_HTML_DATE_OF_BIRTH}
-    <tr><td>Civil Status : Married</td></tr>
-    <tr><td>Religion : Catholic</td></tr>
-    <tr><td>Profession / Occupation : Physicist</td></tr>
+        {TEST_HTML_DATE_OF_BIRTH}
+        <tr><td>Civil Status : Married</td></tr>
+        <tr><td>Religion : Catholic</td></tr>
+        <tr><td>Profession / Occupation : Physicist</td></tr>
 
-    <table>
-        {TEST_HTML_CONTACT}
+        <table>
+            {TEST_HTML_CONTACT}
+        </table>
+        {TEST_HTML_EMAIL}
     </table>
-    {TEST_HTML_EMAIL}
 </div>
 '''
 
