@@ -4,6 +4,8 @@ import re
 from bs4 import BeautifulSoup
 from utils import www
 
+from parliament_lk._utils import log
+
 IMG_SRC_EMAIL = '/images/email_ico.png'
 IMG_SRC_PHONE = '/images/phone_ico.png'
 IMG_SRC_ADDRESS = '/images/address.png'
@@ -142,4 +144,7 @@ def parse_html(html):
 def scrape(url_num):
     url = get_url(url_num)
     html = www.read(url, use_selenium=True)
-    return parse_html(html)
+    member_info = parse_html(html)
+    name = member_info['name']
+    log.debug(f'Scraped member_info for {name} ({url_num})')
+    return member_info
