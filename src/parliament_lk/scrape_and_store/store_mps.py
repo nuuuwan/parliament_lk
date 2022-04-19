@@ -68,17 +68,22 @@ def store_all():
     mp_idx_info_list = scrape_and_store_mp_idx()
 
     n_mps = len(mp_idx_info_list)
+    mp_info_list = []
     for i, info in enumerate(mp_idx_info_list):
         log.debug(f'{i}/{n_mps}')
         url_num = info['url_num']
         mp_info = scrape_and_store_mp(url_num)
         download_and_store_image(mp_info)
+        mp_info_list.append(mp_info)
 
         if i % GIT_UPLOAD_FREQUENCY == 0:
             git_upload(git)
 
+    mp_list_file = os.path.join(DIR_GIT_DATA, 'mp_list.tsv')
+    tsv.write(mp_list_file, mp_info_list)
+    log.info(f'Stored {n_mps} items {mp_list_file}')
+
     git_upload(git)
-    # git.cleanup()
 
 
 if __name__ == '__main__':
