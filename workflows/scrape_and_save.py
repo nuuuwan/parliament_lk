@@ -9,7 +9,7 @@ from parliament_lk._utils import log
 DIR_GIT_DATA = '/tmp/parliament_lk.data'
 DIR_MEMBER_INFO = os.path.join(DIR_GIT_DATA, 'member_info')
 DIR_MEMBER_IMAGES = os.path.join(DIR_GIT_DATA, 'member_images')
-
+GIT_UPLOAD_FREQUENCY = 10
 
 def git_download():
     if os.path.exists(DIR_GIT_DATA):
@@ -27,11 +27,9 @@ def git_download():
     log.info('git_download: complete.')
 
 
-def git_upload(member_info):
-    url_num = member_info['url_num']
-    name = member_info['name']
+def git_upload():
     time_id = timex.get_time_id()
-    message = f'[scrape_and_save] Added {name} ({url_num}) [{time_id}]'
+    message = f'[scrape_and_save] {time_id}'
 
     os.system(' &&'.join([
         f'cd {DIR_GIT_DATA}',
@@ -63,10 +61,13 @@ if __name__ == '__main__':
     mem_dir_info_list = scrape_mem_dir.scrape_all()
     n_members = len(mem_dir_info_list)
     for i, info in enumerate(mem_dir_info_list):
+        log.debug(f'{i}/{n_members}')
         url_num = info['url_num']
         member_info = scrape_mem.scrape(url_num)
         store_member(member_info)
         download_image(member_info)
-        git_upload(member_info)
+        if i % GIT_UPLOAD_FREQUENCY == 0:
+            git_upload()
 
+    git_upload()
     shutil.rmtree(DIR_GIT_DATA)
