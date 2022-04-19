@@ -67,6 +67,9 @@ TEST_HTML_CONTACT = f'''
 TEST_HTML_DIV_CONTENT = f'''
 <div class="components-wrapper">
     <h2>Albert Einstein</h2>
+    <div class="left-pic">
+        <img src="profile.png" />
+    </div>
     <table>
         {TEST_HTML_PARTY}
         <td>

@@ -46,6 +46,14 @@ def extract_name(div_content):
     return div_content.find('h2').text
 
 
+def extract_image_url(div_content):
+    div_image = div_content.find('div', class_='left-pic')
+    img = div_image.find('img')
+    if not img:
+        return None
+    return img.get('src')
+
+
 def extract_pic_kv(tr):
     tds = tr.find_all('td')
     if len(tds) != 2:
@@ -92,6 +100,7 @@ def parse_html(html):
     div_content = soup.find('div', class_='components-wrapper')
 
     name = extract_name(div_content)
+    image_url = extract_image_url(div_content)
 
     d = {}
     for table in div_content.find_all('table'):
@@ -124,6 +133,7 @@ def parse_html(html):
 
     return dict(
         name=name,
+        image_url=image_url,
         party=d.get('Party'),
         electoral_district=d.get('Electoral District / National List'),
         date_of_birth=d.get('Date of Birth'),

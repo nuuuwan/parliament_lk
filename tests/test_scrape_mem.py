@@ -54,6 +54,13 @@ class TestCase(unittest.TestCase):
             scrape_mem.extract_name(div_content),
         )
 
+    def test_extract_image_url(self):
+        div_content = BeautifulSoup(TEST_HTML_DIV_CONTENT, 'html.parser')
+        self.assertEqual(
+            'profile.png',
+            scrape_mem.extract_image_url(div_content),
+        )
+
     def test_extract_pic_kv(self):
         tr = BeautifulSoup(TEST_HTML_EMAIL, 'html.parser')
         self.assertEqual(
@@ -91,6 +98,7 @@ class TestCase(unittest.TestCase):
         self.assertEqual(
             dict(
                 name='Albert Einstein',
+                image_url='profile.png',
                 party='United National Party (UNP)',
                 electoral_district='Colombo',
 

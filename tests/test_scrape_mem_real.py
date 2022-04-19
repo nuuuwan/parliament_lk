@@ -15,6 +15,8 @@ class TestCase(unittest.TestCase):
         for url_num, expected_info in [
             [1244, dict(
                 name='Hon. Ranil Wickremesinghe, M.P.',
+                image_url='https://www.parliament.lk'
+                + '/uploads/images/members/profile_images/thumbs/1244.jpg',
                 party='United National Party (UNP)',
                 electoral_district='Colombo',
 
@@ -31,6 +33,8 @@ class TestCase(unittest.TestCase):
             )],
             [1482, dict(
                 name='Hon. (Mrs.) Thalatha Athukorala, M.P.',
+                image_url='https://www.parliament.lk'
+                + '/uploads/images/members/profile_images/thumbs/1482.jpg',
                 party='Samagi Jana Balawegaya (SJB)',
                 electoral_district='Ratnapura',
 
@@ -47,6 +51,8 @@ class TestCase(unittest.TestCase):
             )],
             [3179, dict(
                 name='Hon. Namal Rajapaksa, M.P.',
+                image_url='https://www.parliament.lk'
+                + '/uploads/images/members/profile_images/thumbs/3179.jpg',
                 party='Sri Lanka Podujana Peramuna (SLPP)',
                 electoral_district='Hambantota',
 
@@ -63,6 +69,8 @@ class TestCase(unittest.TestCase):
             )],
             [3306, dict(
                 name='Hon. Amarakeerthi Athukorala, M.P.',
+                image_url='https://www.parliament.lk'
+                + '/uploads/images/members/profile_images/thumbs/3306.jpg',
                 party='Sri Lanka Podujana Peramuna (SLPP)',
                 electoral_district='Polonnaruwa',
 
@@ -79,6 +87,8 @@ class TestCase(unittest.TestCase):
             )],
             [3438, dict(
                 name='Hon. Yadamini Gunawardena, M.P.',
+                image_url='https://www.parliament.lk'
+                + '/uploads/images/members/profile_images/thumbs/3438.jpg',
                 party='Sri Lanka Podujana Peramuna (SLPP)',
                 electoral_district='National List',
 
@@ -95,6 +105,8 @@ class TestCase(unittest.TestCase):
             )],
             [3449, dict(
                 name='Hon. (Dr.) (Ms.) Harini Amarasuriya, M.P.',
+                image_url='https://www.parliament.lk'
+                + '/uploads/images/members/profile_images/thumbs/3449.jpg',
                 party='Jathika Jana balawegaya (JJB)',
                 electoral_district='National List',
 
