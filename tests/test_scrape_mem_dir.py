@@ -8,21 +8,21 @@ from utils import www
 from parliament_lk import scrape_mem_dir
 
 TEST_LI = '''
-    <li id="Albert Einstein">
-        <a href="member/1234">Test</a>
-    </li>
+<li id="Albert Einstein">
+    <a href="member/1234">Test</a>
+</li>
 '''
 
 TEST_HTML = f'''
-    <html>
-        <body>
-            <div id="listholder">
-                <ul>
-                    {TEST_LI}
-                </ul>
-            </div>
-        </body>
-    </html>
+<html>
+    <body>
+        <div id="listholder">
+            <ul>
+                {TEST_LI}
+            </ul>
+        </div>
+    </body>
+</html>
 '''
 
 
