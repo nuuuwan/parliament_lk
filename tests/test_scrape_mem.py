@@ -3,9 +3,9 @@ import unittest
 from unittest.mock import MagicMock
 
 from bs4 import BeautifulSoup
-from html_mem import (TEST_HTML, TEST_HTML_CONTACT, TEST_HTML_DATE_OF_BIRTH,
-                      TEST_HTML_DIV_CONTENT, TEST_HTML_EMAIL, TEST_HTML_PARTY,
-                      TEST_URL)
+from test_examples.mem import (TEST_HTML, TEST_HTML_CONTACT,
+                               TEST_HTML_DATE_OF_BIRTH, TEST_HTML_DIV_CONTENT,
+                               TEST_HTML_EMAIL, TEST_HTML_PARTY, TEST_URL)
 from utils import www
 
 from parliament_lk import scrape_mem

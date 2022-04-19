@@ -3,27 +3,10 @@ import unittest
 from unittest.mock import MagicMock
 
 from bs4 import BeautifulSoup
+from test_examples.mem_dir import TEST_HTML, TEST_LI
 from utils import www
 
 from parliament_lk import scrape_mem_dir
-
-TEST_LI = '''
-<li id="Albert Einstein">
-    <a href="member/1234">Test</a>
-</li>
-'''
-
-TEST_HTML = f'''
-<html>
-    <body>
-        <div id="listholder">
-            <ul>
-                {TEST_LI}
-            </ul>
-        </div>
-    </body>
-</html>
-'''
 
 
 class TestCase(unittest.TestCase):
