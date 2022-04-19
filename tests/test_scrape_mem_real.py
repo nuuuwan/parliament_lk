@@ -45,6 +45,22 @@ class TestCase(unittest.TestCase):
                 address_sitting=None,
                 email='atukorale_t@parliament.lk',
             )],
+            [3179, dict(
+                name='Hon. Namal Rajapaksa, M.P.',
+                party='Sri Lanka Podujana Peramuna (SLPP)',
+                electoral_district='Hambantota',
+
+                date_of_birth='10-04-1986',
+                civil_status='Married',
+                religion='Buddhism',
+                profession=None,
+
+                phone=None,
+                address='Carlton House,Mahawela Road,Tangalle.',
+                phone_sitting='0472240332',
+                address_sitting='260/12,Torrington avenue,Colombo 05.',
+                email='rajapaksa_n@parliament.lk',
+            )],
             [3306, dict(
                 name='Hon. Amarakeerthi Athukorala, M.P.',
                 party='Sri Lanka Podujana Peramuna (SLPP)',
