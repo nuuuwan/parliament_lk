@@ -11,6 +11,7 @@ DIR_MEMBER_INFO = os.path.join(DIR_GIT_DATA, 'member_info')
 DIR_MEMBER_IMAGES = os.path.join(DIR_GIT_DATA, 'member_images')
 GIT_UPLOAD_FREQUENCY = 10
 
+
 def git_download():
     if os.path.exists(DIR_GIT_DATA):
         shutil.rmtree(DIR_GIT_DATA)
@@ -48,10 +49,12 @@ def store_member(member_info):
 
 
 def download_image(member_info):
-    image_url = member_info['image_url']
     url_num = member_info['url_num']
     image_file = os.path.join(DIR_MEMBER_IMAGES, f'{url_num}.jpg')
-    www.download_binary(image_url, image_file)
+
+    if not os.path.exists(image_file):
+        image_url = member_info['image_url']
+        www.download_binary(image_url, image_file)
 
 
 URL_GIT = 'https://github.com/nuuuwan/parliament_lk'
