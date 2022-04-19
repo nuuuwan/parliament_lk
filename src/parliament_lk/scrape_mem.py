@@ -4,15 +4,26 @@ import re
 from bs4 import BeautifulSoup
 from utils import www
 
-IMG_SRC_EMAIL = 'images/email_ico.png'
-IMG_SRC_PHONE = 'images/phone_ico.png'
-IMG_SRC_ADDRESS = 'images/address_png.png'
+IMG_SRC_EMAIL = '/images/email_ico.png'
+IMG_SRC_PHONE = '/images/phone_ico.png'
+IMG_SRC_ADDRESS = '/images/address.png'
 
 
 def clean(s):
-    s = s.replace('\n', ' ')
-    s = re.sub(r'\s+', ' ', s)
-    return s.strip()
+    if isinstance(s, str):
+        s = s.replace('\n', ' ')
+        s = re.sub(r'\s+', ' ', s)
+        s = s.strip()
+        return s
+
+    if isinstance(s, list):
+        return list(map(clean, s))
+
+    return clean(s.text)
+
+
+def clean_and_remove_empty(s_list):
+    return list(filter(lambda x: x, list(map(clean, s_list))))
 
 
 def get_url(url_num):
@@ -45,13 +56,12 @@ def extract_pic_kv(tr):
     return (img.get('src'), clean(tds[1].text))
 
 
-def extract_table_kvs(tr):
-    tables = tr.find_all('table')
-    if len(tables) != 3:
+def extract_table_kvs(table):
+    tables = table.find_all('table')
+    if len(tables) != 2:
         return None
-
     d = {}
-    for i, table in enumerate(tables[1:]):
+    for i, table in enumerate(tables):
         for tr1 in table.find_all('tr'):
             kv = extract_pic_kv(tr1)
             if kv:
@@ -62,21 +72,20 @@ def extract_table_kvs(tr):
 
 def extract_two_line_kv(td):
     div = td.find('div')
-    a = td.find('a')
-    if not div or not a:
+    if not div:
         return None
-
-    k = div.text.strip()
-    v = a.text.strip()
-    return (k, v)
+    tokens = clean_and_remove_empty(td.find_all(text=True))
+    if len(tokens) != 2:
+        return None
+    return (tokens[0], tokens[1])
 
 
 def extract_one_line_kv(td):
     text = td.text.strip()
-    tokens = text.split(':')
+    tokens = clean_and_remove_empty(text.split(':'))
     if len(tokens) != 2:
         return None
-    return (tokens[0].strip(), tokens[1].strip())
+    return (tokens[0], tokens[1])
 
 
 def parse_html(html):
@@ -86,27 +95,27 @@ def parse_html(html):
     name = extract_name(div_content)
 
     d = {}
-    for tr in div_content.find_all('tr'):
-
-        kv = extract_pic_kv(tr)
-        if kv:
-            d |= dict([kv])
-            continue
-
-        kvs = extract_table_kvs(tr)
+    for table in div_content.find_all('table'):
+        kvs = extract_table_kvs(table)
         if kvs:
             d |= kvs
             continue
 
-        for td in tr.find_all('td'):
-            kv = extract_two_line_kv(td)
+        for tr in div_content.find_all('tr'):
+            kv = extract_pic_kv(tr)
             if kv:
                 d |= dict([kv])
                 continue
 
-            kv = extract_one_line_kv(td)
-            if kv:
-                d |= dict([kv])
+            for td in tr.find_all('td'):
+                kv = extract_two_line_kv(td)
+                if kv:
+                    d |= dict([kv])
+                    continue
+
+                kv = extract_one_line_kv(td)
+                if kv:
+                    d |= dict([kv])
 
     return dict(
         name=name,
@@ -123,3 +132,9 @@ def parse_html(html):
         address_sitting=d.get('1-' + IMG_SRC_ADDRESS),
         email=d.get(IMG_SRC_EMAIL),
     )
+
+
+def scrape(url_num):
+    url = get_url(url_num)
+    html = www.read(url, use_selenium=True)
+    return parse_html(html)

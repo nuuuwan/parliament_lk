@@ -24,10 +24,22 @@ class TestCase(unittest.TestCase):
     def test_clean(self):
         for [s, expected_output] in [
             ['Colombo    ', 'Colombo'],
+            [['Colombo    ', 'Kandy '], ['Colombo', 'Kandy']],
             ['Presidents House, Colombo 10', 'Presidents House, Colombo 10'],
             ['Colombo\n  Sri Lanka', 'Colombo Sri Lanka'],
         ]:
             self.assertEqual(expected_output, scrape_mem.clean(s))
+
+    def test_clean_and_remove_empty(self):
+        for [s, expected_output] in [
+            [['Colombo    ', 'Kandy '], ['Colombo', 'Kandy']],
+            [['Colombo    ', 'Kandy ', '  '], ['Colombo', 'Kandy']],
+            [['Colombo    ', ''], ['Colombo']],
+        ]:
+            self.assertEqual(
+                expected_output,
+                scrape_mem.clean_and_remove_empty(s),
+            )
 
     def test_scrape_html(self):
         self.assertEqual(
@@ -50,15 +62,15 @@ class TestCase(unittest.TestCase):
         )
 
     def test_extract_table_kvs(self):
-        tr = BeautifulSoup(TEST_HTML_CONTACT, 'html.parser')
+        table = BeautifulSoup(TEST_HTML_CONTACT, 'html.parser')
         self.assertEqual(
             {
-                '0-images/phone_ico.png': '0123456789',
-                '0-images/address_png.png': 'Princeton, NJ',
-                '1-images/phone_ico.png': '0149779419',
-                '1-images/address_png.png': '123 Home Street Princeton, NJ',
+                '0-/images/phone_ico.png': '0123456789',
+                '0-/images/address_png.png': 'Princeton, NJ',
+                '1-/images/phone_ico.png': '0149779419',
+                '1-/images/address_png.png': '123 Home Street Princeton, NJ',
             },
-            scrape_mem.extract_table_kvs(tr),
+            scrape_mem.extract_table_kvs(table),
         )
 
     def test_extract_two_line_kv(self):
