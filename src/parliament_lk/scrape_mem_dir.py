@@ -4,8 +4,6 @@ import string
 from bs4 import BeautifulSoup
 from utils import www
 
-from parliament_lk._utils import log
-
 
 def get_url(c):
     return os.path.join(
@@ -17,13 +15,13 @@ def get_url(c):
     )
 
 
-def extract_list_div(c):
-    html = www.read(get_url(c), use_selenium=True)
-    soup = BeautifulSoup(html, 'html.parser')
-    return soup.find('div', {'id': 'listholder'})
+def scrape_html(c):
+    url = get_url(c)
+    html = www.read(url, use_selenium=True)
+    return html
 
 
-def parse_info(li):
+def parse_li(li):
     name = li.get('id')
     a = li.find('a')
     url_num = (int)(a.get('href').split('/')[-1])
@@ -33,19 +31,15 @@ def parse_info(li):
     )
 
 
-def scrape_mem_dir_for_letter(c):
-    mem_dir_info_list = []
-    div = extract_list_div(c)
-    for li in div.find_all('li'):
-        mem_dir_info_list.append(parse_info(li))
-
-    n_mem_dir_info_list = len(mem_dir_info_list)
-    log.debug(f'Scraped {n_mem_dir_info_list} members for {c}')
-    return mem_dir_info_list
+def parse_html(html):
+    soup = BeautifulSoup(html, 'html.parser')
+    div = soup.find('div', {'id': 'listholder'})
+    return list(map(parse_li, div.find_all('li')))
 
 
-def scrape_mem_dir():
+def scrape_all():
     mem_dir_info_list = []
     for c in string.ascii_uppercase:
-        mem_dir_info_list += scrape_mem_dir_for_letter(c)
+        html = scrape_html(c)
+        mem_dir_info_list += parse_html(html)
     return mem_dir_info_list
