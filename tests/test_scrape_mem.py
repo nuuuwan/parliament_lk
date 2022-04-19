@@ -5,7 +5,8 @@ from unittest.mock import MagicMock
 from bs4 import BeautifulSoup
 from test_examples.mem import (TEST_HTML, TEST_HTML_CONTACT,
                                TEST_HTML_DATE_OF_BIRTH, TEST_HTML_DIV_CONTENT,
-                               TEST_HTML_EMAIL, TEST_HTML_PARTY, TEST_URL)
+                               TEST_HTML_EMAIL, TEST_HTML_PARTY, TEST_URL,
+                               TEST_URL_NUM)
 from utils import www
 
 from parliament_lk import scrape_mem
@@ -18,7 +19,7 @@ class TestCase(unittest.TestCase):
     def test_get_url(self):
         self.assertEqual(
             TEST_URL,
-            scrape_mem.get_url(1234)
+            scrape_mem.get_url(TEST_URL_NUM)
         )
 
     def test_clean(self):
@@ -43,8 +44,8 @@ class TestCase(unittest.TestCase):
 
     def test_scrape_html(self):
         self.assertEqual(
-            TEST_HTML,
-            scrape_mem.scrape_html(1234),
+            [TEST_HTML, TEST_URL, TEST_URL_NUM],
+            scrape_mem.scrape_html(TEST_URL_NUM),
         )
 
     def test_extract_name(self):
@@ -97,6 +98,7 @@ class TestCase(unittest.TestCase):
     def test_parse_html(self):
         self.assertEqual(
             dict(
+                url_num=TEST_URL_NUM,
                 name='Albert Einstein',
                 image_url='profile.png',
                 party='United National Party (UNP)',
@@ -112,8 +114,9 @@ class TestCase(unittest.TestCase):
                 phone_sitting='0149779419',
                 address_sitting='123 Home Street Princeton, NJ',
                 email='albert@einstein.org',
+                source_url='www.albert.com',
             ),
-            scrape_mem.parse_html(TEST_HTML),
+            scrape_mem.parse_html(TEST_HTML, 'www.albert.com', TEST_URL_NUM),
         )
 
 

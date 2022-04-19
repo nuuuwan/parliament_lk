@@ -14,6 +14,7 @@ class TestCase(unittest.TestCase):
 
         for url_num, expected_info in [
             [1244, dict(
+                url_num=1244,
                 name='Hon. Ranil Wickremesinghe, M.P.',
                 image_url='https://www.parliament.lk'
                 + '/uploads/images/members/profile_images/thumbs/1244.jpg',
@@ -30,8 +31,12 @@ class TestCase(unittest.TestCase):
                 phone_sitting='0112573308',
                 address_sitting=None,
                 email='wickremesinghe_r@parliament.lk',
+                source_url='https://www.parliament.lk'
+                + '/en/members-of-parliament'
+                + '/directory-of-members/viewMember/1244'
             )],
             [1482, dict(
+                url_num=1482,
                 name='Hon. (Mrs.) Thalatha Athukorala, M.P.',
                 image_url='https://www.parliament.lk'
                 + '/uploads/images/members/profile_images/thumbs/1482.jpg',
@@ -48,8 +53,12 @@ class TestCase(unittest.TestCase):
                 phone_sitting='0452274287',
                 address_sitting=None,
                 email='atukorale_t@parliament.lk',
+                source_url='https://www.parliament.lk'
+                + '/en/members-of-parliament'
+                + '/directory-of-members/viewMember/1482'
             )],
             [3179, dict(
+                url_num=3179,
                 name='Hon. Namal Rajapaksa, M.P.',
                 image_url='https://www.parliament.lk'
                 + '/uploads/images/members/profile_images/thumbs/3179.jpg',
@@ -66,8 +75,12 @@ class TestCase(unittest.TestCase):
                 phone_sitting='0472240332',
                 address_sitting='260/12,Torrington avenue,Colombo 05.',
                 email='rajapaksa_n@parliament.lk',
+                source_url='https://www.parliament.lk'
+                + '/en/members-of-parliament'
+                + '/directory-of-members/viewMember/3179'
             )],
             [3306, dict(
+                url_num=3306,
                 name='Hon. Amarakeerthi Athukorala, M.P.',
                 image_url='https://www.parliament.lk'
                 + '/uploads/images/members/profile_images/thumbs/3306.jpg',
@@ -84,8 +97,12 @@ class TestCase(unittest.TestCase):
                 phone_sitting='0272223282',
                 address_sitting=None,
                 email='amarakeerthi_a@parliament.lk',
+                source_url='https://www.parliament.lk'
+                + '/en/members-of-parliament'
+                + '/directory-of-members/viewMember/3306'
             )],
             [3438, dict(
+                url_num=3438,
                 name='Hon. Yadamini Gunawardena, M.P.',
                 image_url='https://www.parliament.lk'
                 + '/uploads/images/members/profile_images/thumbs/3438.jpg',
@@ -102,8 +119,12 @@ class TestCase(unittest.TestCase):
                 phone_sitting='0714311163',
                 address_sitting='No. 84,Kirulapona Avenue,Colombo 05.',
                 email='yadamini_g@parliament.lk',
+                source_url='https://www.parliament.lk'
+                + '/en/members-of-parliament'
+                + '/directory-of-members/viewMember/3438'
             )],
             [3449, dict(
+                url_num=3449,
                 name='Hon. (Dr.) (Ms.) Harini Amarasuriya, M.P.',
                 image_url='https://www.parliament.lk'
                 + '/uploads/images/members/profile_images/thumbs/3449.jpg',
@@ -121,6 +142,9 @@ class TestCase(unittest.TestCase):
                 address_sitting='No. 464/20, Pannipitiya Road,'
                 + 'Pelawatte,Battaramulla.',
                 email='harini_a@parliament.lk',
+                source_url='https://www.parliament.lk'
+                + '/en/members-of-parliament'
+                + '/directory-of-members/viewMember/3449'
             )],
         ]:
             html_file = f'tests/test_examples/mem_real/{url_num}.html'

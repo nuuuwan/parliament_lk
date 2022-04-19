@@ -39,7 +39,8 @@ def get_url(url_num):
 
 def scrape_html(url_num):
     url = get_url(url_num)
-    return www.read(url, use_selenium=True)
+    html = www.read(url, use_selenium=True)
+    return [html, url, url_num]
 
 
 def extract_name(div_content):
@@ -95,7 +96,7 @@ def extract_one_line_kv(td):
     return (tokens[0], tokens[1])
 
 
-def parse_html(html):
+def parse_html(html, source_url, url_num):
     soup = BeautifulSoup(html, 'html.parser')
     div_content = soup.find('div', class_='components-wrapper')
 
@@ -132,6 +133,7 @@ def parse_html(html):
                     d |= dict([kv])
 
     return dict(
+        url_num=url_num,
         name=name,
         image_url=image_url,
         party=d.get('Party'),
@@ -146,11 +148,11 @@ def parse_html(html):
         phone_sitting=d.get('1-' + IMG_SRC_PHONE),
         address_sitting=d.get('1-' + IMG_SRC_ADDRESS),
         email=d.get(IMG_SRC_EMAIL),
+        source_url=source_url,
     )
 
 
 def scrape(url_num):
-    html = scrape_html(url_num)
-    member_info = parse_html(html)
-    member_info['name']
+    html, source_url, url_num = scrape_html(url_num)
+    member_info = parse_html(html, source_url, url_num)
     return member_info

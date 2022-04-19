@@ -1,9 +1,10 @@
 
 from parliament_lk import scrape_mem
 
+TEST_URL_NUM = 1234
 TEST_URL = 'https://www.parliament.lk' \
     + '/en/members-of-parliament'\
-    + '/directory-of-members/viewMember/1234'
+    + f'/directory-of-members/viewMember/{TEST_URL_NUM}'
 
 TEST_HTML_PARTY = '''
 <tr>
