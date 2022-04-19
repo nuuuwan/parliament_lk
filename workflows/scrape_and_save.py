@@ -21,7 +21,6 @@ def git_download():
         os.mkdir(DIR_MEMBER_INFO)
     if not os.path.exists(DIR_MEMBER_IMAGES):
         os.mkdir(DIR_MEMBER_IMAGES)
-    log.info('git_download: complete.')
     return git
 
 
@@ -29,7 +28,6 @@ def git_upload(git):
     time_id = timex.get_time_id()
     message = f'[scrape_and_save] {time_id}'
     git.stage_commit_and_push(message)
-    log.info('git_upload: complete.')
 
 
 def store_member(member_info):
