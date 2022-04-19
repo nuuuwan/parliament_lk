@@ -1,3 +1,4 @@
+import json
 import os
 import re
 
@@ -41,7 +42,7 @@ def get_url(url_num):
 
 def scrape_html(url_num):
     url = get_url(url_num)
-    return www.read(url, use_selenium=True)
+    return www.read(url)
 
 
 def extract_name(div_content):
@@ -142,9 +143,9 @@ def parse_html(html):
 
 
 def scrape(url_num):
-    url = get_url(url_num)
-    html = www.read(url, use_selenium=True)
+    html = scrape_html(url_num)
     member_info = parse_html(html)
     name = member_info['name']
     log.debug(f'Scraped member_info for {name} ({url_num})')
+    log.debug(json.dumps(member_info, indent=2))
     return member_info
