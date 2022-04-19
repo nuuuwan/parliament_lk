@@ -14,7 +14,6 @@ if __name__ == '__main__':
         url_num = info['url_num']
         member_info = scrape_mem.scrape(url_num)
         member_info_list.append(member_info)
-        break
 
     dir_data = '/tmp/parliament_lk.data'
     if os.path.exists(dir_data):
@@ -31,10 +30,12 @@ if __name__ == '__main__':
 
     n_members = len(member_info_list)
     time_id = timex.get_time_id()
-    message = '[scrape_and_save] Added {n_members} MPs ({time_id})'
+    message = f'[scrape_and_save] Added {n_members} MPs ({time_id})'
 
     os.system(' &&'.join([
         f'cd {dir_data}',
         'git add .',
         f'git commit -m "{message}"',
+        'git push origin data',
     ]))
+    shutil.rmtree(dir_data)
