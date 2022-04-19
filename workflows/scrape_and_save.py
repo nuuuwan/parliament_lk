@@ -39,7 +39,7 @@ def store_member(member_info):
     log.info(f'Stored member {url_num} to {member_info_file}')
 
 
-def download_image(member_info):
+def store_image(member_info):
     url_num = member_info['url_num']
     image_file = os.path.join(DIR_MEMBER_IMAGES, f'{url_num}.jpg')
 
@@ -58,7 +58,7 @@ if __name__ == '__main__':
         url_num = info['url_num']
         member_info = scrape_mem.scrape(url_num)
         store_member(member_info)
-        download_image(member_info)
+        store_image(member_info)
         if i % GIT_UPLOAD_FREQUENCY == 0:
             git_upload(git)
 
