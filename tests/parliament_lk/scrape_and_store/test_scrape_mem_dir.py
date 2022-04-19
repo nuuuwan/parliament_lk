@@ -6,7 +6,7 @@ from bs4 import BeautifulSoup
 from test_examples.mem_dir import TEST_HTML, TEST_LI
 from utils import www
 
-from parliament_lk import scrape_mem_dir
+from parliament_lk.scrape_and_store import scrape_mem_dir
 
 
 class TestCase(unittest.TestCase):

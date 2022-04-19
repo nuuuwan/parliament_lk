@@ -1,10 +1,10 @@
-
+import os
 import unittest
 from unittest.mock import MagicMock
 
 from utils import filex, www
 
-from parliament_lk import scrape_mem
+from parliament_lk.scrape_and_store import scrape_mem
 
 TEST_URL_NUMS = []
 
@@ -147,7 +147,11 @@ class TestCase(unittest.TestCase):
                 + '/directory-of-members/viewMember/3449'
             )],
         ]:
-            html_file = f'tests/test_examples/mem_real/{url_num}.html'
+            html_file = os.path.join(
+                'tests/parliament_lk/scrape_and_store',
+                'test_examples/mem_real',
+                f'{url_num}.html',
+            )
             html = filex.read(html_file)
             www.read = MagicMock(return_value=html)
 

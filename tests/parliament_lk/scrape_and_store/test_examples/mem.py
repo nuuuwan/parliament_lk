@@ -1,5 +1,5 @@
 
-from parliament_lk import scrape_mem
+from parliament_lk.scrape_and_store import scrape_mem
 
 TEST_URL_NUM = 1234
 TEST_URL = 'https://www.parliament.lk' \

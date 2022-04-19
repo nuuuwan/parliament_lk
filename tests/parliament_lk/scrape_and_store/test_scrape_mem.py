@@ -9,7 +9,7 @@ from test_examples.mem import (TEST_HTML, TEST_HTML_CONTACT,
                                TEST_URL_NUM)
 from utils import www
 
-from parliament_lk import scrape_mem
+from parliament_lk.scrape_and_store import scrape_mem
 
 
 class TestCase(unittest.TestCase):

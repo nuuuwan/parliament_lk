@@ -2,8 +2,8 @@ import os
 
 from utils import jsonx, timex, www
 
-from parliament_lk import scrape_mem, scrape_mem_dir
 from parliament_lk._utils import log
+from parliament_lk.scrape_and_store import scrape_mem, scrape_mem_dir
 from utils_future.gitx import Git
 
 URL_GIT = 'https://github.com/nuuuwan/parliament_lk'
@@ -19,6 +19,7 @@ def git_download():
 
     if not os.path.exists(DIR_MEMBER_INFO):
         os.mkdir(DIR_MEMBER_INFO)
+
     if not os.path.exists(DIR_MEMBER_IMAGES):
         os.mkdir(DIR_MEMBER_IMAGES)
     return git
@@ -46,7 +47,7 @@ def store_image(member_info):
         www.download_binary(image_url, image_file)
 
 
-if __name__ == '__main__':
+def store_all():
     git = git_download()
 
     mem_dir_info_list = scrape_mem_dir.scrape_all()
@@ -59,6 +60,11 @@ if __name__ == '__main__':
         store_image(member_info)
         if i % GIT_UPLOAD_FREQUENCY == 0:
             git_upload(git)
+        break
 
     git_upload(git)
     git.cleanup()
+
+
+if __name__ == '__main__':
+    store_all()
