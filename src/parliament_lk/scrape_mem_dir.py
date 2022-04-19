@@ -3,6 +3,7 @@ import string
 
 from bs4 import BeautifulSoup
 from utils import www
+from parliament_lk._utils import log
 
 
 def get_url(c):
@@ -41,5 +42,11 @@ def scrape_all():
     mem_dir_info_list = []
     for c in string.ascii_uppercase:
         html = scrape_html(c)
-        mem_dir_info_list += parse_html(html)
+        mem_dir_info_list_for_letter = parse_html(html)
+        n_members = len(mem_dir_info_list_for_letter)
+        log.debug(f'Scraped {n_members} infos for {c}')
+        mem_dir_info_list += mem_dir_info_list_for_letter
+
+    n_members = len(mem_dir_info_list)
+    log.info(f'Scraped {n_members} infos in total')
     return mem_dir_info_list
