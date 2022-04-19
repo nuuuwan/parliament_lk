@@ -2,11 +2,11 @@ import os
 
 from utils import jsonx, timex, tsv, www
 
+from parliament_lk._constants import URL_GIT
 from parliament_lk._utils import log
 from parliament_lk.scrape_and_store import scrape_mp, scrape_mp_idx
 from utils_future.gitx import Git
 
-URL_GIT = 'https://github.com/nuuuwan/parliament_lk'
 DIR_GIT_DATA = '/tmp/parliament_lk.data'
 DIR_MP_INFO = os.path.join(DIR_GIT_DATA, 'mp_info')
 DIR_MP_IMAGES = os.path.join(DIR_GIT_DATA, 'mp_images')
@@ -27,7 +27,7 @@ def git_download():
 
 def git_upload(git):
     time_id = timex.get_time_id()
-    message = f'[scrape_and_save] {time_id}'
+    message = f'[store_mps] {time_id}'
     git.stage_commit_and_push(message)
 
 
