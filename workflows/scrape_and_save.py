@@ -1,3 +1,4 @@
+import json
 import os
 import shutil
 
@@ -10,10 +11,13 @@ URL_GIT = 'https://github.com/nuuuwan/parliament_lk'
 if __name__ == '__main__':
     mem_dir_info_list = scrape_mem_dir.scrape_all()
     member_info_list = []
-    for info in mem_dir_info_list:
+    n_members = len(mem_dir_info_list)
+    for i, info in enumerate(mem_dir_info_list):
         url_num = info['url_num']
         member_info = scrape_mem.scrape(url_num)
+        log.debug(json.dumps(member_info, indent=2))
         member_info_list.append(member_info)
+        log.debug(f'Scraped {i}/{n_members} members')
 
     dir_data = '/tmp/parliament_lk.data'
     if os.path.exists(dir_data):
@@ -28,7 +32,6 @@ if __name__ == '__main__':
     tsv.write(member_info_file, member_info_list)
     log.info(f'Saved {member_info_file}')
 
-    n_members = len(member_info_list)
     time_id = timex.get_time_id()
     message = f'[scrape_and_save] Added {n_members} MPs ({time_id})'
 

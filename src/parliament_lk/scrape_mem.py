@@ -1,11 +1,8 @@
-import json
 import os
 import re
 
 from bs4 import BeautifulSoup
 from utils import www
-
-from parliament_lk._utils import log
 
 IMG_SRC_EMAIL = '/images/email_ico.png'
 IMG_SRC_PHONE = '/images/phone_ico.png'
@@ -145,7 +142,5 @@ def parse_html(html):
 def scrape(url_num):
     html = scrape_html(url_num)
     member_info = parse_html(html)
-    name = member_info['name']
-    log.debug(f'Scraped member_info for {name} ({url_num})')
-    log.debug(json.dumps(member_info, indent=2))
+    member_info['name']
     return member_info
