@@ -310,12 +310,12 @@ def validate(expanded_mp_list):
 
 
 def expand_mps():
-    # git = store_mps.git_download()
+    git = store_mps.git_download()
     mp_list = jsonx.read(store_mps.MP_LIST_JSON_FILE)
     expanded_mp_list = list(map(expand_single_mp, mp_list))
 
-    validate(expanded_mp_list)
+    # validate(expanded_mp_list)
 
     jsonx.write(EXPANDED_MP_LIST_JSON_FILE, expanded_mp_list)
     log.info(f'Wrote {EXPANDED_MP_LIST_JSON_FILE}')
-    # git_upload(git)
+    git_upload(git)
