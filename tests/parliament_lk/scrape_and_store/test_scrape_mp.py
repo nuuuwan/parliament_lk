@@ -13,6 +13,7 @@ from parliament_lk.scrape_and_store import scrape_mp
 
 
 class TestCase(unittest.TestCase):
+    maxDiff = None
     def setUp(self):
         www.read = MagicMock(return_value=TEST_HTML)
 
