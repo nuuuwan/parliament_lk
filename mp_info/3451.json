@@ -6,12 +6,14 @@
   "electoral_district": "Kalutara",
   "date_of_birth": null,
   "civil_status": null,
-  "religion": null,
+  "religion": "Buddhism",
   "profession": null,
   "phone": "0342250353",
   "address": "Pahala Naragala,Govinna.",
   "phone_sitting": "0777416245",
   "address_sitting": null,
   "email": "lalith_vk@parliament.lk",
-  "source_url": "https://www.parliament.lk/en/members-of-parliament/directory-of-members/viewMember/3451"
+  "source_url": "https://www.parliament.lk/en/members-of-parliament/directory-of-members/viewMember/3451",
+  "academic_qualifications": "G.C.E. A/L",
+  "professional_qualifications": null
 }
