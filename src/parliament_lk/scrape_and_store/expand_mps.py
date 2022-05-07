@@ -37,6 +37,12 @@ EXPANDED_MP_LIST_JSON_FILE = os.path.join(
 # },
 
 
+def git_upload(git):
+    time_id = timex.get_time_id()
+    message = f'[expand_mps] {time_id}'
+    git.stage_commit_and_push(message)
+
+
 def parse_name_cleaned(name):
     for k in [
         "Hon.",
@@ -63,15 +69,20 @@ def parse_gender(name):
     return 'Male'
 
 
-def git_upload(git):
-    time_id = timex.get_time_id()
-    message = f'[expand_mps] {time_id}'
-    git.stage_commit_and_push(message)
+def parse_first_and_last_names(name_cleaned):
+    names = name_cleaned.split(' ')
+    n_last_name_words = 1
+    if names[-2].lower() in ['ali', 'de', 'bakeer']:
+        n_last_name_words = 2
+
+    return ' '.join(names[:-n_last_name_words]
+                    ), ' '.join(names[-n_last_name_words:]).title()
 
 
 def expand_single_mp(mp):
     name_cleaned = parse_name_cleaned(mp['name'])
     gender = parse_gender(mp['name'])
+    first_names, last_name = parse_first_and_last_names(name_cleaned)
 
     return dict(
         url_num=mp['url_num'],
@@ -79,8 +90,8 @@ def expand_single_mp(mp):
 
         name=mp['name'],
         name_cleaned=name_cleaned,
-        # first_names=first_names,
-        # last_name=last_name,
+        first_names=first_names,
+        last_name=last_name,
 
         gender=gender,
 
@@ -111,7 +122,7 @@ def expand_mps():
     expanded_mp_list = list(map(expand_single_mp, mp_list))
 
     subset_list = sorted(list(map(
-        lambda mp: [mp['name_cleaned'], mp['name']],
+        lambda mp: [mp['last_name'], mp['first_names'], mp['name']],
         expanded_mp_list,
     )), key=lambda x: x[0])
 
