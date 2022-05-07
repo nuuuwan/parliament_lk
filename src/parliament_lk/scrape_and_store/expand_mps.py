@@ -9,6 +9,7 @@ from parliament_lk.scrape_and_store import store_mps
 
 EXPANDED_MP_LIST_JSON_FILE = os.path.join(
     store_mps.DIR_GIT_DATA, 'expanded_mp_list.json')
+PROD_MODE = False
 
 # {
 #   "url_num": 3266,
@@ -137,6 +138,25 @@ def parse_religion_cleaned(religion):
     }.get(religion, 'Other or Unknown')
 
 
+def parse_phone_norm(phone):
+    if not phone:
+        return None
+
+    if len(phone) == 9:
+        phone = '0' + phone
+    if len(phone) == 7:
+        phone = '011' + phone
+
+    if len(phone) != 10:
+        log.error(phone)
+
+    return '-'.join([
+        phone[:3],
+        phone[3:6],
+        phone[6:10],
+    ])
+
+
 def parse_academic_highest_level(academic_qualifications):
     if not academic_qualifications:
         return '0 Unknown'
@@ -233,6 +253,9 @@ def expand_single_mp(mp):
 
     religion_cleaned = parse_religion_cleaned(mp['religion'])
 
+    phone_norm = parse_phone_norm(mp['phone'])
+    phone_sitting_norm = parse_phone_norm(mp['phone_sitting'])
+
     academic_highest_level = parse_academic_highest_level(
         mp['academic_qualifications'],
     )
@@ -273,9 +296,15 @@ def expand_single_mp(mp):
         profession=mp['profession'],
 
         phone=mp['phone'],
+        phone_norm=phone_norm,
+
         address=mp['address'],
+
         phone_sitting=mp['phone_sitting'],
+        phone_sitting_norm=phone_sitting_norm,
+
         address_sitting=mp['address_sitting'],
+
         email=mp['email'],
         source_url=mp['source_url'],
 
@@ -288,16 +317,17 @@ def expand_single_mp(mp):
 def validate(expanded_mp_list):
     subset_list = sorted(list(map(
         lambda mp: [
-            mp['academic_highest_level'],
-            mp['academic_qualifications'],
-            mp['profession'],
+            mp['phone'],
+            mp['phone_norm'],
+            mp['phone_sitting'],
+            mp['phone_sitting_norm'],
         ],
         expanded_mp_list,
-    )), key=lambda x: x[0])
+    )), key=lambda x: str(x[0]))
 
     x0_to_list = {}
     for x in subset_list:
-        x0 = x[0]
+        x0 = str(x[0])
         if x0 not in x0_to_list:
             x0_to_list[x0] = []
         x0_to_list[x0].append(tuple(x[1:]))
@@ -310,12 +340,15 @@ def validate(expanded_mp_list):
 
 
 def expand_mps():
-    git = store_mps.git_download()
+    if PROD_MODE:
+        git = store_mps.git_download()
     mp_list = jsonx.read(store_mps.MP_LIST_JSON_FILE)
     expanded_mp_list = list(map(expand_single_mp, mp_list))
 
-    # validate(expanded_mp_list)
+    if not PROD_MODE:
+        validate(expanded_mp_list)
 
     jsonx.write(EXPANDED_MP_LIST_JSON_FILE, expanded_mp_list)
     log.info(f'Wrote {EXPANDED_MP_LIST_JSON_FILE}')
-    git_upload(git)
+    if PROD_MODE:
+        git_upload(git)
