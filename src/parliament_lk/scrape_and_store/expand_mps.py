@@ -1,7 +1,10 @@
 import os
-from utils import jsonx
-from parliament_lk.scrape_and_store import store_mps
+import re
+
+from utils import jsonx, timex
+
 from parliament_lk._utils import log
+from parliament_lk.scrape_and_store import store_mps
 
 EXPANDED_MP_LIST_JSON_FILE = os.path.join(
     store_mps.DIR_GIT_DATA, 'expanded_mp_list.json')
@@ -9,7 +12,8 @@ EXPANDED_MP_LIST_JSON_FILE = os.path.join(
 # {
 #   "url_num": 3266,
 #   "name": "Hon. A. Aravindh Kumar, M.P.",
-#   "image_url": "https://www.parliament.lk/uploads/images/members/profile_images/thumbs/3266.jpg",
+#   "image_url": "https://www.parliament.lk/uploads
+#   /images/members/profile_images/thumbs/3266.jpg",
 #   "party": "Samagi Jana Balawegaya (SJB)",
 #   "electoral_district": "Badulla",
 #   "date_of_birth": "17-11-1954",
@@ -19,12 +23,44 @@ EXPANDED_MP_LIST_JSON_FILE = os.path.join(
 #   "phone": "0777727472",
 #   "address": "NO.19,Badulupitiya Road,Badulla.",
 #   "phone_sitting": "0552231526",
-#   "address_sitting": "NO.271/19, Resta Garden,Muditha Mawatha, Kerawalapitiya, Hendala,Wattala.",
+#   "address_sitting": "NO.271/19, Resta Garden,
+#   Muditha Mawatha, Kerawalapitiya, Hendala,Wattala.",
 #   "email": "aravindh_k@parliament.lk",
-#   "source_url": "https://www.parliament.lk/en/members-of-parliament/directory-of-members/viewMember/3266",
+#   "source_url": "https://www.parliament.lk/en/
+#   members-of-parliament/directory-of-members/viewMember/3266",
 #   "academic_qualifications": "G.C.E Advanced Level",
-#   "professional_qualifications": "1. 20 Years experience as an Executive in the Tea Plantation Sector. 2. 10 years experience as a Private Secretary to a Cabinet Minister 3. 10 years as a Member of Uva Provincial Council. 4. 4 1/2 years as a Member of Parliament."
+#   "professional_qualifications": "1. 20 Years
+#   experience as an Executive in the Tea Plantation Sector.
+#   2. 10 years experience as a Private Secretary to a
+#   Cabinet Minister 3. 10 years as a Member of
+#   Uva Provincial Council. 4. 4 1/2 years as a Member of Parliament."
 # },
+
+
+def parse_name_cleaned(name):
+    for k in [
+        "Hon.",
+        ", M.P.",
+        "(Dr.)",
+        "(Mrs.)",
+        "(Major)",
+        "Field Marshal",
+        "(Ms.)",
+        ", PC",
+        "Thero",
+        "(Ven.) ",
+        "(Prof.)",
+    ]:
+        name = name.replace(k, ' ')
+    name = re.sub(r'\s+', ' ', name).strip()
+    return name
+
+
+def parse_gender(name):
+    for k in ['Mrs.', 'Miss', 'Ms.']:
+        if k in name:
+            return 'Female'
+    return 'Male'
 
 
 def git_upload(git):
@@ -34,13 +70,58 @@ def git_upload(git):
 
 
 def expand_single_mp(mp):
-    return mp
+    name_cleaned = parse_name_cleaned(mp['name'])
+    gender = parse_gender(mp['name'])
+
+    return dict(
+        url_num=mp['url_num'],
+        id=mp['url_num'],
+
+        name=mp['name'],
+        name_cleaned=name_cleaned,
+        # first_names=first_names,
+        # last_name=last_name,
+
+        gender=gender,
+
+        image_url=mp['image_url'],
+        party=mp['party'],
+        electoral_district=mp['electoral_district'],
+
+        date_of_birth=mp['date_of_birth'],
+        civil_status=mp['civil_status'],
+        religion=mp['religion'],
+        profession=mp['profession'],
+
+        phone=mp['phone'],
+        address=mp['address'],
+        phone_sitting=mp['phone_sitting'],
+        address_sitting=mp['address_sitting'],
+        email=mp['email'],
+        source_url=mp['source_url'],
+
+        academic_qualifications=mp['academic_qualifications'],
+        professional_qualifications=mp['professional_qualifications'],
+    )
 
 
 def expand_mps():
     # git = store_mps.git_download()
     mp_list = jsonx.read(store_mps.MP_LIST_JSON_FILE)
     expanded_mp_list = list(map(expand_single_mp, mp_list))
+
+    subset_list = sorted(list(map(
+        lambda mp: [mp['name_cleaned'], mp['name']],
+        expanded_mp_list,
+    )), key=lambda x: x[0])
+
+    prev_x0 = None
+    for x in subset_list:
+        x0 = x[0]
+        if x0 != prev_x0:
+            prev_x0 = x0
+            print('-' * 32)
+        print(x)
 
     jsonx.write(EXPANDED_MP_LIST_JSON_FILE, expanded_mp_list)
     log.info(f'Wrote {EXPANDED_MP_LIST_JSON_FILE}')
