@@ -79,10 +79,15 @@ def parse_first_and_last_names(name_cleaned):
                     ), ' '.join(names[-n_last_name_words:]).title()
 
 
+def parse_party_short(party):
+    return party.split('(')[1].split(')')[0]
+
+
 def expand_single_mp(mp):
     name_cleaned = parse_name_cleaned(mp['name'])
     gender = parse_gender(mp['name'])
     first_names, last_name = parse_first_and_last_names(name_cleaned)
+    party_short = parse_party_short(mp['party'])
 
     return dict(
         url_num=mp['url_num'],
@@ -96,7 +101,10 @@ def expand_single_mp(mp):
         gender=gender,
 
         image_url=mp['image_url'],
+
         party=mp['party'],
+        party_short=party_short,
+
         electoral_district=mp['electoral_district'],
 
         date_of_birth=mp['date_of_birth'],
@@ -121,18 +129,22 @@ def expand_mps():
     mp_list = jsonx.read(store_mps.MP_LIST_JSON_FILE)
     expanded_mp_list = list(map(expand_single_mp, mp_list))
 
+    # analysis only
     subset_list = sorted(list(map(
-        lambda mp: [mp['last_name'], mp['first_names'], mp['name']],
+        lambda mp: [mp['party_short'], mp['party']],
         expanded_mp_list,
     )), key=lambda x: x[0])
-
-    prev_x0 = None
+    x0_to_list = {}
     for x in subset_list:
         x0 = x[0]
-        if x0 != prev_x0:
-            prev_x0 = x0
-            print('-' * 32)
-        print(x)
+        if x0 not in x0_to_list:
+            x0_to_list[x0] = []
+        x0_to_list[x0].append(tuple(x[1:]))
+
+    for x0, x_rem_list in sorted(x0_to_list.items(), key=lambda x: x[0]):
+        print(x0)
+        for x_rem in list(set(x_rem_list)):
+            print('\t', x_rem)
 
     jsonx.write(EXPANDED_MP_LIST_JSON_FILE, expanded_mp_list)
     log.info(f'Wrote {EXPANDED_MP_LIST_JSON_FILE}')
