@@ -103,14 +103,38 @@ def search_ed(electoral_district):
 
 
 def parse_ed_info(electoral_district):
+    if electoral_district == 'National List':
+        return 'LK', 'National List'
+
     matched_ed = search_ed(electoral_district)
     return matched_ed['ed_id'], matched_ed['name']
 
 
-def parse_date_of_birth(date_of_birth):
+def parse_date_of_birth(date_of_birth, url_num):
+    if not date_of_birth:
+        date_of_birth = {
+            1575: "27-04-1951",  # Basil Rohana Rajapaksa
+            3451: "01-10-1971",  # Jagath Kumara Sumithraarachchi
+            3364: "07-10-1974",  # Lalith Varna Kumara
+        }.get(url_num)
+
+    if not date_of_birth:
+        log.error(url_num)
+
     date_of_birth_ut = timex.parse_time(date_of_birth, '%d-%m-%Y')
     date_of_birth_norm = timex.format_time(date_of_birth_ut, '%Y-%m-%d')
-    return date_of_birth_ut, date_of_birth_norm
+    return date_of_birth, date_of_birth_ut, date_of_birth_norm
+
+
+def parse_religion_cleaned(religion):
+    return {
+        'Buddhism': 'Buddhism',
+        'Islam': 'Islam',
+        'Hindu': 'Hinduism',
+        'Roman Catholicism': 'Christianity (All)',
+        'Christianity': 'Christianity (All)',
+
+    }.get(religion, 'Other or Unknown')
 
 
 def expand_single_mp(mp):
@@ -119,22 +143,12 @@ def expand_single_mp(mp):
     first_names, last_name = parse_first_and_last_names(name_cleaned)
     party_short = parse_party_short(mp['party'])
 
-    date_of_birth = mp['date_of_birth']
-    if not date_of_birth:
-        date_of_birth = {
-            1575: "27-04-1951",  # Basil Rohana Rajapaksa
-            3451: "01-10-1971",  # Jagath Kumara Sumithraarachchi
-            3364: "07-10-1974",  # Lalith Varna Kumara
-        }.get(mp['url_num'])
+    date_of_birth, date_of_birth_ut, date_of_birth_norm = parse_date_of_birth(
+        mp['date_of_birth'], mp['url_num'])
 
-    if not date_of_birth:
-        log.error(str(mp['url_num']) + ' ' + mp['name'])
-    date_of_birth_ut, date_of_birth_norm = parse_date_of_birth(date_of_birth)
+    ed_id, ed_name = parse_ed_info(mp['electoral_district'])
 
-    if mp['electoral_district'] == 'National List':
-        ed_id, ed_name = 'LK', 'National List'
-    else:
-        ed_id, ed_name = parse_ed_info(mp['electoral_district'])
+    religion_cleaned = parse_religion_cleaned(mp['religion'])
 
     return dict(
         url_num=mp['url_num'],
@@ -162,6 +176,7 @@ def expand_single_mp(mp):
 
         civil_status=mp['civil_status'],
         religion=mp['religion'],
+        religion_cleaned=religion_cleaned,
         profession=mp['profession'],
 
         phone=mp['phone'],
@@ -184,9 +199,9 @@ def expand_mps():
     # analysis only
     subset_list = sorted(list(map(
         lambda mp: [
-            mp['date_of_birth_norm'],
-            mp['date_of_birth_ut'],
-            mp['date_of_birth'],
+            mp['religion'] if mp['religion'] else "None",
+            mp['religion_cleaned'],
+            mp['name_cleaned'],
         ],
         expanded_mp_list,
     )), key=lambda x: x[0])
