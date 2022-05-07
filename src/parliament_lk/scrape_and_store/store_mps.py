@@ -1,6 +1,7 @@
 import os
+import threading
 
-from utils import jsonx, timex, tsv, www
+from utils import jsonx, mr, timex, tsv, www
 
 from parliament_lk._constants import URL_GIT
 from parliament_lk._utils import log
@@ -11,6 +12,7 @@ DIR_GIT_DATA = '/tmp/parliament_lk.data'
 DIR_MP_INFO = os.path.join(DIR_GIT_DATA, 'mp_info')
 DIR_MP_IMAGES = os.path.join(DIR_GIT_DATA, 'mp_images')
 GIT_UPLOAD_FREQUENCY = 10
+MAX_THREADS = 4
 
 
 def git_download():
@@ -66,18 +68,29 @@ def download_and_store_image(mp_info, FORCE_SCRAPE):
 def store_all(FORCE_SCRAPE):
     git = git_download()
     mp_idx_info_list = scrape_and_store_mp_idx(FORCE_SCRAPE)
+    git_upload(git)
 
     n_mps = len(mp_idx_info_list)
-    mp_info_list = []
-    for i, info in enumerate(mp_idx_info_list):
+    git_lock = threading.Lock()
+
+    def store_all_item(i, info):
         log.debug(f'{i}/{n_mps}')
         url_num = info['url_num']
         mp_info = scrape_and_store_mp(url_num, FORCE_SCRAPE)
         download_and_store_image(mp_info, FORCE_SCRAPE)
-        mp_info_list.append(mp_info)
 
         if i % GIT_UPLOAD_FREQUENCY == 0:
+            git_lock.acquire()
             git_upload(git)
+            git_lock.release()
+
+        return mp_info
+
+    mp_info_list = mr.map_parallel(
+        lambda x: store_all_item(x[0], x[1]),
+        enumerate(mp_idx_info_list),
+        MAX_THREADS,
+    )
 
     mp_list_json_file = os.path.join(DIR_GIT_DATA, 'mp_list.json')
     jsonx.write(mp_list_json_file, mp_info_list)
