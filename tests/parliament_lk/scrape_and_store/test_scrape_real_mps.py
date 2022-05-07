@@ -33,7 +33,11 @@ class TestCase(unittest.TestCase):
                 email='wickremesinghe_r@parliament.lk',
                 source_url='https://www.parliament.lk'
                 + '/en/members-of-parliament'
-                + '/directory-of-members/viewMember/1244'
+                + '/directory-of-members/viewMember/1244',
+
+                academic_qualifications='LLB.;',
+                professional_qualifications='Attorney-at-Law; Advocate',
+
             )],
             [1482, dict(
                 url_num=1482,
@@ -55,7 +59,11 @@ class TestCase(unittest.TestCase):
                 email='atukorale_t@parliament.lk',
                 source_url='https://www.parliament.lk'
                 + '/en/members-of-parliament'
-                + '/directory-of-members/viewMember/1482'
+                + '/directory-of-members/viewMember/1482',
+
+                academic_qualifications='Attorney-at-Law;'
+                + ' G.C.E. (A/L); G.C.E. (O/L)',
+                professional_qualifications='Attorney At Law',
             )],
             [3179, dict(
                 url_num=3179,
@@ -77,7 +85,10 @@ class TestCase(unittest.TestCase):
                 email='rajapaksa_n@parliament.lk',
                 source_url='https://www.parliament.lk'
                 + '/en/members-of-parliament'
-                + '/directory-of-members/viewMember/3179'
+                + '/directory-of-members/viewMember/3179',
+
+                academic_qualifications='LLB, Attorney -at- Law',
+                professional_qualifications='Attorney at Law',
             )],
             [3306, dict(
                 url_num=3306,
@@ -99,7 +110,11 @@ class TestCase(unittest.TestCase):
                 email='amarakeerthi_a@parliament.lk',
                 source_url='https://www.parliament.lk'
                 + '/en/members-of-parliament'
-                + '/directory-of-members/viewMember/3306'
+                + '/directory-of-members/viewMember/3306',
+
+                academic_qualifications='Open University Degree',
+                professional_qualifications='2008 To 2017 North Central '
+                + ' province Council Member',
             )],
             [3438, dict(
                 url_num=3438,
@@ -121,7 +136,10 @@ class TestCase(unittest.TestCase):
                 email='yadamini_g@parliament.lk',
                 source_url='https://www.parliament.lk'
                 + '/en/members-of-parliament'
-                + '/directory-of-members/viewMember/3438'
+                + '/directory-of-members/viewMember/3438',
+
+                academic_qualifications=None,
+                professional_qualifications=None,
             )],
             [3449, dict(
                 url_num=3449,
@@ -144,7 +162,12 @@ class TestCase(unittest.TestCase):
                 email='harini_a@parliament.lk',
                 source_url='https://www.parliament.lk'
                 + '/en/members-of-parliament'
-                + '/directory-of-members/viewMember/3449'
+                + '/directory-of-members/viewMember/3449',
+
+                academic_qualifications='BA (Hons) Sociology;'
+                + 'MA App. Anthropology & Development Studies;'
+                + 'PHD, Social Anthropology',
+                professional_qualifications='University Lecturer',
             )],
         ]:
             html_file = os.path.join(
