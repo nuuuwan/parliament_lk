@@ -88,6 +88,23 @@ TEST_HTML_DIV_CONTENT = f'''
         </table>
         {TEST_HTML_EMAIL}
     </table>
+
+    <div class="top-mp-detail-4">
+        <h4>Academic Qualifications</h4>
+        <div class="bottomcont">
+            Federal polytechnic school in Zurich;
+            University of Zurich (PhD);
+        </div>
+    </div>
+
+    <div class="top-mp-detail-4">
+        <h4>Professional Qualifications</h4>
+        <div class="bottomcont">
+            General relativity;
+            Can sing;
+        </div>
+    </div>
+
 </div>
 '''
 
