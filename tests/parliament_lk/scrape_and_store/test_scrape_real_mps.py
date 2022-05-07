@@ -114,7 +114,7 @@ class TestCase(unittest.TestCase):
                 + '/directory-of-members/viewMember/3306',
 
                 academic_qualifications='Open University Degree',
-                professional_qualifications='2008 To 2017 North Central '
+                professional_qualifications='2008 To 2017 North Central'
                 + ' province Council Member',
             )],
             [3438, dict(
@@ -153,7 +153,7 @@ class TestCase(unittest.TestCase):
                 date_of_birth='06-03-1970',
                 civil_status='Single',
                 religion='Buddhism',
-                profession=None,
+                profession='University Lecturer',
 
                 phone=None,
                 address='No. 33B" Janatha Mawatha,Mirihana,Kotte.',
@@ -166,8 +166,8 @@ class TestCase(unittest.TestCase):
                 + '/directory-of-members/viewMember/3449',
 
                 academic_qualifications='BA (Hons) Sociology;'
-                + 'MA App. Anthropology & Development Studies;'
-                + 'PHD, Social Anthropology',
+                + ' MA App. Anthropology & Development Studies;'
+                + ' PHD, Social Anthropology',
                 professional_qualifications='University Lecturer',
             )],
         ]:
@@ -180,7 +180,6 @@ class TestCase(unittest.TestCase):
             www.read = MagicMock(return_value=html)
 
             actual_info = scrape_mp.scrape(url_num)
-            print(actual_info)
 
             self.assertEqual(
                 expected_info,
