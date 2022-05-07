@@ -14,6 +14,9 @@ DIR_MP_IMAGES = os.path.join(DIR_GIT_DATA, 'mp_images')
 GIT_UPLOAD_FREQUENCY = 10
 MAX_THREADS = 4
 
+MP_LIST_JSON_FILE = os.path.join(DIR_GIT_DATA, 'mp_list.json')
+MP_LIST_FILE = os.path.join(DIR_GIT_DATA, 'mp_list.tsv')
+
 
 def git_download():
     git = Git(URL_GIT, 'data', DIR_GIT_DATA)
@@ -92,12 +95,11 @@ def store_all(FORCE_SCRAPE):
         MAX_THREADS,
     )
 
-    mp_list_json_file = os.path.join(DIR_GIT_DATA, 'mp_list.json')
-    jsonx.write(mp_list_json_file, mp_info_list)
-    log.info(f'Stored {n_mps} items {mp_list_json_file}')
+    jsonx.write(MP_LIST_JSON_FILE, mp_info_list)
+    log.info(f'Stored {n_mps} items {MP_LIST_JSON_FILE}')
 
-    mp_list_file = os.path.join(DIR_GIT_DATA, 'mp_list.tsv')
-    tsv.write(mp_list_file, mp_info_list)
-    log.info(f'Stored {n_mps} items {mp_list_file}')
+    os.path.join(DIR_GIT_DATA, 'mp_list.tsv')
+    tsv.write(MP_LIST_FILE, mp_info_list)
+    log.info(f'Stored {n_mps} items {MP_LIST_FILE}')
 
     git_upload(git)
