@@ -14,6 +14,7 @@ from parliament_lk.scrape_and_store import scrape_mp
 
 class TestCase(unittest.TestCase):
     maxDiff = None
+
     def setUp(self):
         www.read = MagicMock(return_value=TEST_HTML)
 
@@ -119,7 +120,7 @@ class TestCase(unittest.TestCase):
 
                 academic_qualifications=''
                 + 'Federal polytechnic school in Zurich;'
-                + 'University of Zurich (PhD);',
+                + ' University of Zurich (PhD);',
                 professional_qualifications='General relativity; Can sing;'
             ),
             scrape_mp.parse_html(TEST_HTML, 'www.albert.com', TEST_URL_NUM),
