@@ -10,9 +10,9 @@ TEST_URL_NUMS = []
 
 
 class TestCase(unittest.TestCase):
-    def test(self):
-        maxDiff = None
+    maxDiff = None
 
+    def test(self):
         for url_num, expected_info in [
             [1244, dict(
                 url_num=1244,
