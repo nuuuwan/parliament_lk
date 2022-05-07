@@ -79,6 +79,10 @@ def store_all():
         if i % GIT_UPLOAD_FREQUENCY == 0:
             git_upload(git)
 
+    mp_list_json_file = os.path.join(DIR_GIT_DATA, 'mp_list.json')
+    jsonx.write(mp_list_json_file, mp_info_list)
+    log.info(f'Stored {n_mps} items {mp_list_json_file}')
+
     mp_list_file = os.path.join(DIR_GIT_DATA, 'mp_list.tsv')
     tsv.write(mp_list_file, mp_info_list)
     log.info(f'Stored {n_mps} items {mp_list_file}')
