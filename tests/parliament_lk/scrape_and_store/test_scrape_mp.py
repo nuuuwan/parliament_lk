@@ -115,6 +115,11 @@ class TestCase(unittest.TestCase):
                 address_sitting='123 Home Street Princeton, NJ',
                 email='albert@einstein.org',
                 source_url='www.albert.com',
+
+                academic_qualifications=''
+                + 'Federal polytechnic school in Zurich;'
+                + 'University of Zurich (PhD);',
+                professional_qualifications='General relativity; Can sing;'
             ),
             scrape_mp.parse_html(TEST_HTML, 'www.albert.com', TEST_URL_NUM),
         )
