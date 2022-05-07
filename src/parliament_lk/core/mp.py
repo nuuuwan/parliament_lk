@@ -71,9 +71,3 @@ class MP:
             lambda mp_info: MP(mp_info),
             mp_info_list,
         ))
-
-
-if __name__ == '__main__':
-    mps = MP.loadMPs()
-    for mp in sorted(mps, key=lambda mp: mp.age):
-        print(mp, mp.age)
