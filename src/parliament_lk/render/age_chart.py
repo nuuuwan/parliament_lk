@@ -48,7 +48,11 @@ def render_mp(item):
         _('td', [_('div', mp.name_clean, {'class': "div-name"})]),
         _('td', [_('div', [
             _('div', mp.party_short, {'class': "div-party"}),
-            _('div', mp.electoral_district, {'class': "div-electoral-district"}),
+            _(
+                'div',
+                mp.electoral_district,
+                {'class': "div-electoral-district"},
+            ),
         ])]),
         _('td', [_('div', f'Age {mp.age}', {'class': "div-age"})]),
     ])
