@@ -31,9 +31,9 @@ def git_upload(git):
     git.stage_commit_and_push(message)
 
 
-def scrape_and_store_mp_idx():
+def scrape_and_store_mp_idx(FORCE_SCRAPE):
     mp_idx_file = os.path.join(DIR_GIT_DATA, 'mp_idx.tsv')
-    if os.path.exists(mp_idx_file):
+    if not FORCE_SCRAPE and os.path.exists(mp_idx_file):
         return tsv.read(mp_idx_file)
 
     mp_idx_info_list = scrape_mp_idx.scrape_all_indices()
@@ -42,9 +42,9 @@ def scrape_and_store_mp_idx():
     return mp_idx_info_list
 
 
-def scrape_and_store_mp(url_num):
+def scrape_and_store_mp(url_num, FORCE_SCRAPE):
     mp_info_file = os.path.join(DIR_MP_INFO, f'{url_num}.json')
-    if os.path.exists(mp_info_file):
+    if not FORCE_SCRAPE and os.path.exists(mp_info_file):
         return jsonx.read(mp_info_file)
 
     mp_info = scrape_mp.scrape(url_num)
@@ -53,27 +53,27 @@ def scrape_and_store_mp(url_num):
     return mp_info
 
 
-def download_and_store_image(mp_info):
+def download_and_store_image(mp_info, FORCE_SCRAPE):
     url_num = mp_info['url_num']
     image_file = os.path.join(DIR_MP_IMAGES, f'{url_num}.jpg')
-    if os.path.exists(image_file):
+    if not FORCE_SCRAPE and os.path.exists(image_file):
         return
 
     image_url = mp_info['image_url']
     www.download_binary(image_url, image_file)
 
 
-def store_all():
+def store_all(FORCE_SCRAPE):
     git = git_download()
-    mp_idx_info_list = scrape_and_store_mp_idx()
+    mp_idx_info_list = scrape_and_store_mp_idx(FORCE_SCRAPE)
 
     n_mps = len(mp_idx_info_list)
     mp_info_list = []
     for i, info in enumerate(mp_idx_info_list):
         log.debug(f'{i}/{n_mps}')
         url_num = info['url_num']
-        mp_info = scrape_and_store_mp(url_num)
-        download_and_store_image(mp_info)
+        mp_info = scrape_and_store_mp(url_num, FORCE_SCRAPE)
+        download_and_store_image(mp_info, FORCE_SCRAPE)
         mp_info_list.append(mp_info)
 
         if i % GIT_UPLOAD_FREQUENCY == 0:
