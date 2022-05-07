@@ -137,6 +137,89 @@ def parse_religion_cleaned(religion):
     }.get(religion, 'Other or Unknown')
 
 
+def parse_academic_highest_level(academic_qualifications):
+    if not academic_qualifications:
+        return '0 Unknown'
+
+    LEVEL_TO_KEYWORDS = {
+        '8 Doctorate': [
+            'Doctor of Public Service',
+            'PhD',
+            'Ph.D',
+            'Doctor of Philosophy',
+            'M.D.',
+            'Doctarate in Public Administration',
+        ],
+        '7 Masters': [
+            'Msc',
+            'MA ',
+            'Mphil ',
+            'M.Ed',
+            'MBA',
+            'M.Sc',
+            'MSc',
+            'M.Com.',
+            'M.B.A',
+            'LLM',
+        ],
+        '6 Bachelors': [
+            'Postgraduate Degree In Business Management',
+            'BSc',
+            'MBBS',
+            'M.B.B.S.',
+            'B.A',
+            'Business Management Degree',
+            'BSc.',
+            'B.Eng',
+            'B.com',
+            'B.A. ',
+            'B.Com.',
+            'B. Sc.',
+            'BA',
+            'B.B.A ',
+            'B. Com',
+            'B.Sc',
+            'LLB',
+            'Bachelor',
+            'L.L.B.',
+            'Attorney',
+            'B.Ed',
+            'LL. B',
+            'Open University Degree',
+            'B.B.A',
+            'L.LB',
+            'Sri Lanka Law College',
+            'Electrical and Electronics Engineering',
+        ],
+        '5 Short-Tertiary': [],
+        '4 Post-Secondary': ['Diploma', 'Dip.', 'HCIMA', 'Dip in'],
+        '3 Upper Secondary (A. Levels)': [
+            'G.C.E Advanced Level',
+            'A/L',
+            'Advanced level',
+            'GCE Advanced Level',
+            'Advance level',
+            'advanced Level',
+            'G.C.E. (Advanced Level)',
+        ],
+        '2 Lower Secondary (O. Levels)': [
+            'O/L',
+            'O /L',
+            'upto Advanced Level',
+            'Secondary Education',
+            'Upto Advanced Level',
+        ],
+        '1 Primary': [''],
+    }
+
+    for level, keywords in LEVEL_TO_KEYWORDS.items():
+        for k in keywords:
+            if k and k in academic_qualifications:
+                return level
+
+    return '1 Primary'
+
+
 def expand_single_mp(mp):
     name_cleaned = parse_name_cleaned(mp['name'])
     gender = parse_gender(mp['name'])
@@ -149,6 +232,16 @@ def expand_single_mp(mp):
     ed_id, ed_name = parse_ed_info(mp['electoral_district'])
 
     religion_cleaned = parse_religion_cleaned(mp['religion'])
+
+    academic_highest_level = parse_academic_highest_level(
+        mp['academic_qualifications'],
+    )
+    if (int)(academic_highest_level[0]) < 6 \
+        and mp['profession'] in [
+            'Attorney-at-Law',
+            'Accountant',
+    ]:
+        academic_highest_level = '6 Bachelors'
 
     return dict(
         url_num=mp['url_num'],
@@ -187,21 +280,17 @@ def expand_single_mp(mp):
         source_url=mp['source_url'],
 
         academic_qualifications=mp['academic_qualifications'],
+        academic_highest_level=academic_highest_level,
         professional_qualifications=mp['professional_qualifications'],
     )
 
 
-def expand_mps():
-    # git = store_mps.git_download()
-    mp_list = jsonx.read(store_mps.MP_LIST_JSON_FILE)
-    expanded_mp_list = list(map(expand_single_mp, mp_list))
-
-    # analysis only
+def validate(expanded_mp_list):
     subset_list = sorted(list(map(
         lambda mp: [
-            mp['religion'] if mp['religion'] else "None",
-            mp['religion_cleaned'],
-            mp['name_cleaned'],
+            mp['academic_highest_level'],
+            mp['academic_qualifications'],
+            mp['profession'],
         ],
         expanded_mp_list,
     )), key=lambda x: x[0])
@@ -214,9 +303,18 @@ def expand_mps():
         x0_to_list[x0].append(tuple(x[1:]))
 
     for x0, x_rem_list in sorted(x0_to_list.items(), key=lambda x: x[0]):
-        print(x0)
+        print('-' * 32)
+        print(x0, len(x_rem_list))
         for x_rem in list(set(x_rem_list)):
             print('\t', x_rem)
+
+
+def expand_mps():
+    # git = store_mps.git_download()
+    mp_list = jsonx.read(store_mps.MP_LIST_JSON_FILE)
+    expanded_mp_list = list(map(expand_single_mp, mp_list))
+
+    validate(expanded_mp_list)
 
     jsonx.write(EXPANDED_MP_LIST_JSON_FILE, expanded_mp_list)
     log.info(f'Wrote {EXPANDED_MP_LIST_JSON_FILE}')
