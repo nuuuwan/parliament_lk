@@ -36,6 +36,8 @@ class MP:
         self.address_sitting = d['address_sitting']
         self.email = d['email']
 
+        self.vote20A = d['vote_20th_amendment']
+
         self.source_url = d['source_url']
 
     @property
