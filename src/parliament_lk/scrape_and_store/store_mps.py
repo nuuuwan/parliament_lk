@@ -88,7 +88,3 @@ def store_all():
     log.info(f'Stored {n_mps} items {mp_list_file}')
 
     git_upload(git)
-
-
-if __name__ == '__main__':
-    store_all()
