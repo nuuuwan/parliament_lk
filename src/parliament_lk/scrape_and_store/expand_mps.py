@@ -2,14 +2,18 @@ import os
 import re
 
 from gig import ents
-from utils import jsonx, timex
+from utils import jsonx, timex, tsv
 
 from parliament_lk._utils import log
 from parliament_lk.scrape_and_store import store_mps
 
 EXPANDED_MP_LIST_JSON_FILE = os.path.join(
-    store_mps.DIR_GIT_DATA, 'expanded_mp_list.json')
-PROD_MODE = False
+    store_mps.DIR_GIT_DATA, 'expanded_mp_list.json',
+)
+EXPANDED_MP_LIST_TSV_FILE = os.path.join(
+    store_mps.DIR_GIT_DATA, 'expanded_mp_list.tsv',
+)
+PROD_MODE = True
 
 # {
 #   "url_num": 3266,
@@ -40,6 +44,7 @@ PROD_MODE = False
 
 
 ED_INDEX = ents.get_entity_index('ed')
+PROVINCE_INDEX = ents.get_entity_index('province')
 
 
 def git_upload(git):
@@ -105,10 +110,16 @@ def search_ed(electoral_district):
 
 def parse_ed_info(electoral_district):
     if electoral_district == 'National List':
-        return 'LK', 'National List'
+        return 'LK', 'National List', 'LK', 'National List'
 
     matched_ed = search_ed(electoral_district)
-    return matched_ed['ed_id'], matched_ed['name']
+    province = PROVINCE_INDEX[matched_ed['province_id']]
+    return [
+        matched_ed['ed_id'],
+        matched_ed['name'],
+        province['province_id'],
+        province['name'],
+    ]
 
 
 def parse_date_of_birth(date_of_birth, url_num):
@@ -249,7 +260,8 @@ def expand_single_mp(mp):
     date_of_birth, date_of_birth_ut, date_of_birth_norm = parse_date_of_birth(
         mp['date_of_birth'], mp['url_num'])
 
-    ed_id, ed_name = parse_ed_info(mp['electoral_district'])
+    ed_id, ed_name, province_id, province_name = parse_ed_info(
+        mp['electoral_district'])
 
     religion_cleaned = parse_religion_cleaned(mp['religion'])
 
@@ -285,6 +297,8 @@ def expand_single_mp(mp):
         electoral_district=mp['electoral_district'],
         ed_id=ed_id,
         ed_name=ed_name,
+        province_id=province_id,
+        province_name=province_name,
 
         date_of_birth=date_of_birth,
         date_of_birth_ut=date_of_birth_ut,
@@ -317,10 +331,9 @@ def expand_single_mp(mp):
 def validate(expanded_mp_list):
     subset_list = sorted(list(map(
         lambda mp: [
-            mp['phone'],
-            mp['phone_norm'],
-            mp['phone_sitting'],
-            mp['phone_sitting_norm'],
+            mp['province_name'],
+            mp['province_id'],
+            mp['electoral_district'],
         ],
         expanded_mp_list,
     )), key=lambda x: str(x[0]))
@@ -350,5 +363,10 @@ def expand_mps():
 
     jsonx.write(EXPANDED_MP_LIST_JSON_FILE, expanded_mp_list)
     log.info(f'Wrote {EXPANDED_MP_LIST_JSON_FILE}')
+
+    tsv.write(EXPANDED_MP_LIST_TSV_FILE, expanded_mp_list)
+    log.info(f'Wrote {EXPANDED_MP_LIST_TSV_FILE}')
+
     if PROD_MODE:
         git_upload(git)
+        os.system('open "https://github.com/nuuuwan/parliament_lk/tree/data"')
