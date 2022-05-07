@@ -132,6 +132,18 @@ def parse_html(html, source_url, url_num):
                 if kv:
                     d |= dict([kv])
 
+    academic_qualifications = None
+    professional_qualifications = None
+    for div_top in div_content.find_all('div', class_='top-mp-detail-4'):
+        h4_subtitle = div_top.find('h4')
+        div_bottom = div_top.find('div', class_='bottomcont')
+
+        subtitle = h4_subtitle.text
+        if (subtitle == 'Academic Qualifications'):
+            academic_qualifications = clean(div_bottom.text)
+        elif (subtitle == 'Professional Qualifications'):
+            professional_qualifications = clean(div_bottom.text)
+
     return dict(
         url_num=url_num,
         name=name,
@@ -149,6 +161,9 @@ def parse_html(html, source_url, url_num):
         address_sitting=d.get('1-' + IMG_SRC_ADDRESS),
         email=d.get(IMG_SRC_EMAIL),
         source_url=source_url,
+
+        academic_qualifications=academic_qualifications,
+        professional_qualifications=professional_qualifications,
     )
 
 
