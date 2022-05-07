@@ -13,7 +13,7 @@ EXPANDED_MP_LIST_JSON_FILE = os.path.join(
 EXPANDED_MP_LIST_TSV_FILE = os.path.join(
     store_mps.DIR_GIT_DATA, 'expanded_mp_list.tsv',
 )
-PROD_MODE = True
+PROD_MODE = False
 
 # {
 #   "url_num": 3266,
@@ -251,6 +251,63 @@ def parse_academic_highest_level(academic_qualifications):
     return '1 Primary'
 
 
+def parse_vote_20th_amendment(party_short, name):
+    if name in [
+        'Faizal Cassim',
+        'Diana Gamage',
+        'A. Aravindh Kumar',
+        'Ali Sabri Raheem',
+        'M. S. Thowfeek',
+        'Naseer Ahamed',
+        'H. M. M. Harees',
+        'Ishak Rahuman',
+    ]:
+        return 'Voted: In Favour'
+
+    if name in [
+        'Basil Rohana Rajapaksa',
+        'Ranil Wickremesinghe',
+        'Ajith Mannapperuma',
+        'Athuraliye Rathana',
+    ]:
+        return 'Did Not Vote: Not MP'
+
+    if name in [
+        'Mahinda Yapa Abeywardana',
+    ]:
+        return 'Did Not Vote: Speaker'
+
+    if name in [
+        'Maithreepala Sirisena',
+
+    ]:
+        return 'Did Not Vote: Absent'
+
+    if party_short in ['SLPP', 'EPDP', 'OPPP', 'SLFP', 'NC', 'TMVP']:
+        return 'Voted: In Favour'
+
+    if party_short in [
+        'SJB',
+        'UNP',
+
+        'JJB',
+
+        'AITC',
+        'ITAK',
+        'ACMC',
+        'TMTK',
+        'TMVP',
+
+        'SLMC',
+        'MNA',
+
+
+    ]:
+        return 'Voted Against'
+
+    return 'Unknown'
+
+
 def expand_single_mp(mp):
     name_cleaned = parse_name_cleaned(mp['name'])
     gender = parse_gender(mp['name'])
@@ -277,6 +334,11 @@ def expand_single_mp(mp):
             'Accountant',
     ]:
         academic_highest_level = '6 Bachelors'
+
+    vote_20th_amendment = parse_vote_20th_amendment(
+        party_short,
+        name_cleaned,
+    )
 
     return dict(
         url_num=mp['url_num'],
@@ -325,15 +387,17 @@ def expand_single_mp(mp):
         academic_qualifications=mp['academic_qualifications'],
         academic_highest_level=academic_highest_level,
         professional_qualifications=mp['professional_qualifications'],
+
+        vote_20th_amendment=vote_20th_amendment,
     )
 
 
 def validate(expanded_mp_list):
     subset_list = sorted(list(map(
         lambda mp: [
-            mp['province_name'],
-            mp['province_id'],
-            mp['electoral_district'],
+            mp['vote_20th_amendment'],
+            mp['party_short'],
+            mp['name_cleaned'],
         ],
         expanded_mp_list,
     )), key=lambda x: str(x[0]))
@@ -348,7 +412,7 @@ def validate(expanded_mp_list):
     for x0, x_rem_list in sorted(x0_to_list.items(), key=lambda x: x[0]):
         print('-' * 32)
         print(x0, len(x_rem_list))
-        for x_rem in list(set(x_rem_list)):
+        for x_rem in sorted(list(set(x_rem_list))):
             print('\t', x_rem)
 
 
