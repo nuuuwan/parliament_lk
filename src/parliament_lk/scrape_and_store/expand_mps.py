@@ -13,7 +13,7 @@ EXPANDED_MP_LIST_JSON_FILE = os.path.join(
 EXPANDED_MP_LIST_TSV_FILE = os.path.join(
     store_mps.DIR_GIT_DATA, 'expanded_mp_list.tsv',
 )
-PROD_MODE = False
+PROD_MODE = True
 
 # {
 #   "url_num": 3266,
@@ -108,8 +108,9 @@ def search_ed(electoral_district):
     return None
 
 
-def parse_ed_info(electoral_district):
-    if electoral_district == 'National List':
+def parse_ed_info(electoral_district, name_cleaned):
+    if electoral_district == 'National List' or name_cleaned in [
+            'Ranil Wickremesinghe']:
         return 'LK', 'National List', 'LK', 'National List'
 
     matched_ed = search_ed(electoral_district)
@@ -318,7 +319,9 @@ def expand_single_mp(mp):
         mp['date_of_birth'], mp['url_num'])
 
     ed_id, ed_name, province_id, province_name = parse_ed_info(
-        mp['electoral_district'])
+        mp['electoral_district'],
+        name_cleaned,
+    )
 
     religion_cleaned = parse_religion_cleaned(mp['religion'])
 
