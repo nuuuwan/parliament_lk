@@ -329,8 +329,7 @@ def expand_single_mp(mp):
     phone_sitting_norm = parse_phone_norm(mp['phone_sitting'])
 
     academic_highest_level = parse_academic_highest_level(
-        mp['academic_qualifications'] + " " + mp['professional_qualifications'],
-    )
+        mp['academic_qualifications'] + " " + mp['professional_qualifications'], )
     if (int)(academic_highest_level[0]) < 6 \
         and mp['profession'] in [
             'Attorney-at-Law',
