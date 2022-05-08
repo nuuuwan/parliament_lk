@@ -54,6 +54,8 @@ def build_dictionary():
             f'const {var_name} = ' + '{',
         ]
         for word_source in word_list:
+            if not word_source.strip():
+                continue
             word_source_use = word_source
             for k, v in HARD_CODED_CHANGES.items():
                 if k in word_source:
