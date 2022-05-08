@@ -15,5 +15,9 @@
   "email": "haleem_a@parliament.lk",
   "source_url": "https://www.parliament.lk/en/members-of-parliament/directory-of-members/viewMember/50",
   "academic_qualifications": "Diploma in Banking",
-  "professional_qualifications": "Banker- worked for Dubai Bank Ltd, Dubai"
+  "professional_qualifications": "Banker- worked for Dubai Bank Ltd, Dubai",
+  "attendance_9th_present": 94,
+  "attendance_9th_absent": 65,
+  "attendance_8th_present": 152,
+  "attendance_8th_absent": 100
 }
