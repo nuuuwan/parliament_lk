@@ -1,7 +1,9 @@
 import os
+
 from utils import logx
-from utils_future.gitx import Git
+
 from parliament_lk._constants import URL_GIT
+from utils_future.gitx import Git
 
 DIR_GIT_DATA = '/tmp/parliament_lk.data'
 DIR_IMAGES = os.path.join(DIR_GIT_DATA, 'mp_images')
