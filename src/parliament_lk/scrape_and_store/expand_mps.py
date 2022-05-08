@@ -1,13 +1,14 @@
 import os
 import re
 
-from gig import ents
 from utils import jsonx, timex, tsv
 
 from parliament_lk._utils import log
 from parliament_lk.scrape_and_store import store_mps
 from parliament_lk.scrape_and_store.expand_mps_helpers.academics import \
     parse_academic_highest_level
+from parliament_lk.scrape_and_store.expand_mps_helpers.regions import \
+    parse_ed_info
 from parliament_lk.scrape_and_store.expand_mps_helpers.voting import \
     parse_vote_20th_amendment
 
@@ -17,9 +18,6 @@ EXPANDED_MP_LIST_JSON_FILE = os.path.join(
 EXPANDED_MP_LIST_TSV_FILE = os.path.join(
     store_mps.DIR_GIT_DATA, 'expanded_mp_list.tsv',
 )
-
-ED_INDEX = ents.get_entity_index('ed')
-PROVINCE_INDEX = ents.get_entity_index('province')
 
 
 def git_upload(git):
@@ -66,36 +64,6 @@ def parse_first_and_last_names(name_cleaned):
 
 def parse_party_short(party):
     return party.split('(')[1].split(')')[0]
-
-
-def search_ed(electoral_district):
-    electoral_district = {
-        'Nuwara - Eliya': 'Nuwara-Eliya',
-        'Mahanuwara': 'Kandy',
-        'Monaragala': 'Moneragala',
-    }.get(electoral_district, electoral_district)
-
-    for ed in ED_INDEX.values():
-        if ed['name'] == electoral_district:
-            return ed
-
-    log.error('Can not find ed for: ' + electoral_district)
-    return None
-
-
-def parse_ed_info(electoral_district, name_cleaned):
-    if electoral_district == 'National List' or name_cleaned in [
-            'Ranil Wickremesinghe']:
-        return 'LK', 'National List', 'LK', 'National List'
-
-    matched_ed = search_ed(electoral_district)
-    province = PROVINCE_INDEX[matched_ed['province_id']]
-    return [
-        matched_ed['ed_id'],
-        matched_ed['name'],
-        province['province_id'],
-        province['name'],
-    ]
 
 
 def parse_date_of_birth(date_of_birth, url_num):
@@ -257,6 +225,7 @@ def validate(expanded_mp_list):
 
 
 def expand_mps(prod_mode):
+    log.debug('prod_mode = ', prod_mode)
     if prod_mode:
         git = store_mps.git_download()
     mp_list = jsonx.read(store_mps.MP_LIST_JSON_FILE)
