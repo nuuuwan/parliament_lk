@@ -39,6 +39,11 @@ class TestCase(unittest.TestCase):
                 academic_qualifications='LLB.;',
                 professional_qualifications='Attorney-at-Law; Advocate',
 
+                attendance_9th_present=61,
+                attendance_9th_absent=19,
+                attendance_8th_present=208,
+                attendance_8th_absent=44,
+
             )],
             [1482, dict(
                 url_num=1482,
@@ -65,6 +70,11 @@ class TestCase(unittest.TestCase):
                 academic_qualifications='Attorney-at-Law;'
                 + ' G.C.E. (A/L); G.C.E. (O/L)',
                 professional_qualifications='Attorney At Law',
+
+                attendance_9th_present=97,
+                attendance_9th_absent=62,
+                attendance_8th_present=144,
+                attendance_8th_absent=108,
             )],
             [3179, dict(
                 url_num=3179,
@@ -90,6 +100,11 @@ class TestCase(unittest.TestCase):
 
                 academic_qualifications='LLB, Attorney -at- Law',
                 professional_qualifications='Attorney at Law',
+
+                attendance_9th_present=106,
+                attendance_9th_absent=53,
+                attendance_8th_present=96,
+                attendance_8th_absent=156,
             )],
             [3306, dict(
                 url_num=3306,
@@ -116,6 +131,11 @@ class TestCase(unittest.TestCase):
                 academic_qualifications='Open University Degree',
                 professional_qualifications='2008 To 2017 North Central'
                 + ' province Council Member',
+
+                attendance_9th_present=147,
+                attendance_9th_absent=12,
+                attendance_8th_present=None,
+                attendance_8th_absent=None,
             )],
             [3438, dict(
                 url_num=3438,
@@ -141,6 +161,11 @@ class TestCase(unittest.TestCase):
 
                 academic_qualifications=None,
                 professional_qualifications=None,
+
+                attendance_9th_present=158,
+                attendance_9th_absent=1,
+                attendance_8th_present=None,
+                attendance_8th_absent=None,
             )],
             [3449, dict(
                 url_num=3449,
@@ -169,6 +194,11 @@ class TestCase(unittest.TestCase):
                 + ' MA App. Anthropology & Development Studies;'
                 + ' PHD, Social Anthropology',
                 professional_qualifications='University Lecturer',
+
+                attendance_9th_present=124,
+                attendance_9th_absent=35,
+                attendance_8th_present=None,
+                attendance_8th_absent=None,
             )],
         ]:
             html_file = os.path.join(
