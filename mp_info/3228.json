@@ -15,5 +15,9 @@
   "email": "mayantha_d@parliament.lk",
   "source_url": "https://www.parliament.lk/en/members-of-parliament/directory-of-members/viewMember/3228",
   "academic_qualifications": "B. Sc. in Printing (Applied Arts & Sciences)",
-  "professional_qualifications": "BTEC; National Diploma in Printing; B.Sc. in Printing"
+  "professional_qualifications": "BTEC; National Diploma in Printing; B.Sc. in Printing",
+  "attendance_9th_present": 128,
+  "attendance_9th_absent": 31,
+  "attendance_8th_present": 145,
+  "attendance_8th_absent": 107
 }
