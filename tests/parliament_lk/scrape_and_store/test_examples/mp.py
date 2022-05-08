@@ -100,6 +100,14 @@ TEST_HTML_DIV_CONTENT = f'''
     <div class="top-mp-detail-4">
         <h4>Professional Qualifications</h4>
         <div class="bottomcont">
+            General relativity;
+            Can sing;
+        </div>
+    </div>
+
+    <div class="top-mp-detail-4">
+        <h4>Attendence</h4>
+        <div class="bottomcont">
             <table>
                 <tbody>
                     <tr>
@@ -119,14 +127,6 @@ TEST_HTML_DIV_CONTENT = f'''
                     </tr>
                 </tbody>
             </table>
-        </div>
-    </div>
-
-    <div class="top-mp-detail-4">
-        <h4>Attendence</h4>
-        <div class="bottomcont">
-            General relativity;
-            Can sing;
         </div>
     </div>
 
