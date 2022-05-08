@@ -15,5 +15,9 @@
   "email": "nalaka_g@parliament.lk",
   "source_url": "https://www.parliament.lk/en/members-of-parliament/directory-of-members/viewMember/3343",
   "academic_qualifications": "B. Sc., MBA, PhD",
-  "professional_qualifications": "FCIM, B.Sc. (Eng.)"
+  "professional_qualifications": "FCIM, B.Sc. (Eng.)",
+  "attendance_9th_present": 130,
+  "attendance_9th_absent": 29,
+  "attendance_8th_present": null,
+  "attendance_8th_absent": null
 }
