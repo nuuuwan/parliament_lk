@@ -15,5 +15,9 @@
   "email": "fernando_h@parliament.lk",
   "source_url": "https://www.parliament.lk/en/members-of-parliament/directory-of-members/viewMember/3164",
   "academic_qualifications": "G.C.E. (A/L) 2) B.A. Political Science/ Sociology",
-  "professional_qualifications": null
+  "professional_qualifications": null,
+  "attendance_9th_present": 74,
+  "attendance_9th_absent": 85,
+  "attendance_8th_present": 86,
+  "attendance_8th_absent": 166
 }

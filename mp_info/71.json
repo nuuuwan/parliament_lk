@@ -15,5 +15,9 @@
   "email": "karunatileka_g@parliament.lk",
   "source_url": "https://www.parliament.lk/en/members-of-parliament/directory-of-members/viewMember/71",
   "academic_qualifications": "G.C.E. O/L,G.C.E. A/L Followed Diploma in Political Science in London",
-  "professional_qualifications": "Course of Plantation Management"
+  "professional_qualifications": "Course of Plantation Management",
+  "attendance_9th_present": 155,
+  "attendance_9th_absent": 4,
+  "attendance_8th_present": 249,
+  "attendance_8th_absent": 3
 }

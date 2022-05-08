@@ -15,5 +15,9 @@
   "email": "harini_a@parliament.lk",
   "source_url": "https://www.parliament.lk/en/members-of-parliament/directory-of-members/viewMember/3449",
   "academic_qualifications": "BA (Hons) Sociology; MA App. Anthropology & Development Studies; PHD, Social Anthropology",
-  "professional_qualifications": "University Lecturer"
+  "professional_qualifications": "University Lecturer",
+  "attendance_9th_present": 124,
+  "attendance_9th_absent": 35,
+  "attendance_8th_present": null,
+  "attendance_8th_absent": null
 }
