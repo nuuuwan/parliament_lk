@@ -35,6 +35,8 @@ def build_dictionary():
         filex.read(WORDLIST_FILE).split('\n'),
     ))))
 
+    filex.write(WORDLIST_FILE, '\n'.join(word_list))
+
     for target_lang in TARGET_LANGS:
         translator = GoogleTranslator(source=SOURCE_LANG, target=target_lang)
 
