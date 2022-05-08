@@ -64,10 +64,11 @@ def build_dictionary():
 
             word_target = translate(word_source_use)
             print(word_source, '->', word_target)
-            if ' ' in word_source or '-' in word_source:
-                word_source_str = f'"{word_source}"'
-            else:
+
+            if word_source.isalnum():
                 word_source_str = word_source
+            else:
+                word_source_str = f'"{word_source}"'
 
             log_lines.append(f'  {word_source_str}: "{word_target}",')
         log_lines.append('};')
