@@ -15,5 +15,9 @@
   "email": "fernando_j@parliament.lk",
   "source_url": "https://www.parliament.lk/en/members-of-parliament/directory-of-members/viewMember/133",
   "academic_qualifications": null,
-  "professional_qualifications": null
+  "professional_qualifications": null,
+  "attendance_9th_present": 154,
+  "attendance_9th_absent": 5,
+  "attendance_8th_present": 83,
+  "attendance_8th_absent": 169
 }

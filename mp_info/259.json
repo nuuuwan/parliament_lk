@@ -15,5 +15,9 @@
   "email": "hashim_k@parliament.lk",
   "source_url": "https://www.parliament.lk/en/members-of-parliament/directory-of-members/viewMember/259",
   "academic_qualifications": "B.A. Hons (Economics) M.A. (Economics)",
-  "professional_qualifications": "Development Evaluation Specialist - Carleton University - Canada"
+  "professional_qualifications": "Development Evaluation Specialist - Carleton University - Canada",
+  "attendance_9th_present": 91,
+  "attendance_9th_absent": 68,
+  "attendance_8th_present": 142,
+  "attendance_8th_absent": 110
 }

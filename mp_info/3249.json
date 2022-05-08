@@ -15,5 +15,9 @@
   "email": "masthan_kk@parliament.lk",
   "source_url": "https://www.parliament.lk/en/members-of-parliament/directory-of-members/viewMember/3249",
   "academic_qualifications": "GCE A/L",
-  "professional_qualifications": null
+  "professional_qualifications": null,
+  "attendance_9th_present": 135,
+  "attendance_9th_absent": 24,
+  "attendance_8th_present": 170,
+  "attendance_8th_absent": 82
 }
