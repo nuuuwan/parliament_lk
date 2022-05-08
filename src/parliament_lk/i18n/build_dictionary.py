@@ -47,8 +47,10 @@ def build_dictionary():
         CACHE_TIMEOUT = timex.SECONDS_IN.YEAR
 
         @cache(CACHE_NAME, CACHE_TIMEOUT)
-        def translate(word):
-            return translator.translate(word)
+        def translate(word_source):
+            word_target = translator.translate(word_source)
+            print(word_source, '->', word_target)
+            return word_target
 
         var_name = f'{target_lang}_DICTIONARY'.upper()
         time_id = timex.get_time_id()
@@ -66,7 +68,7 @@ def build_dictionary():
                     print(f'\tReplaced {k} with {v} -> {word_source_use}')
 
             word_target = translate(word_source_use)
-            print(word_source, '->', word_target)
+
 
             if word_source.isalnum():
                 word_source_str = word_source
