@@ -8,6 +8,8 @@ from parliament_lk._utils import log
 from parliament_lk.scrape_and_store import store_mps
 from parliament_lk.scrape_and_store.expand_mps_helpers.academics import \
     parse_academic_highest_level
+from parliament_lk.scrape_and_store.expand_mps_helpers.voting import \
+    parse_vote_20th_amendment
 
 EXPANDED_MP_LIST_JSON_FILE = os.path.join(
     store_mps.DIR_GIT_DATA, 'expanded_mp_list.json',
@@ -140,63 +142,6 @@ def parse_phone_norm(phone):
         phone[3:6],
         phone[6:10],
     ])
-
-
-def parse_vote_20th_amendment(party_short, name):
-    if name in [
-        'Faizal Cassim',
-        'Diana Gamage',
-        'A. Aravindh Kumar',
-        'Ali Sabri Raheem',
-        'M. S. Thowfeek',
-        'Naseer Ahamed',
-        'H. M. M. Harees',
-        'Ishak Rahuman',
-    ]:
-        return 'Voted: In Favour'
-
-    if name in [
-        'Basil Rohana Rajapaksa',
-        'Ranil Wickremesinghe',
-        'Ajith Mannapperuma',
-        'Athuraliye Rathana',
-    ]:
-        return 'Did Not Vote: Not MP'
-
-    if name in [
-        'Mahinda Yapa Abeywardana',
-    ]:
-        return 'Did Not Vote: Speaker'
-
-    if name in [
-        'Maithreepala Sirisena',
-
-    ]:
-        return 'Did Not Vote: Absent'
-
-    if party_short in ['SLPP', 'EPDP', 'OPPP', 'SLFP', 'NC', 'TMVP']:
-        return 'Voted: In Favour'
-
-    if party_short in [
-        'SJB',
-        'UNP',
-
-        'JJB',
-
-        'AITC',
-        'ITAK',
-        'ACMC',
-        'TMTK',
-        'TMVP',
-
-        'SLMC',
-        'MNA',
-
-
-    ]:
-        return 'Voted Against'
-
-    return 'Unknown'
 
 
 def expand_single_mp(mp):
