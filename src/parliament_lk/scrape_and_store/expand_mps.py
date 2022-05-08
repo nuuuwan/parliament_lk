@@ -1,5 +1,4 @@
 import os
-import re
 
 from utils import jsonx, timex, tsv
 
@@ -7,8 +6,11 @@ from parliament_lk._utils import log
 from parliament_lk.scrape_and_store import store_mps
 from parliament_lk.scrape_and_store.expand_mps_helpers.academics import \
     parse_academic_highest_level
+from parliament_lk.scrape_and_store.expand_mps_helpers.name import (
+    parse_first_and_last_names, parse_gender, parse_name_cleaned)
 from parliament_lk.scrape_and_store.expand_mps_helpers.regions import \
     parse_ed_info
+from parliament_lk.scrape_and_store.expand_mps_helpers.validate import validate
 from parliament_lk.scrape_and_store.expand_mps_helpers.voting import \
     parse_vote_20th_amendment
 
@@ -24,42 +26,6 @@ def git_upload(git):
     time_id = timex.get_time_id()
     message = f'[expand_mps] {time_id}'
     git.stage_commit_and_push(message)
-
-
-def parse_name_cleaned(name):
-    for k in [
-        "Hon.",
-        ", M.P.",
-        "(Dr.)",
-        "(Mrs.)",
-        "(Major)",
-        "Field Marshal",
-        "(Ms.)",
-        ", PC",
-        "Thero",
-        "(Ven.) ",
-        "(Prof.)",
-    ]:
-        name = name.replace(k, ' ')
-    name = re.sub(r'\s+', ' ', name).strip()
-    return name
-
-
-def parse_gender(name):
-    for k in ['Mrs.', 'Miss', 'Ms.']:
-        if k in name:
-            return 'Female'
-    return 'Male'
-
-
-def parse_first_and_last_names(name_cleaned):
-    names = name_cleaned.split(' ')
-    n_last_name_words = 1
-    if names[-2].lower() in ['ali', 'de', 'bakeer']:
-        n_last_name_words = 2
-
-    return ' '.join(names[:-n_last_name_words]
-                    ), ' '.join(names[-n_last_name_words:]).title()
 
 
 def parse_party_short(party):
@@ -198,30 +164,6 @@ def expand_single_mp(mp):
 
         vote_20th_amendment=vote_20th_amendment,
     )
-
-
-def validate(expanded_mp_list):
-    subset_list = sorted(list(map(
-        lambda mp: [
-            mp['vote_20th_amendment'],
-            mp['party_short'],
-            mp['name_cleaned'],
-        ],
-        expanded_mp_list,
-    )), key=lambda x: str(x[0]))
-
-    x0_to_list = {}
-    for x in subset_list:
-        x0 = str(x[0])
-        if x0 not in x0_to_list:
-            x0_to_list[x0] = []
-        x0_to_list[x0].append(tuple(x[1:]))
-
-    for x0, x_rem_list in sorted(x0_to_list.items(), key=lambda x: x[0]):
-        print('-' * 32)
-        print(x0, len(x_rem_list))
-        for x_rem in sorted(list(set(x_rem_list))):
-            print('\t', x_rem)
 
 
 def expand_mps(prod_mode):
