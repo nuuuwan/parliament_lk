@@ -178,6 +178,12 @@ def expand_single_mp(mp):
 
         vote_20th_amendment=vote_20th_amendment,
         asset_declaration_years=asset_declaration_years,
+
+        attendance_9th_present=mp['attendance_9th_present'],
+        attendance_9th_absent=mp['attendance_9th_absent'],
+        attendance_8th_present=mp['attendance_8th_present'],
+        attendance_8th_absent=mp['attendance_8th_absent'],
+
     )
 
 
