@@ -15,5 +15,9 @@
   "email": "rajapakshe_w@parliament.lk",
   "source_url": "https://www.parliament.lk/en/members-of-parliament/directory-of-members/viewMember/1521",
   "academic_qualifications": "PhD, University of Colombo, on Constitutional Law; PhD, University of Kelaniya, on Buddhist Philosophy; M.Phil, University of Sri Jayewardenepura; LL.D, (honaris cause) Commonwealth University, United Kingdom; LL.B, (Bachelor of Law) University of Colombo; Attorney-at-Law, Sri Lanka Law College; Diploma, Freiburg University, Switzerland",
-  "professional_qualifications": "President's Counsel"
+  "professional_qualifications": "President's Counsel",
+  "attendance_9th_present": 50,
+  "attendance_9th_absent": 109,
+  "attendance_8th_present": 67,
+  "attendance_8th_absent": 185
 }
