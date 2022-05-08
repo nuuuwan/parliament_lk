@@ -15,5 +15,9 @@
   "email": "ranawaka_p@parliament.lk",
   "source_url": "https://www.parliament.lk/en/members-of-parliament/directory-of-members/viewMember/3076",
   "academic_qualifications": "Electrical and Electronics Engineering",
-  "professional_qualifications": "Electrical Engineer"
+  "professional_qualifications": "Electrical Engineer",
+  "attendance_9th_present": 95,
+  "attendance_9th_absent": 64,
+  "attendance_8th_present": 109,
+  "attendance_8th_absent": 143
 }
