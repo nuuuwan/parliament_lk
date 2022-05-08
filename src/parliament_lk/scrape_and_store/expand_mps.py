@@ -15,7 +15,6 @@ EXPANDED_MP_LIST_JSON_FILE = os.path.join(
 EXPANDED_MP_LIST_TSV_FILE = os.path.join(
     store_mps.DIR_GIT_DATA, 'expanded_mp_list.tsv',
 )
-PROD_MODE = False
 
 ED_INDEX = ents.get_entity_index('ed')
 PROVINCE_INDEX = ents.get_entity_index('province')
@@ -312,13 +311,13 @@ def validate(expanded_mp_list):
             print('\t', x_rem)
 
 
-def expand_mps():
-    if PROD_MODE:
+def expand_mps(prod_mode):
+    if prod_mode:
         git = store_mps.git_download()
     mp_list = jsonx.read(store_mps.MP_LIST_JSON_FILE)
     expanded_mp_list = list(map(expand_single_mp, mp_list))
 
-    if not PROD_MODE:
+    if not prod_mode:
         validate(expanded_mp_list)
 
     jsonx.write(EXPANDED_MP_LIST_JSON_FILE, expanded_mp_list)
@@ -327,6 +326,6 @@ def expand_mps():
     tsv.write(EXPANDED_MP_LIST_TSV_FILE, expanded_mp_list)
     log.info(f'Wrote {EXPANDED_MP_LIST_TSV_FILE}')
 
-    if PROD_MODE:
+    if prod_mode:
         git_upload(git)
         os.system('open "https://github.com/nuuuwan/parliament_lk/tree/data"')
