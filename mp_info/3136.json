@@ -15,5 +15,9 @@
   "email": "fernandopulle_s@parliament.lk",
   "source_url": "https://www.parliament.lk/en/members-of-parliament/directory-of-members/viewMember/3136",
   "academic_qualifications": "M.B.B.S; M.Sc (Community Medicine); M.D. (Community Medicine)",
-  "professional_qualifications": null
+  "professional_qualifications": null,
+  "attendance_9th_present": 122,
+  "attendance_9th_absent": 37,
+  "attendance_8th_present": 152,
+  "attendance_8th_absent": 100
 }

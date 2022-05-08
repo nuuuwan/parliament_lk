@@ -15,5 +15,9 @@
   "email": "semasinghe_s@parliament.lk",
   "source_url": "https://www.parliament.lk/en/members-of-parliament/directory-of-members/viewMember/3151",
   "academic_qualifications": "MBA, University of Peradeniya; B. Com University of Delhi, India; G.C.E. A/L; G.C.E. O/L",
-  "professional_qualifications": null
+  "professional_qualifications": null,
+  "attendance_9th_present": 132,
+  "attendance_9th_absent": 27,
+  "attendance_8th_present": 172,
+  "attendance_8th_absent": 80
 }
