@@ -15,5 +15,9 @@
   "email": "kavinda_j@parliament.lk",
   "source_url": "https://www.parliament.lk/en/members-of-parliament/directory-of-members/viewMember/3276",
   "academic_qualifications": "MBBS (Sri Ramachandra Medical College Chennai, India); G.C.E. A/L",
-  "professional_qualifications": null
+  "professional_qualifications": null,
+  "attendance_9th_present": 114,
+  "attendance_9th_absent": 45,
+  "attendance_8th_present": 174,
+  "attendance_8th_absent": 78
 }
