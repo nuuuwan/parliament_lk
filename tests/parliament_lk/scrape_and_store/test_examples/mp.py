@@ -100,6 +100,31 @@ TEST_HTML_DIV_CONTENT = f'''
     <div class="top-mp-detail-4">
         <h4>Professional Qualifications</h4>
         <div class="bottomcont">
+            <table>
+                <tbody>
+                    <tr>
+                        <td>Legislature</td>
+                        <td>Days present</td>
+                        <td>Days absent</td>
+                    </tr>
+                    <tr>
+                        <td>Ninth Conference</td>
+                        <td>56</td>
+                        <td>44</td>
+                    </tr>
+                    <tr>
+                        <td>Eighth Conference</td>
+                        <td>11</td>
+                        <td>23</td>
+                    </tr>
+                </tbody>
+            </table>
+        </div>
+    </div>
+
+    <div class="top-mp-detail-4">
+        <h4>Attendence</h4>
+        <div class="bottomcont">
             General relativity;
             Can sing;
         </div>
