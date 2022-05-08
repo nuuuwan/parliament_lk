@@ -6,6 +6,8 @@ from utils import jsonx, timex, tsv
 
 from parliament_lk._utils import log
 from parliament_lk.scrape_and_store import store_mps
+from parliament_lk.scrape_and_store.expand_mps_helpers.academics import \
+    parse_academic_highest_level
 
 EXPANDED_MP_LIST_JSON_FILE = os.path.join(
     store_mps.DIR_GIT_DATA, 'expanded_mp_list.json',
@@ -13,35 +15,7 @@ EXPANDED_MP_LIST_JSON_FILE = os.path.join(
 EXPANDED_MP_LIST_TSV_FILE = os.path.join(
     store_mps.DIR_GIT_DATA, 'expanded_mp_list.tsv',
 )
-PROD_MODE = True
-
-# {
-#   "url_num": 3266,
-#   "name": "Hon. A. Aravindh Kumar, M.P.",
-#   "image_url": "https://www.parliament.lk/uploads
-#   /images/members/profile_images/thumbs/3266.jpg",
-#   "party": "Samagi Jana Balawegaya (SJB)",
-#   "electoral_district": "Badulla",
-#   "date_of_birth": "17-11-1954",
-#   "civil_status": "Married",
-#   "religion": "Hindu",
-#   "profession": null,
-#   "phone": "0777727472",
-#   "address": "NO.19,Badulupitiya Road,Badulla.",
-#   "phone_sitting": "0552231526",
-#   "address_sitting": "NO.271/19, Resta Garden,
-#   Muditha Mawatha, Kerawalapitiya, Hendala,Wattala.",
-#   "email": "aravindh_k@parliament.lk",
-#   "source_url": "https://www.parliament.lk/en/
-#   members-of-parliament/directory-of-members/viewMember/3266",
-#   "academic_qualifications": "G.C.E Advanced Level",
-#   "professional_qualifications": "1. 20 Years
-#   experience as an Executive in the Tea Plantation Sector.
-#   2. 10 years experience as a Private Secretary to a
-#   Cabinet Minister 3. 10 years as a Member of
-#   Uva Provincial Council. 4. 4 1/2 years as a Member of Parliament."
-# },
-
+PROD_MODE = False
 
 ED_INDEX = ents.get_entity_index('ed')
 PROVINCE_INDEX = ents.get_entity_index('province')
@@ -167,94 +141,6 @@ def parse_phone_norm(phone):
         phone[3:6],
         phone[6:10],
     ])
-
-
-def parse_academic_highest_level(
-        academic_qualifications,
-        professional_qualifications):
-    if not academic_qualifications and not professional_qualifications:
-        return '0 Unknown'
-    s = str(professional_qualifications) + ' ' + str(academic_qualifications)
-
-    LEVEL_TO_KEYWORDS = {
-        '8 Doctorate': [
-            'Doctor of Public Service',
-            'PhD',
-            'Ph.D',
-            'Doctor of Philosophy',
-            'M.D.',
-            'Doctarate in Public Administration',
-            'PHD',
-            ' MD ',
-        ],
-        '7 Masters': [
-            'Msc',
-            'MA ',
-            'Mphil ',
-            'M.Ed',
-            'MBA',
-            'M.Sc',
-            'MSc',
-            'M.Com.',
-            'M.B.A',
-            'LLM',
-        ],
-        '6 Bachelors': [
-            'Postgraduate Degree In Business Management',
-            'BSc',
-            'MBBS',
-            'M.B.B.S.',
-            'B.A',
-            'Business Management Degree',
-            'BSc.',
-            'B.Eng',
-            'B.com',
-            'B.A. ',
-            'B.Com.',
-            'B. Sc.',
-            'BA',
-            'B.B.A ',
-            'B. Com',
-            'B.Sc',
-            'LLB',
-            'Bachelor',
-            'L.L.B.',
-            'Attorney',
-            'B.Ed',
-            'LL. B',
-            'Open University Degree',
-            'B.B.A',
-            'L.LB',
-            'Sri Lanka Law College',
-            'Electrical and Electronics Engineering',
-        ],
-        '5 Short-Tertiary': [],
-        '4 Post-Secondary': ['Diploma', 'Dip.', 'HCIMA', 'Dip in'],
-        '3 Upper Secondary (A. Levels)': [
-            'G.C.E Advanced Level',
-            'A/L',
-            'Advanced level',
-            'GCE Advanced Level',
-            'Advance level',
-            'advanced Level',
-            'G.C.E. (Advanced Level)',
-        ],
-        '2 Lower Secondary (O. Levels)': [
-            'O/L',
-            'O /L',
-            'upto Advanced Level',
-            'Secondary Education',
-            'Upto Advanced Level',
-        ],
-        '1 Primary': [''],
-    }
-
-    for level, keywords in LEVEL_TO_KEYWORDS.items():
-        for k in keywords:
-            if k and k in s:
-                return level
-
-    return '1 Primary'
 
 
 def parse_vote_20th_amendment(party_short, name):
