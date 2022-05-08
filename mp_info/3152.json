@@ -15,5 +15,9 @@
   "email": "niroshan_p@parliament.lk",
   "source_url": "https://www.parliament.lk/en/members-of-parliament/directory-of-members/viewMember/3152",
   "academic_qualifications": "M.Sc. Electronic Engineering; B.Sc. Electronic Engineering",
-  "professional_qualifications": null
+  "professional_qualifications": null,
+  "attendance_9th_present": 146,
+  "attendance_9th_absent": 13,
+  "attendance_8th_present": 188,
+  "attendance_8th_absent": 64
 }

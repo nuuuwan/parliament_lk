@@ -15,5 +15,9 @@
   "email": "nipuna_r@parliament.lk",
   "source_url": "https://www.parliament.lk/en/members-of-parliament/directory-of-members/viewMember/3336",
   "academic_qualifications": "B. Sc. (Honours), specialized in Business Management (University of Dublin, Ireland) Higher National Diploma in Business Management (National Institute of Business Management) Advanced National Diploma in Business Management (National Institute of Business Management) G.C.E. A/L; G.C.E. O/L",
-  "professional_qualifications": null
+  "professional_qualifications": null,
+  "attendance_9th_present": 114,
+  "attendance_9th_absent": 45,
+  "attendance_8th_present": null,
+  "attendance_8th_absent": null
 }

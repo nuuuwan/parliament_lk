@@ -15,5 +15,9 @@
   "email": "nimalsiripala@parliament.lk",
   "source_url": "https://www.parliament.lk/en/members-of-parliament/directory-of-members/viewMember/108",
   "academic_qualifications": "Attorney-at-Law; Solicitor of the United Kingdom; G.C.E. (A/L); G.C.E. (O/L)",
-  "professional_qualifications": null
+  "professional_qualifications": null,
+  "attendance_9th_present": 150,
+  "attendance_9th_absent": 9,
+  "attendance_8th_present": 187,
+  "attendance_8th_absent": 65
 }
