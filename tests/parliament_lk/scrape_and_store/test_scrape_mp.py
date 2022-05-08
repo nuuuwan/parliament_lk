@@ -123,10 +123,10 @@ class TestCase(unittest.TestCase):
                 + ' University of Zurich (PhD);',
                 professional_qualifications='General relativity; Can sing;',
 
-                attendence_9th_present=56,
-                attendence_9th_absent=44,
-                attendence_8th_present=11,
-                attendence_8th_absent=23,
+                attendance_9th_present=56,
+                attendance_9th_absent=44,
+                attendance_8th_present=11,
+                attendance_8th_absent=23,
             ),
             scrape_mp.parse_html(TEST_HTML, 'www.albert.com', TEST_URL_NUM),
         )

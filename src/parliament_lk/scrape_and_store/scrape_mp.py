@@ -134,10 +134,10 @@ def parse_html(html, source_url, url_num):
 
     academic_qualifications = None
     professional_qualifications = None
-    attendence_9th_present = None
-    attendence_9th_absent = None
-    attendence_8th_present = None
-    attendence_8th_absent = None
+    attendance_9th_present = None
+    attendance_9th_absent = None
+    attendance_8th_present = None
+    attendance_8th_absent = None
 
     for div_top in div_content.find_all('div', class_='top-mp-detail-4'):
         h4_subtitle = div_top.find('h4')
@@ -150,7 +150,7 @@ def parse_html(html, source_url, url_num):
         elif subtitle == 'Professional Qualifications':
             professional_qualifications = clean(div_bottom.text)
 
-        elif subtitle == 'Attendence':
+        elif subtitle == 'Attendance':
             table = div_bottom.find('table')
             for tr in table.find_all('tr'):
                 text_list = list(map(
@@ -158,11 +158,11 @@ def parse_html(html, source_url, url_num):
                     tr.find_all('td'),
                 ))
                 if 'Ninth' in text_list[0]:
-                    attendence_9th_present = (int)(text_list[1])
-                    attendence_9th_absent = (int)(text_list[2])
+                    attendance_9th_present = (int)(text_list[1])
+                    attendance_9th_absent = (int)(text_list[2])
                 elif 'Eighth' in text_list[0]:
-                    attendence_8th_present = (int)(text_list[1])
-                    attendence_8th_absent = (int)(text_list[2])
+                    attendance_8th_present = (int)(text_list[1])
+                    attendance_8th_absent = (int)(text_list[2])
 
     return dict(
         url_num=url_num,
@@ -185,10 +185,10 @@ def parse_html(html, source_url, url_num):
         academic_qualifications=academic_qualifications,
         professional_qualifications=professional_qualifications,
 
-        attendence_9th_present=attendence_9th_present,
-        attendence_9th_absent=attendence_9th_absent,
-        attendence_8th_present=attendence_8th_present,
-        attendence_8th_absent=attendence_8th_absent,
+        attendance_9th_present=attendance_9th_present,
+        attendance_9th_absent=attendance_9th_absent,
+        attendance_8th_present=attendance_8th_present,
+        attendance_8th_absent=attendance_8th_absent,
     )
 
 

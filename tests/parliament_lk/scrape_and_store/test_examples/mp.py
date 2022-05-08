@@ -106,7 +106,7 @@ TEST_HTML_DIV_CONTENT = f'''
     </div>
 
     <div class="top-mp-detail-4">
-        <h4>Attendence</h4>
+        <h4>Attendance</h4>
         <div class="bottomcont">
             <table>
                 <tbody>
