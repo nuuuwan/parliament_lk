@@ -15,5 +15,9 @@
   "email": "asokapriyantha@parliament.lk",
   "source_url": "https://www.parliament.lk/en/members-of-parliament/directory-of-members/viewMember/3260",
   "academic_qualifications": null,
-  "professional_qualifications": null
+  "professional_qualifications": null,
+  "attendance_9th_present": 136,
+  "attendance_9th_absent": 23,
+  "attendance_8th_present": 181,
+  "attendance_8th_absent": 71
 }
