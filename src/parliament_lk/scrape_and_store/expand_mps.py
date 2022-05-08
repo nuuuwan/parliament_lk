@@ -80,6 +80,12 @@ def parse_phone_norm(phone):
     ])
 
 
+def parse_civil_status_cleaned(civil_status):
+    if not civil_status or civil_status in ['None', 'Unknown', 'null']:
+        return 'Unknown'
+    return civil_status
+
+
 def expand_single_mp(mp):
     name_cleaned = parse_name_cleaned(mp['name'])
     gender = parse_gender(mp['name'])
@@ -93,6 +99,8 @@ def expand_single_mp(mp):
         mp['electoral_district'],
         name_cleaned,
     )
+
+    civil_status_cleaned = parse_civil_status_cleaned(mp['civil_status'])
 
     religion_cleaned = parse_religion_cleaned(mp['religion'])
 
@@ -145,6 +153,8 @@ def expand_single_mp(mp):
         date_of_birth_norm=date_of_birth_norm,
 
         civil_status=mp['civil_status'],
+        civil_status_cleaned=civil_status_cleaned,
+
         religion=mp['religion'],
         religion_cleaned=religion_cleaned,
         profession=mp['profession'],

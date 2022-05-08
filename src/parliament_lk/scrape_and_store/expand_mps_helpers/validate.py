@@ -8,13 +8,11 @@ def validate(expanded_mp_list):
     for mp in expanded_mp_list:
         if 'Tharaka' in mp['name_cleaned']:
             print(json.dumps(mp, indent=2))
-    return
 
     subset_list = sorted(list(map(
         lambda mp: [
-            mp['vote_20th_amendment'],
-            mp['party_short'],
-            mp['name_cleaned'],
+            mp['civil_status_cleaned'],
+            str(mp['civil_status']),
         ],
         expanded_mp_list,
     )), key=lambda x: str(x[0]))
