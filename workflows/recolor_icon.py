@@ -1,3 +1,4 @@
+import os
 import random
 
 from PIL import Image
@@ -6,7 +7,7 @@ from utils import logx
 log = logx.get_logger('some_main')
 
 ORIGINAL_IMAGE_FILE = 'media/parliament.original.png'
-RECOLORED_IMAGE_FILE = 'media/parliament.recolored.png'
+DIR_RECOLORED_IMAGES = 'media/parliament.recolored'
 FLAG_COLORS = [
     (255, 190, 41),
     (141, 21, 58),
@@ -32,7 +33,17 @@ def main():
 
             pixels[x, y] = (r, g, b, a)
 
-    im.save(RECOLORED_IMAGE_FILE)
+    im.save(os.path.join(DIR_RECOLORED_IMAGES, 'master.png'))
+
+    for file_only, dim in [
+        ['favicon.ico', 70],
+        ['logo192.png', 192],
+        ['logo512.png', 512],
+    ]:
+        im.resize(
+            (dim, dim)).save(
+            os.path.join(
+                DIR_RECOLORED_IMAGES, file_only))
 
 
 if __name__ == '__main__':
