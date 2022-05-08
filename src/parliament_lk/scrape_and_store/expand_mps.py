@@ -6,6 +6,8 @@ from parliament_lk._utils import log
 from parliament_lk.scrape_and_store import store_mps
 from parliament_lk.scrape_and_store.expand_mps_helpers.academics import \
     parse_academic_highest_level
+from parliament_lk.scrape_and_store.expand_mps_helpers.corruption import \
+    parse_asset_declaration_years
 from parliament_lk.scrape_and_store.expand_mps_helpers.name import (
     parse_first_and_last_names, parse_gender, parse_name_cleaned)
 from parliament_lk.scrape_and_store.expand_mps_helpers.regions import \
@@ -114,6 +116,8 @@ def expand_single_mp(mp):
         name_cleaned,
     )
 
+    asset_declaration_years = parse_asset_declaration_years(name_cleaned)
+
     return dict(
         url_num=mp['url_num'],
         id=mp['url_num'],
@@ -163,11 +167,11 @@ def expand_single_mp(mp):
         professional_qualifications=mp['professional_qualifications'],
 
         vote_20th_amendment=vote_20th_amendment,
+        asset_declaration_years=asset_declaration_years,
     )
 
 
 def expand_mps(prod_mode):
-    log.debug('prod_mode = ', prod_mode)
     if prod_mode:
         git = store_mps.git_download()
     mp_list = jsonx.read(store_mps.MP_LIST_JSON_FILE)
