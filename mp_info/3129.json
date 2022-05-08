@@ -15,5 +15,9 @@
   "email": "bandara_s@parliament.lk",
   "source_url": "https://www.parliament.lk/en/members-of-parliament/directory-of-members/viewMember/3129",
   "academic_qualifications": null,
-  "professional_qualifications": null
+  "professional_qualifications": null,
+  "attendance_9th_present": 157,
+  "attendance_9th_absent": 2,
+  "attendance_8th_present": 62,
+  "attendance_8th_absent": 30
 }
