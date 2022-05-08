@@ -1,8 +1,10 @@
 import json
 import random
+
+
 def validate(expanded_mp_list):
     n = len(expanded_mp_list)
-    i = random.randint(0, n - 1)
+    random.randint(0, n - 1)
     for mp in expanded_mp_list:
         if 'Tharaka' in mp['name_cleaned']:
             print(json.dumps(mp, indent=2))
