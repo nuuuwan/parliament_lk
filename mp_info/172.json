@@ -15,5 +15,9 @@
   "email": "lokuge_g@parliament.lk",
   "source_url": "https://www.parliament.lk/en/members-of-parliament/directory-of-members/viewMember/172",
   "academic_qualifications": "G.C.E. (Advanced Level)",
-  "professional_qualifications": null
+  "professional_qualifications": null,
+  "attendance_9th_present": 127,
+  "attendance_9th_absent": 32,
+  "attendance_8th_present": 197,
+  "attendance_8th_absent": 55
 }
