@@ -139,9 +139,10 @@ def parse_html(html, source_url, url_num):
         div_bottom = div_top.find('div', class_='bottomcont')
 
         subtitle = h4_subtitle.text
-        if (subtitle == 'Academic Qualifications'):
+        if subtitle == 'Academic Qualifications':
             academic_qualifications = clean(div_bottom.text)
-        elif (subtitle == 'Professional Qualifications'):
+
+        elif subtitle == 'Professional Qualifications':
             professional_qualifications = clean(div_bottom.text)
 
     return dict(
