@@ -15,5 +15,9 @@
   "email": "sampanthan_r@parliament.lk",
   "source_url": "https://www.parliament.lk/en/members-of-parliament/directory-of-members/viewMember/309",
   "academic_qualifications": "Attorney at Law",
-  "professional_qualifications": "Attorney at Law"
+  "professional_qualifications": "Attorney at Law",
+  "attendance_9th_present": 29,
+  "attendance_9th_absent": 130,
+  "attendance_8th_present": 152,
+  "attendance_8th_absent": 100
 }
