@@ -15,5 +15,9 @@
   "email": "chanaka_d@parliament.lk",
   "source_url": "https://www.parliament.lk/en/members-of-parliament/directory-of-members/viewMember/3240",
   "academic_qualifications": "B.Sc. in Construction Management",
-  "professional_qualifications": null
+  "professional_qualifications": null,
+  "attendance_9th_present": 95,
+  "attendance_9th_absent": 64,
+  "attendance_8th_present": 164,
+  "attendance_8th_absent": 88
 }
