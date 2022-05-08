@@ -35,7 +35,11 @@
     "academic_highest_level": "3 Upper Secondary (A. Levels)",
     "professional_qualifications": "1. 20 Years experience as an Executive in the Tea Plantation Sector. 2. 10 years experience as a Private Secretary to a Cabinet Minister 3. 10 years as a Member of Uva Provincial Council. 4. 4 1/2 years as a Member of Parliament.",
     "vote_20th_amendment": "Voted: In Favour",
-    "asset_declaration_years": ""
+    "asset_declaration_years": "",
+    "attendance_9th_present": 146,
+    "attendance_9th_absent": 13,
+    "attendance_8th_present": 221,
+    "attendance_8th_absent": 31
   },
   {
     "url_num": 50,
@@ -73,7 +77,11 @@
     "academic_highest_level": "4 Post-Secondary",
     "professional_qualifications": "Banker- worked for Dubai Bank Ltd, Dubai",
     "vote_20th_amendment": "Voted Against",
-    "asset_declaration_years": ""
+    "asset_declaration_years": "",
+    "attendance_9th_present": 94,
+    "attendance_9th_absent": 65,
+    "attendance_8th_present": 152,
+    "attendance_8th_absent": 100
   },
   {
     "url_num": 3325,
@@ -111,7 +119,11 @@
     "academic_highest_level": "3 Upper Secondary (A. Levels)",
     "professional_qualifications": "Director - Rajapaksha Group of Companies; Director- Rajapaksha Gems; Director - Ravindu Palas",
     "vote_20th_amendment": "Voted: In Favour",
-    "asset_declaration_years": ""
+    "asset_declaration_years": "",
+    "attendance_9th_present": 157,
+    "attendance_9th_absent": 2,
+    "attendance_8th_present": null,
+    "attendance_8th_absent": null
   },
   {
     "url_num": 3296,
@@ -149,7 +161,11 @@
     "academic_highest_level": "6 Bachelors",
     "professional_qualifications": null,
     "vote_20th_amendment": "Voted: In Favour",
-    "asset_declaration_years": ""
+    "asset_declaration_years": "",
+    "attendance_9th_present": 109,
+    "attendance_9th_absent": 50,
+    "attendance_8th_present": null,
+    "attendance_8th_absent": null
   },
   {
     "url_num": 3355,
@@ -187,7 +203,11 @@
     "academic_highest_level": "4 Post-Secondary",
     "professional_qualifications": "Dip in Business Management",
     "vote_20th_amendment": "Voted: In Favour",
-    "asset_declaration_years": ""
+    "asset_declaration_years": "",
+    "attendance_9th_present": 134,
+    "attendance_9th_absent": 25,
+    "attendance_8th_present": null,
+    "attendance_8th_absent": null
   },
   {
     "url_num": 3306,
@@ -225,7 +245,11 @@
     "academic_highest_level": "6 Bachelors",
     "professional_qualifications": "2008 To 2017 North Central province Council Member",
     "vote_20th_amendment": "Voted: In Favour",
-    "asset_declaration_years": ""
+    "asset_declaration_years": "",
+    "attendance_9th_present": 147,
+    "attendance_9th_absent": 12,
+    "attendance_8th_present": null,
+    "attendance_8th_absent": null
   },
   {
     "url_num": 3275,
@@ -263,7 +287,11 @@
     "academic_highest_level": "0 Unknown",
     "professional_qualifications": null,
     "vote_20th_amendment": "Voted: In Favour",
-    "asset_declaration_years": ""
+    "asset_declaration_years": "",
+    "attendance_9th_present": 126,
+    "attendance_9th_absent": 33,
+    "attendance_8th_present": 138,
+    "attendance_8th_absent": 114
   },
   {
     "url_num": 3350,
@@ -301,7 +329,11 @@
     "academic_highest_level": "6 Bachelors",
     "professional_qualifications": "Environmental Specialist",
     "vote_20th_amendment": "Voted: In Favour",
-    "asset_declaration_years": ""
+    "asset_declaration_years": "",
+    "attendance_9th_present": 137,
+    "attendance_9th_absent": 22,
+    "attendance_8th_present": null,
+    "attendance_8th_absent": null
   },
   {
     "url_num": 158,
@@ -339,7 +371,11 @@
     "academic_highest_level": "6 Bachelors",
     "professional_qualifications": null,
     "vote_20th_amendment": "Voted: In Favour",
-    "asset_declaration_years": ""
+    "asset_declaration_years": "",
+    "attendance_9th_present": 123,
+    "attendance_9th_absent": 36,
+    "attendance_8th_present": 156,
+    "attendance_8th_absent": 96
   },
   {
     "url_num": 3232,
@@ -377,7 +413,11 @@
     "academic_highest_level": "6 Bachelors",
     "professional_qualifications": "Attorney-at- Law",
     "vote_20th_amendment": "Voted: In Favour",
-    "asset_declaration_years": ""
+    "asset_declaration_years": "",
+    "attendance_9th_present": 124,
+    "attendance_9th_absent": 35,
+    "attendance_8th_present": 175,
+    "attendance_8th_absent": 77
   },
   {
     "url_num": 3146,
@@ -415,7 +455,11 @@
     "academic_highest_level": "6 Bachelors",
     "professional_qualifications": null,
     "vote_20th_amendment": "Voted: In Favour",
-    "asset_declaration_years": ""
+    "asset_declaration_years": "",
+    "attendance_9th_present": 78,
+    "attendance_9th_absent": 81,
+    "attendance_8th_present": 97,
+    "attendance_8th_absent": 155
   },
   {
     "url_num": 3313,
@@ -453,7 +497,11 @@
     "academic_highest_level": "4 Post-Secondary",
     "professional_qualifications": "PCM (SLIM); Diploma in HR",
     "vote_20th_amendment": "Voted: In Favour",
-    "asset_declaration_years": ""
+    "asset_declaration_years": "",
+    "attendance_9th_present": 126,
+    "attendance_9th_absent": 33,
+    "attendance_8th_present": null,
+    "attendance_8th_absent": null
   },
   {
     "url_num": 3144,
@@ -491,7 +539,11 @@
     "academic_highest_level": "1 Primary",
     "professional_qualifications": "Director - A.G. Distributors/ Seth Sevana Hospital (Pvt) Ltd Pharmaceutical Distributor",
     "vote_20th_amendment": "Voted Against",
-    "asset_declaration_years": ""
+    "asset_declaration_years": "",
+    "attendance_9th_present": 148,
+    "attendance_9th_absent": 11,
+    "attendance_8th_present": 205,
+    "attendance_8th_absent": 47
   },
   {
     "url_num": 3260,
@@ -529,7 +581,11 @@
     "academic_highest_level": "0 Unknown",
     "professional_qualifications": null,
     "vote_20th_amendment": "Voted: In Favour",
-    "asset_declaration_years": ""
+    "asset_declaration_years": "",
+    "attendance_9th_present": 136,
+    "attendance_9th_absent": 23,
+    "attendance_8th_present": 181,
+    "attendance_8th_absent": 71
   },
   {
     "url_num": 1248,
@@ -567,7 +623,11 @@
     "academic_highest_level": "2 Lower Secondary (O. Levels)",
     "professional_qualifications": "GCE O /L",
     "vote_20th_amendment": "Voted: In Favour",
-    "asset_declaration_years": ""
+    "asset_declaration_years": "",
+    "attendance_9th_present": 116,
+    "attendance_9th_absent": 43,
+    "attendance_8th_present": null,
+    "attendance_8th_absent": null
   },
   {
     "url_num": 3312,
@@ -605,7 +665,11 @@
     "academic_highest_level": "7 Masters",
     "professional_qualifications": "Partly Qualfied - Sri Lanka Institute of Chartered Accountants",
     "vote_20th_amendment": "Voted: In Favour",
-    "asset_declaration_years": ""
+    "asset_declaration_years": "",
+    "attendance_9th_present": 143,
+    "attendance_9th_absent": 16,
+    "attendance_8th_present": null,
+    "attendance_8th_absent": null
   },
   {
     "url_num": 1575,
@@ -643,7 +707,11 @@
     "academic_highest_level": "0 Unknown",
     "professional_qualifications": null,
     "vote_20th_amendment": "Did Not Vote: Not MP",
-    "asset_declaration_years": ""
+    "asset_declaration_years": "",
+    "attendance_9th_present": 54,
+    "attendance_9th_absent": 23,
+    "attendance_8th_present": null,
+    "attendance_8th_absent": null
   },
   {
     "url_num": 3155,
@@ -681,7 +749,11 @@
     "academic_highest_level": "1 Primary",
     "professional_qualifications": "Possesses considerable experience in the field of media having served as a presenter and moderator of political programs at SIRASA TV and TNL television channels for nine years.",
     "vote_20th_amendment": "Voted Against",
-    "asset_declaration_years": ""
+    "asset_declaration_years": "",
+    "attendance_9th_present": 140,
+    "attendance_9th_absent": 19,
+    "attendance_8th_present": 182,
+    "attendance_8th_absent": 70
   },
   {
     "url_num": 299,
@@ -719,7 +791,11 @@
     "academic_highest_level": "3 Upper Secondary (A. Levels)",
     "professional_qualifications": null,
     "vote_20th_amendment": "Voted: In Favour",
-    "asset_declaration_years": ""
+    "asset_declaration_years": "",
+    "attendance_9th_present": 115,
+    "attendance_9th_absent": 44,
+    "attendance_8th_present": 153,
+    "attendance_8th_absent": 99
   },
   {
     "url_num": 3326,
@@ -757,7 +833,11 @@
     "academic_highest_level": "6 Bachelors",
     "professional_qualifications": "Proctors' Final Advocates'; Attorney at Law; Former Lecturer, Law College; Former SC Judge; Former CM Northern Province",
     "vote_20th_amendment": "Voted Against",
-    "asset_declaration_years": ""
+    "asset_declaration_years": "",
+    "attendance_9th_present": 76,
+    "attendance_9th_absent": 83,
+    "attendance_8th_present": null,
+    "attendance_8th_absent": null
   },
   {
     "url_num": 168,
@@ -795,7 +875,11 @@
     "academic_highest_level": "3 Upper Secondary (A. Levels)",
     "professional_qualifications": null,
     "vote_20th_amendment": "Voted: In Favour",
-    "asset_declaration_years": ""
+    "asset_declaration_years": "",
+    "attendance_9th_present": 117,
+    "attendance_9th_absent": 42,
+    "attendance_8th_present": 167,
+    "attendance_8th_absent": 85
   },
   {
     "url_num": 3309,
@@ -833,7 +917,11 @@
     "academic_highest_level": "0 Unknown",
     "professional_qualifications": null,
     "vote_20th_amendment": "Voted: In Favour",
-    "asset_declaration_years": ""
+    "asset_declaration_years": "",
+    "attendance_9th_present": 136,
+    "attendance_9th_absent": 23,
+    "attendance_8th_present": null,
+    "attendance_8th_absent": null
   },
   {
     "url_num": 3265,
@@ -871,7 +959,11 @@
     "academic_highest_level": "6 Bachelors",
     "professional_qualifications": "Business Management Degree",
     "vote_20th_amendment": "Voted Against",
-    "asset_declaration_years": ""
+    "asset_declaration_years": "",
+    "attendance_9th_present": 157,
+    "attendance_9th_absent": 2,
+    "attendance_8th_present": 212,
+    "attendance_8th_absent": 40
   },
   {
     "url_num": 1590,
@@ -909,7 +1001,11 @@
     "academic_highest_level": "6 Bachelors",
     "professional_qualifications": null,
     "vote_20th_amendment": "Voted: In Favour",
-    "asset_declaration_years": ""
+    "asset_declaration_years": "",
+    "attendance_9th_present": 137,
+    "attendance_9th_absent": 22,
+    "attendance_8th_present": 189,
+    "attendance_8th_absent": 63
   },
   {
     "url_num": 3409,
@@ -947,7 +1043,11 @@
     "academic_highest_level": "8 Doctorate",
     "professional_qualifications": "Professor in Pharmacology",
     "vote_20th_amendment": "Voted: In Favour",
-    "asset_declaration_years": ""
+    "asset_declaration_years": "",
+    "attendance_9th_present": 94,
+    "attendance_9th_absent": 65,
+    "attendance_8th_present": null,
+    "attendance_8th_absent": null
   },
   {
     "url_num": 3436,
@@ -985,7 +1085,11 @@
     "academic_highest_level": "8 Doctorate",
     "professional_qualifications": "University Professor",
     "vote_20th_amendment": "Voted: In Favour",
-    "asset_declaration_years": ""
+    "asset_declaration_years": "",
+    "attendance_9th_present": 154,
+    "attendance_9th_absent": 5,
+    "attendance_8th_present": null,
+    "attendance_8th_absent": null
   },
   {
     "url_num": 3247,
@@ -1023,7 +1127,11 @@
     "academic_highest_level": "3 Upper Secondary (A. Levels)",
     "professional_qualifications": null,
     "vote_20th_amendment": "Voted Against",
-    "asset_declaration_years": ""
+    "asset_declaration_years": "",
+    "attendance_9th_present": 140,
+    "attendance_9th_absent": 19,
+    "attendance_8th_present": 200,
+    "attendance_8th_absent": 52
   },
   {
     "url_num": 3315,
@@ -1061,7 +1169,11 @@
     "academic_highest_level": "3 Upper Secondary (A. Levels)",
     "professional_qualifications": null,
     "vote_20th_amendment": "Voted: In Favour",
-    "asset_declaration_years": ""
+    "asset_declaration_years": "",
+    "attendance_9th_present": 141,
+    "attendance_9th_absent": 18,
+    "attendance_8th_present": null,
+    "attendance_8th_absent": null
   },
   {
     "url_num": 3284,
@@ -1099,7 +1211,11 @@
     "academic_highest_level": "3 Upper Secondary (A. Levels)",
     "professional_qualifications": "Commissioner , North Western Province Cooperative Employees' Commission; Director General , Wayamba Development Authority; Working Director , Milco Pvt Ltd .",
     "vote_20th_amendment": "Voted: In Favour",
-    "asset_declaration_years": ""
+    "asset_declaration_years": "",
+    "attendance_9th_present": 154,
+    "attendance_9th_absent": 5,
+    "attendance_8th_present": 19,
+    "attendance_8th_absent": 4
   },
   {
     "url_num": 3240,
@@ -1137,7 +1253,11 @@
     "academic_highest_level": "6 Bachelors",
     "professional_qualifications": null,
     "vote_20th_amendment": "Voted: In Favour",
-    "asset_declaration_years": ""
+    "asset_declaration_years": "",
+    "attendance_9th_present": 95,
+    "attendance_9th_absent": 64,
+    "attendance_8th_present": 164,
+    "attendance_8th_absent": 88
   },
   {
     "url_num": 3321,
@@ -1175,7 +1295,11 @@
     "academic_highest_level": "0 Unknown",
     "professional_qualifications": null,
     "vote_20th_amendment": "Voted: In Favour",
-    "asset_declaration_years": ""
+    "asset_declaration_years": "",
+    "attendance_9th_present": 140,
+    "attendance_9th_absent": 19,
+    "attendance_8th_present": null,
+    "attendance_8th_absent": null
   },
   {
     "url_num": 1468,
@@ -1213,7 +1337,11 @@
     "academic_highest_level": "6 Bachelors",
     "professional_qualifications": null,
     "vote_20th_amendment": "Voted: In Favour",
-    "asset_declaration_years": "2018/19; 2019/20; 2020/21"
+    "asset_declaration_years": "2018/19; 2019/20; 2020/21",
+    "attendance_9th_present": 139,
+    "attendance_9th_absent": 20,
+    "attendance_8th_present": 173,
+    "attendance_8th_absent": 79
   },
   {
     "url_num": 311,
@@ -1251,7 +1379,11 @@
     "academic_highest_level": "6 Bachelors",
     "professional_qualifications": null,
     "vote_20th_amendment": "Voted Against",
-    "asset_declaration_years": ""
+    "asset_declaration_years": "",
+    "attendance_9th_present": 82,
+    "attendance_9th_absent": 77,
+    "attendance_8th_present": 127,
+    "attendance_8th_absent": 125
   },
   {
     "url_num": 3448,
@@ -1289,7 +1421,11 @@
     "academic_highest_level": "7 Masters",
     "professional_qualifications": null,
     "vote_20th_amendment": "Voted: In Favour",
-    "asset_declaration_years": ""
+    "asset_declaration_years": "",
+    "attendance_9th_present": 123,
+    "attendance_9th_absent": 36,
+    "attendance_8th_present": null,
+    "attendance_8th_absent": null
   },
   {
     "url_num": 128,
@@ -1327,7 +1463,11 @@
     "academic_highest_level": "6 Bachelors",
     "professional_qualifications": "Attorney - at - law, Sri Lanka Law College",
     "vote_20th_amendment": "Voted: In Favour",
-    "asset_declaration_years": ""
+    "asset_declaration_years": "",
+    "attendance_9th_present": 124,
+    "attendance_9th_absent": 35,
+    "attendance_8th_present": 99,
+    "attendance_8th_absent": 153
   },
   {
     "url_num": 181,
@@ -1365,7 +1505,11 @@
     "academic_highest_level": "0 Unknown",
     "professional_qualifications": null,
     "vote_20th_amendment": "Voted Against",
-    "asset_declaration_years": ""
+    "asset_declaration_years": "",
+    "attendance_9th_present": 118,
+    "attendance_9th_absent": 41,
+    "attendance_8th_present": 168,
+    "attendance_8th_absent": 84
   },
   {
     "url_num": 3193,
@@ -1403,7 +1547,11 @@
     "academic_highest_level": "2 Lower Secondary (O. Levels)",
     "professional_qualifications": "READING MASTERS OF BUSINESS ADMINISTRATION CARDIFF METROPOLITAN UNIVERSITY UK",
     "vote_20th_amendment": "Voted: In Favour",
-    "asset_declaration_years": ""
+    "asset_declaration_years": "",
+    "attendance_9th_present": 79,
+    "attendance_9th_absent": 80,
+    "attendance_8th_present": 55,
+    "attendance_8th_absent": 197
   },
   {
     "url_num": 112,
@@ -1441,7 +1589,11 @@
     "academic_highest_level": "6 Bachelors",
     "professional_qualifications": null,
     "vote_20th_amendment": "Voted Against",
-    "asset_declaration_years": ""
+    "asset_declaration_years": "",
+    "attendance_9th_present": 117,
+    "attendance_9th_absent": 42,
+    "attendance_8th_present": 182,
+    "attendance_8th_absent": 70
   },
   {
     "url_num": 116,
@@ -1479,7 +1631,11 @@
     "academic_highest_level": "3 Upper Secondary (A. Levels)",
     "professional_qualifications": null,
     "vote_20th_amendment": "Voted: In Favour",
-    "asset_declaration_years": ""
+    "asset_declaration_years": "",
+    "attendance_9th_present": 91,
+    "attendance_9th_absent": 68,
+    "attendance_8th_present": 211,
+    "attendance_8th_absent": 41
   },
   {
     "url_num": 2868,
@@ -1517,7 +1673,11 @@
     "academic_highest_level": "4 Post-Secondary",
     "professional_qualifications": "1) Experience in Law Collage, Srilanka 2) Higher Diploma in Political Science, Romania 3) Candidate of Masters Degree Program, University of Iowa 4) Honorary Doctor of Education, University of Plymouth",
     "vote_20th_amendment": "Voted: In Favour",
-    "asset_declaration_years": ""
+    "asset_declaration_years": "",
+    "attendance_9th_present": 108,
+    "attendance_9th_absent": 51,
+    "attendance_8th_present": 132,
+    "attendance_8th_absent": 120
   },
   {
     "url_num": 215,
@@ -1555,7 +1715,11 @@
     "academic_highest_level": "6 Bachelors",
     "professional_qualifications": null,
     "vote_20th_amendment": "Voted: In Favour",
-    "asset_declaration_years": ""
+    "asset_declaration_years": "",
+    "attendance_9th_present": 91,
+    "attendance_9th_absent": 68,
+    "attendance_8th_present": 72,
+    "attendance_8th_absent": 180
   },
   {
     "url_num": 3200,
@@ -1593,7 +1757,11 @@
     "academic_highest_level": "7 Masters",
     "professional_qualifications": null,
     "vote_20th_amendment": "Voted Against",
-    "asset_declaration_years": "2017/18; 2018/19"
+    "asset_declaration_years": "2017/18; 2018/19",
+    "attendance_9th_present": 147,
+    "attendance_9th_absent": 12,
+    "attendance_8th_present": 225,
+    "attendance_8th_absent": 27
   },
   {
     "url_num": 1461,
@@ -1631,7 +1799,11 @@
     "academic_highest_level": "2 Lower Secondary (O. Levels)",
     "professional_qualifications": null,
     "vote_20th_amendment": "Voted: In Favour",
-    "asset_declaration_years": ""
+    "asset_declaration_years": "",
+    "attendance_9th_present": 134,
+    "attendance_9th_absent": 25,
+    "attendance_8th_present": 179,
+    "attendance_8th_absent": 73
   },
   {
     "url_num": 3135,
@@ -1669,7 +1841,11 @@
     "academic_highest_level": "0 Unknown",
     "professional_qualifications": null,
     "vote_20th_amendment": "Voted Against",
-    "asset_declaration_years": ""
+    "asset_declaration_years": "",
+    "attendance_9th_present": 116,
+    "attendance_9th_absent": 43,
+    "attendance_8th_present": 180,
+    "attendance_8th_absent": 72
   },
   {
     "url_num": 291,
@@ -1707,7 +1883,11 @@
     "academic_highest_level": "6 Bachelors",
     "professional_qualifications": "Barrister-at-Law (Lincolin's Inn, England) Attorney-at-Law (Sri Lanka)",
     "vote_20th_amendment": "Voted Against",
-    "asset_declaration_years": ""
+    "asset_declaration_years": "",
+    "attendance_9th_present": 132,
+    "attendance_9th_absent": 27,
+    "attendance_8th_present": null,
+    "attendance_8th_absent": null
   },
   {
     "url_num": 123,
@@ -1745,7 +1925,11 @@
     "academic_highest_level": "8 Doctorate",
     "professional_qualifications": "Assistant Lecturer in Law 1968; Lecturer in Law, 1971 - 1975 ; Associate Professor of Law 1975- 1979; Acting Dean of the Faculty of Law 1977 ; Head of the Department of Law 1978 - 1983 ; Professor of Law since 1979 ; Dean of the Faculty of Law, 1983 ;Vice Chancellor - 1989",
     "vote_20th_amendment": "Voted: In Favour",
-    "asset_declaration_years": ""
+    "asset_declaration_years": "",
+    "attendance_9th_present": 105,
+    "attendance_9th_absent": 54,
+    "attendance_8th_present": null,
+    "attendance_8th_absent": null
   },
   {
     "url_num": 3295,
@@ -1783,7 +1967,11 @@
     "academic_highest_level": "0 Unknown",
     "professional_qualifications": null,
     "vote_20th_amendment": "Voted: In Favour",
-    "asset_declaration_years": ""
+    "asset_declaration_years": "",
+    "attendance_9th_present": 119,
+    "attendance_9th_absent": 40,
+    "attendance_8th_present": null,
+    "attendance_8th_absent": null
   },
   {
     "url_num": 3216,
@@ -1821,7 +2009,11 @@
     "academic_highest_level": "6 Bachelors",
     "professional_qualifications": null,
     "vote_20th_amendment": "Voted: In Favour",
-    "asset_declaration_years": ""
+    "asset_declaration_years": "",
+    "attendance_9th_present": 101,
+    "attendance_9th_absent": 58,
+    "attendance_8th_present": 196,
+    "attendance_8th_absent": 56
   },
   {
     "url_num": 71,
@@ -1859,7 +2051,11 @@
     "academic_highest_level": "4 Post-Secondary",
     "professional_qualifications": "Course of Plantation Management",
     "vote_20th_amendment": "Voted Against",
-    "asset_declaration_years": ""
+    "asset_declaration_years": "",
+    "attendance_9th_present": 155,
+    "attendance_9th_absent": 4,
+    "attendance_8th_present": 249,
+    "attendance_8th_absent": 3
   },
   {
     "url_num": 3293,
@@ -1897,7 +2093,11 @@
     "academic_highest_level": "7 Masters",
     "professional_qualifications": null,
     "vote_20th_amendment": "Voted: In Favour",
-    "asset_declaration_years": ""
+    "asset_declaration_years": "",
+    "attendance_9th_present": 159,
+    "attendance_9th_absent": 0,
+    "attendance_8th_present": null,
+    "attendance_8th_absent": null
   },
   {
     "url_num": 3235,
@@ -1935,7 +2135,11 @@
     "academic_highest_level": "2 Lower Secondary (O. Levels)",
     "professional_qualifications": "(Hons) Doctorate of Art; Internationally Qualified Beautician; Degree in Business Management",
     "vote_20th_amendment": "Voted: In Favour",
-    "asset_declaration_years": ""
+    "asset_declaration_years": "",
+    "attendance_9th_present": 100,
+    "attendance_9th_absent": 59,
+    "attendance_8th_present": 10,
+    "attendance_8th_absent": 34
   },
   {
     "url_num": 3437,
@@ -1973,7 +2177,11 @@
     "academic_highest_level": "0 Unknown",
     "professional_qualifications": null,
     "vote_20th_amendment": "Voted: In Favour",
-    "asset_declaration_years": ""
+    "asset_declaration_years": "",
+    "attendance_9th_present": 143,
+    "attendance_9th_absent": 16,
+    "attendance_8th_present": null,
+    "attendance_8th_absent": null
   },
   {
     "url_num": 2393,
@@ -2011,7 +2219,11 @@
     "academic_highest_level": "3 Upper Secondary (A. Levels)",
     "professional_qualifications": "ex. MP (1989-1994) ex. MPC (2012-2017)",
     "vote_20th_amendment": "Voted Against",
-    "asset_declaration_years": ""
+    "asset_declaration_years": "",
+    "attendance_9th_present": 107,
+    "attendance_9th_absent": 52,
+    "attendance_8th_present": null,
+    "attendance_8th_absent": null
   },
   {
     "url_num": 3375,
@@ -2049,7 +2261,11 @@
     "academic_highest_level": "3 Upper Secondary (A. Levels)",
     "professional_qualifications": null,
     "vote_20th_amendment": "Voted: In Favour",
-    "asset_declaration_years": ""
+    "asset_declaration_years": "",
+    "attendance_9th_present": 154,
+    "attendance_9th_absent": 5,
+    "attendance_8th_present": null,
+    "attendance_8th_absent": null
   },
   {
     "url_num": 85,
@@ -2087,7 +2303,11 @@
     "academic_highest_level": "8 Doctorate",
     "professional_qualifications": "M.A.A.T.",
     "vote_20th_amendment": "Voted: In Favour",
-    "asset_declaration_years": ""
+    "asset_declaration_years": "",
+    "attendance_9th_present": 144,
+    "attendance_9th_absent": 15,
+    "attendance_8th_present": 226,
+    "attendance_8th_absent": 26
   },
   {
     "url_num": 86,
@@ -2125,7 +2345,11 @@
     "academic_highest_level": "6 Bachelors",
     "professional_qualifications": "Diploma International Business,",
     "vote_20th_amendment": "Voted: In Favour",
-    "asset_declaration_years": ""
+    "asset_declaration_years": "",
+    "attendance_9th_present": 153,
+    "attendance_9th_absent": 6,
+    "attendance_8th_present": 237,
+    "attendance_8th_absent": 15
   },
   {
     "url_num": 316,
@@ -2163,7 +2387,11 @@
     "academic_highest_level": "6 Bachelors",
     "professional_qualifications": "Attorney - at - Law.",
     "vote_20th_amendment": "Voted: In Favour",
-    "asset_declaration_years": ""
+    "asset_declaration_years": "",
+    "attendance_9th_present": 115,
+    "attendance_9th_absent": 44,
+    "attendance_8th_present": 141,
+    "attendance_8th_absent": 111
   },
   {
     "url_num": 3411,
@@ -2201,7 +2429,11 @@
     "academic_highest_level": "0 Unknown",
     "professional_qualifications": null,
     "vote_20th_amendment": "Voted: In Favour",
-    "asset_declaration_years": ""
+    "asset_declaration_years": "",
+    "attendance_9th_present": 148,
+    "attendance_9th_absent": 11,
+    "attendance_8th_present": null,
+    "attendance_8th_absent": null
   },
   {
     "url_num": 3164,
@@ -2239,7 +2471,11 @@
     "academic_highest_level": "6 Bachelors",
     "professional_qualifications": null,
     "vote_20th_amendment": "Voted Against",
-    "asset_declaration_years": ""
+    "asset_declaration_years": "",
+    "attendance_9th_present": 74,
+    "attendance_9th_absent": 85,
+    "attendance_8th_present": 86,
+    "attendance_8th_absent": 166
   },
   {
     "url_num": 3449,
@@ -2277,7 +2513,11 @@
     "academic_highest_level": "8 Doctorate",
     "professional_qualifications": "University Lecturer",
     "vote_20th_amendment": "Voted Against",
-    "asset_declaration_years": ""
+    "asset_declaration_years": "",
+    "attendance_9th_present": 124,
+    "attendance_9th_absent": 35,
+    "attendance_8th_present": null,
+    "attendance_8th_absent": null
   },
   {
     "url_num": 3201,
@@ -2315,7 +2555,11 @@
     "academic_highest_level": "8 Doctorate",
     "professional_qualifications": null,
     "vote_20th_amendment": "Voted Against",
-    "asset_declaration_years": "2018/19"
+    "asset_declaration_years": "2018/19",
+    "attendance_9th_present": 147,
+    "attendance_9th_absent": 12,
+    "attendance_8th_present": 196,
+    "attendance_8th_absent": 56
   },
   {
     "url_num": 3217,
@@ -2353,7 +2597,11 @@
     "academic_highest_level": "0 Unknown",
     "professional_qualifications": null,
     "vote_20th_amendment": "Voted Against",
-    "asset_declaration_years": ""
+    "asset_declaration_years": "",
+    "attendance_9th_present": 127,
+    "attendance_9th_absent": 32,
+    "attendance_8th_present": 186,
+    "attendance_8th_absent": 66
   },
   {
     "url_num": 3258,
@@ -2391,7 +2639,11 @@
     "academic_highest_level": "4 Post-Secondary",
     "professional_qualifications": null,
     "vote_20th_amendment": "Voted Against",
-    "asset_declaration_years": ""
+    "asset_declaration_years": "",
+    "attendance_9th_present": 148,
+    "attendance_9th_absent": 11,
+    "attendance_8th_present": 221,
+    "attendance_8th_absent": 31
   },
   {
     "url_num": 3268,
@@ -2429,7 +2681,11 @@
     "academic_highest_level": "6 Bachelors",
     "professional_qualifications": "Company Director",
     "vote_20th_amendment": "Voted Against",
-    "asset_declaration_years": ""
+    "asset_declaration_years": "",
+    "attendance_9th_present": 157,
+    "attendance_9th_absent": 2,
+    "attendance_8th_present": 222,
+    "attendance_8th_absent": 30
   },
   {
     "url_num": 3279,
@@ -2467,7 +2723,11 @@
     "academic_highest_level": "4 Post-Secondary",
     "professional_qualifications": "AAT",
     "vote_20th_amendment": "Voted Against",
-    "asset_declaration_years": ""
+    "asset_declaration_years": "",
+    "attendance_9th_present": 149,
+    "attendance_9th_absent": 10,
+    "attendance_8th_present": 233,
+    "attendance_8th_absent": 19
   },
   {
     "url_num": 145,
@@ -2505,7 +2765,11 @@
     "academic_highest_level": "6 Bachelors",
     "professional_qualifications": "Attorney at law",
     "vote_20th_amendment": "Voted Against",
-    "asset_declaration_years": ""
+    "asset_declaration_years": "",
+    "attendance_9th_present": 145,
+    "attendance_9th_absent": 14,
+    "attendance_8th_present": null,
+    "attendance_8th_absent": null
   },
   {
     "url_num": 3224,
@@ -2543,7 +2807,11 @@
     "academic_highest_level": "0 Unknown",
     "professional_qualifications": null,
     "vote_20th_amendment": "Voted: In Favour",
-    "asset_declaration_years": ""
+    "asset_declaration_years": "",
+    "attendance_9th_present": 147,
+    "attendance_9th_absent": 12,
+    "attendance_8th_present": 201,
+    "attendance_8th_absent": 51
   },
   {
     "url_num": 3263,
@@ -2581,7 +2849,11 @@
     "academic_highest_level": "6 Bachelors",
     "professional_qualifications": "Managing Director",
     "vote_20th_amendment": "Voted: In Favour",
-    "asset_declaration_years": ""
+    "asset_declaration_years": "",
+    "attendance_9th_present": 150,
+    "attendance_9th_absent": 9,
+    "attendance_8th_present": 189,
+    "attendance_8th_absent": 63
   },
   {
     "url_num": 3384,
@@ -2619,7 +2891,11 @@
     "academic_highest_level": "7 Masters",
     "professional_qualifications": null,
     "vote_20th_amendment": "Voted: In Favour",
-    "asset_declaration_years": ""
+    "asset_declaration_years": "",
+    "attendance_9th_present": 151,
+    "attendance_9th_absent": 8,
+    "attendance_8th_present": null,
+    "attendance_8th_absent": null
   },
   {
     "url_num": 2869,
@@ -2657,7 +2933,11 @@
     "academic_highest_level": "4 Post-Secondary",
     "professional_qualifications": "Chairman in Reedigama Pradeshiya Sabha 1991-1993 Member Of Provincial Council NWP 1993-1994 Member Of Sri Lankan Parliament 1994-2000 Member Of Provincial Council NWP 2004-2010 Opposition Leader Of Provincial Council NWP 2010-2015 Member Of Parliament 2015 - 2020",
     "vote_20th_amendment": "Voted Against",
-    "asset_declaration_years": ""
+    "asset_declaration_years": "",
+    "attendance_9th_present": 149,
+    "attendance_9th_absent": 10,
+    "attendance_8th_present": 231,
+    "attendance_8th_absent": 21
   },
   {
     "url_num": 3364,
@@ -2695,7 +2975,11 @@
     "academic_highest_level": "3 Upper Secondary (A. Levels)",
     "professional_qualifications": null,
     "vote_20th_amendment": "Voted: In Favour",
-    "asset_declaration_years": ""
+    "asset_declaration_years": "",
+    "attendance_9th_present": 158,
+    "attendance_9th_absent": 1,
+    "attendance_8th_present": null,
+    "attendance_8th_absent": null
   },
   {
     "url_num": 290,
@@ -2733,7 +3017,11 @@
     "academic_highest_level": "3 Upper Secondary (A. Levels)",
     "professional_qualifications": null,
     "vote_20th_amendment": "Voted: In Favour",
-    "asset_declaration_years": ""
+    "asset_declaration_years": "",
+    "attendance_9th_present": 142,
+    "attendance_9th_absent": 17,
+    "attendance_8th_present": null,
+    "attendance_8th_absent": null
   },
   {
     "url_num": 104,
@@ -2771,7 +3059,11 @@
     "academic_highest_level": "0 Unknown",
     "professional_qualifications": null,
     "vote_20th_amendment": "Voted: In Favour",
-    "asset_declaration_years": ""
+    "asset_declaration_years": "",
+    "attendance_9th_present": 119,
+    "attendance_9th_absent": 40,
+    "attendance_8th_present": 172,
+    "attendance_8th_absent": 80
   },
   {
     "url_num": 3168,
@@ -2809,7 +3101,11 @@
     "academic_highest_level": "3 Upper Secondary (A. Levels)",
     "professional_qualifications": null,
     "vote_20th_amendment": "Voted: In Favour",
-    "asset_declaration_years": ""
+    "asset_declaration_years": "",
+    "attendance_9th_present": 141,
+    "attendance_9th_absent": 18,
+    "attendance_8th_present": 204,
+    "attendance_8th_absent": 48
   },
   {
     "url_num": 3208,
@@ -2847,7 +3143,11 @@
     "academic_highest_level": "3 Upper Secondary (A. Levels)",
     "professional_qualifications": null,
     "vote_20th_amendment": "Voted Against",
-    "asset_declaration_years": ""
+    "asset_declaration_years": "",
+    "attendance_9th_present": 155,
+    "attendance_9th_absent": 4,
+    "attendance_8th_present": 200,
+    "attendance_8th_absent": 52
   },
   {
     "url_num": 73,
@@ -2885,7 +3185,11 @@
     "academic_highest_level": "4 Post-Secondary",
     "professional_qualifications": "Diploma in Film & Television - Aesthetics & Technology (The institute of film & television ) Aesthetic University",
     "vote_20th_amendment": "Voted: In Favour",
-    "asset_declaration_years": ""
+    "asset_declaration_years": "",
+    "attendance_9th_present": 143,
+    "attendance_9th_absent": 4,
+    "attendance_8th_present": null,
+    "attendance_8th_absent": null
   },
   {
     "url_num": 3225,
@@ -2923,7 +3227,11 @@
     "academic_highest_level": "0 Unknown",
     "professional_qualifications": null,
     "vote_20th_amendment": "Voted: In Favour",
-    "asset_declaration_years": ""
+    "asset_declaration_years": "",
+    "attendance_9th_present": 108,
+    "attendance_9th_absent": 51,
+    "attendance_8th_present": 171,
+    "attendance_8th_absent": 81
   },
   {
     "url_num": 3433,
@@ -2961,7 +3269,11 @@
     "academic_highest_level": "6 Bachelors",
     "professional_qualifications": "Attorney at Law from 1976 and a President's Counsel from 2010",
     "vote_20th_amendment": "Voted: In Favour",
-    "asset_declaration_years": ""
+    "asset_declaration_years": "",
+    "attendance_9th_present": 128,
+    "attendance_9th_absent": 31,
+    "attendance_8th_present": null,
+    "attendance_8th_absent": null
   },
   {
     "url_num": 203,
@@ -2999,7 +3311,11 @@
     "academic_highest_level": "4 Post-Secondary",
     "professional_qualifications": null,
     "vote_20th_amendment": "Voted: In Favour",
-    "asset_declaration_years": ""
+    "asset_declaration_years": "",
+    "attendance_9th_present": 88,
+    "attendance_9th_absent": 71,
+    "attendance_8th_present": null,
+    "attendance_8th_absent": null
   },
   {
     "url_num": 3329,
@@ -3037,7 +3353,11 @@
     "academic_highest_level": "6 Bachelors",
     "professional_qualifications": null,
     "vote_20th_amendment": "Voted: In Favour",
-    "asset_declaration_years": ""
+    "asset_declaration_years": "",
+    "attendance_9th_present": 87,
+    "attendance_9th_absent": 72,
+    "attendance_8th_present": null,
+    "attendance_8th_absent": null
   },
   {
     "url_num": 194,
@@ -3075,7 +3395,11 @@
     "academic_highest_level": "6 Bachelors",
     "professional_qualifications": "Advocate ot the Supreme Court of Sri Lanka",
     "vote_20th_amendment": "Voted: In Favour",
-    "asset_declaration_years": ""
+    "asset_declaration_years": "",
+    "attendance_9th_present": 99,
+    "attendance_9th_absent": 60,
+    "attendance_8th_present": 122,
+    "attendance_8th_absent": 130
   },
   {
     "url_num": 133,
@@ -3113,7 +3437,11 @@
     "academic_highest_level": "0 Unknown",
     "professional_qualifications": null,
     "vote_20th_amendment": "Voted: In Favour",
-    "asset_declaration_years": ""
+    "asset_declaration_years": "",
+    "attendance_9th_present": 154,
+    "attendance_9th_absent": 5,
+    "attendance_8th_present": 83,
+    "attendance_8th_absent": 169
   },
   {
     "url_num": 3249,
@@ -3151,7 +3479,11 @@
     "academic_highest_level": "3 Upper Secondary (A. Levels)",
     "professional_qualifications": null,
     "vote_20th_amendment": "Voted: In Favour",
-    "asset_declaration_years": ""
+    "asset_declaration_years": "",
+    "attendance_9th_present": 135,
+    "attendance_9th_absent": 24,
+    "attendance_8th_present": 170,
+    "attendance_8th_absent": 82
   },
   {
     "url_num": 3412,
@@ -3189,7 +3521,11 @@
     "academic_highest_level": "0 Unknown",
     "professional_qualifications": null,
     "vote_20th_amendment": "Voted: In Favour",
-    "asset_declaration_years": ""
+    "asset_declaration_years": "",
+    "attendance_9th_present": 139,
+    "attendance_9th_absent": 20,
+    "attendance_8th_present": null,
+    "attendance_8th_absent": null
   },
   {
     "url_num": 3270,
@@ -3227,7 +3563,11 @@
     "academic_highest_level": "4 Post-Secondary",
     "professional_qualifications": "Assistant Superintendent, Janatha Estate Development Board",
     "vote_20th_amendment": "Voted Against",
-    "asset_declaration_years": ""
+    "asset_declaration_years": "",
+    "attendance_9th_present": 156,
+    "attendance_9th_absent": 3,
+    "attendance_8th_present": 231,
+    "attendance_8th_absent": 21
   },
   {
     "url_num": 259,
@@ -3265,7 +3605,11 @@
     "academic_highest_level": "6 Bachelors",
     "professional_qualifications": "Development Evaluation Specialist - Carleton University - Canada",
     "vote_20th_amendment": "Voted Against",
-    "asset_declaration_years": ""
+    "asset_declaration_years": "",
+    "attendance_9th_present": 91,
+    "attendance_9th_absent": 68,
+    "attendance_8th_present": 142,
+    "attendance_8th_absent": 110
   },
   {
     "url_num": 3346,
@@ -3303,7 +3647,11 @@
     "academic_highest_level": "6 Bachelors",
     "professional_qualifications": null,
     "vote_20th_amendment": "Voted: In Favour",
-    "asset_declaration_years": ""
+    "asset_declaration_years": "",
+    "attendance_9th_present": 147,
+    "attendance_9th_absent": 12,
+    "attendance_8th_present": null,
+    "attendance_8th_absent": null
   },
   {
     "url_num": 3178,
@@ -3341,7 +3689,11 @@
     "academic_highest_level": "7 Masters",
     "professional_qualifications": "Private Pilot Licence",
     "vote_20th_amendment": "Voted: In Favour",
-    "asset_declaration_years": ""
+    "asset_declaration_years": "",
+    "attendance_9th_present": 129,
+    "attendance_9th_absent": 30,
+    "attendance_8th_present": 181,
+    "attendance_8th_absent": 71
   },
   {
     "url_num": 3239,
@@ -3379,7 +3731,11 @@
     "academic_highest_level": "6 Bachelors",
     "professional_qualifications": null,
     "vote_20th_amendment": "Voted: In Favour",
-    "asset_declaration_years": ""
+    "asset_declaration_years": "",
+    "attendance_9th_present": 134,
+    "attendance_9th_absent": 25,
+    "attendance_8th_present": 174,
+    "attendance_8th_absent": 78
   },
   {
     "url_num": 3311,
@@ -3417,7 +3773,11 @@
     "academic_highest_level": "3 Upper Secondary (A. Levels)",
     "professional_qualifications": null,
     "vote_20th_amendment": "Voted: In Favour",
-    "asset_declaration_years": ""
+    "asset_declaration_years": "",
+    "attendance_9th_present": 105,
+    "attendance_9th_absent": 54,
+    "attendance_8th_present": null,
+    "attendance_8th_absent": null
   },
   {
     "url_num": 3337,
@@ -3455,7 +3815,11 @@
     "academic_highest_level": "0 Unknown",
     "professional_qualifications": null,
     "vote_20th_amendment": "Voted: In Favour",
-    "asset_declaration_years": ""
+    "asset_declaration_years": "",
+    "attendance_9th_present": 147,
+    "attendance_9th_absent": 12,
+    "attendance_8th_present": null,
+    "attendance_8th_absent": null
   },
   {
     "url_num": 3276,
@@ -3493,7 +3857,11 @@
     "academic_highest_level": "6 Bachelors",
     "professional_qualifications": null,
     "vote_20th_amendment": "Voted Against",
-    "asset_declaration_years": ""
+    "asset_declaration_years": "",
+    "attendance_9th_present": 114,
+    "attendance_9th_absent": 45,
+    "attendance_8th_present": 174,
+    "attendance_8th_absent": 78
   },
   {
     "url_num": 166,
@@ -3531,7 +3899,11 @@
     "academic_highest_level": "1 Primary",
     "professional_qualifications": "Hotelier by Profession; Doctorate in Defense Studies",
     "vote_20th_amendment": "Voted: In Favour",
-    "asset_declaration_years": ""
+    "asset_declaration_years": "",
+    "attendance_9th_present": 81,
+    "attendance_9th_absent": 78,
+    "attendance_8th_present": 102,
+    "attendance_8th_absent": 150
   },
   {
     "url_num": 3307,
@@ -3569,7 +3941,11 @@
     "academic_highest_level": "4 Post-Secondary",
     "professional_qualifications": null,
     "vote_20th_amendment": "Voted Against",
-    "asset_declaration_years": ""
+    "asset_declaration_years": "",
+    "attendance_9th_present": 137,
+    "attendance_9th_absent": 22,
+    "attendance_8th_present": null,
+    "attendance_8th_absent": null
   },
   {
     "url_num": 3345,
@@ -3607,7 +3983,11 @@
     "academic_highest_level": "4 Post-Secondary",
     "professional_qualifications": null,
     "vote_20th_amendment": "Voted: In Favour",
-    "asset_declaration_years": ""
+    "asset_declaration_years": "",
+    "attendance_9th_present": 126,
+    "attendance_9th_absent": 33,
+    "attendance_8th_present": null,
+    "attendance_8th_absent": null
   },
   {
     "url_num": 3317,
@@ -3645,7 +4025,11 @@
     "academic_highest_level": "0 Unknown",
     "professional_qualifications": null,
     "vote_20th_amendment": "Voted: In Favour",
-    "asset_declaration_years": ""
+    "asset_declaration_years": "",
+    "attendance_9th_present": 135,
+    "attendance_9th_absent": 24,
+    "attendance_8th_present": null,
+    "attendance_8th_absent": null
   },
   {
     "url_num": 182,
@@ -3683,7 +4067,11 @@
     "academic_highest_level": "0 Unknown",
     "professional_qualifications": null,
     "vote_20th_amendment": "Voted Against",
-    "asset_declaration_years": ""
+    "asset_declaration_years": "",
+    "attendance_9th_present": 86,
+    "attendance_9th_absent": 73,
+    "attendance_8th_present": 174,
+    "attendance_8th_absent": 78
   },
   {
     "url_num": 3292,
@@ -3721,7 +4109,11 @@
     "academic_highest_level": "0 Unknown",
     "professional_qualifications": null,
     "vote_20th_amendment": "Voted: In Favour",
-    "asset_declaration_years": ""
+    "asset_declaration_years": "",
+    "attendance_9th_present": 137,
+    "attendance_9th_absent": 22,
+    "attendance_8th_present": null,
+    "attendance_8th_absent": null
   },
   {
     "url_num": 75,
@@ -3759,7 +4151,11 @@
     "academic_highest_level": "6 Bachelors",
     "professional_qualifications": "Attorney-at-Law",
     "vote_20th_amendment": "Voted Against",
-    "asset_declaration_years": ""
+    "asset_declaration_years": "",
+    "attendance_9th_present": 157,
+    "attendance_9th_absent": 2,
+    "attendance_8th_present": 233,
+    "attendance_8th_absent": 19
   },
   {
     "url_num": 3351,
@@ -3797,7 +4193,11 @@
     "academic_highest_level": "3 Upper Secondary (A. Levels)",
     "professional_qualifications": null,
     "vote_20th_amendment": "Voted: In Favour",
-    "asset_declaration_years": ""
+    "asset_declaration_years": "",
+    "attendance_9th_present": 144,
+    "attendance_9th_absent": 15,
+    "attendance_8th_present": null,
+    "attendance_8th_absent": null
   },
   {
     "url_num": 3451,
@@ -3835,7 +4235,11 @@
     "academic_highest_level": "3 Upper Secondary (A. Levels)",
     "professional_qualifications": null,
     "vote_20th_amendment": "Voted: In Favour",
-    "asset_declaration_years": ""
+    "asset_declaration_years": "",
+    "attendance_9th_present": 37,
+    "attendance_9th_absent": 2,
+    "attendance_8th_present": null,
+    "attendance_8th_absent": null
   },
   {
     "url_num": 1423,
@@ -3873,7 +4277,11 @@
     "academic_highest_level": "4 Post-Secondary",
     "professional_qualifications": "Government teacher, minister of western provincial council, Member of Parliament since 2004, Deputy minister, State minister",
     "vote_20th_amendment": "Voted: In Favour",
-    "asset_declaration_years": ""
+    "asset_declaration_years": "",
+    "attendance_9th_present": 152,
+    "attendance_9th_absent": 7,
+    "attendance_8th_present": 229,
+    "attendance_8th_absent": 23
   },
   {
     "url_num": 3191,
@@ -3911,7 +4319,11 @@
     "academic_highest_level": "4 Post-Secondary",
     "professional_qualifications": "Company Director; Managing Director",
     "vote_20th_amendment": "Voted: In Favour",
-    "asset_declaration_years": ""
+    "asset_declaration_years": "",
+    "attendance_9th_present": 102,
+    "attendance_9th_absent": 57,
+    "attendance_8th_present": 100,
+    "attendance_8th_absent": 152
   },
   {
     "url_num": 172,
@@ -3949,7 +4361,11 @@
     "academic_highest_level": "3 Upper Secondary (A. Levels)",
     "professional_qualifications": null,
     "vote_20th_amendment": "Voted: In Favour",
-    "asset_declaration_years": ""
+    "asset_declaration_years": "",
+    "attendance_9th_present": 127,
+    "attendance_9th_absent": 32,
+    "attendance_8th_present": 197,
+    "attendance_8th_absent": 55
   },
   {
     "url_num": 3194,
@@ -3987,7 +4403,11 @@
     "academic_highest_level": "7 Masters",
     "professional_qualifications": "Attorney at Law",
     "vote_20th_amendment": "Voted Against",
-    "asset_declaration_years": "2017/18; 2018/19"
+    "asset_declaration_years": "2017/18; 2018/19",
+    "attendance_9th_present": 118,
+    "attendance_9th_absent": 41,
+    "attendance_8th_present": 196,
+    "attendance_8th_absent": 56
   },
   {
     "url_num": 3330,
@@ -4025,7 +4445,11 @@
     "academic_highest_level": "2 Lower Secondary (O. Levels)",
     "professional_qualifications": "Businessman",
     "vote_20th_amendment": "Voted: In Favour",
-    "asset_declaration_years": ""
+    "asset_declaration_years": "",
+    "attendance_9th_present": 101,
+    "attendance_9th_absent": 58,
+    "attendance_8th_present": null,
+    "attendance_8th_absent": null
   },
   {
     "url_num": 102,
@@ -4063,7 +4487,11 @@
     "academic_highest_level": "3 Upper Secondary (A. Levels)",
     "professional_qualifications": null,
     "vote_20th_amendment": "Voted: In Favour",
-    "asset_declaration_years": ""
+    "asset_declaration_years": "",
+    "attendance_9th_present": 124,
+    "attendance_9th_absent": 35,
+    "attendance_8th_present": 189,
+    "attendance_8th_absent": 63
   },
   {
     "url_num": 3432,
@@ -4101,7 +4529,11 @@
     "academic_highest_level": "6 Bachelors",
     "professional_qualifications": "Attorney - at- Law; President's Councel; Former SL Consul General in Saudi Arabia; Treasurer- Bar Association; Deputy President - Bar Association",
     "vote_20th_amendment": "Voted: In Favour",
-    "asset_declaration_years": ""
+    "asset_declaration_years": "",
+    "attendance_9th_present": 110,
+    "attendance_9th_absent": 49,
+    "attendance_8th_present": null,
+    "attendance_8th_absent": null
   },
   {
     "url_num": 3344,
@@ -4139,7 +4571,11 @@
     "academic_highest_level": "0 Unknown",
     "professional_qualifications": null,
     "vote_20th_amendment": "Voted: In Favour",
-    "asset_declaration_years": ""
+    "asset_declaration_years": "",
+    "attendance_9th_present": 138,
+    "attendance_9th_absent": 21,
+    "attendance_8th_present": null,
+    "attendance_8th_absent": null
   },
   {
     "url_num": 3340,
@@ -4177,7 +4613,11 @@
     "academic_highest_level": "6 Bachelors",
     "professional_qualifications": "Attorney-at-Law",
     "vote_20th_amendment": "Voted: In Favour",
-    "asset_declaration_years": "2021/22"
+    "asset_declaration_years": "2021/22",
+    "attendance_9th_present": 159,
+    "attendance_9th_absent": 0,
+    "attendance_8th_present": null,
+    "attendance_8th_absent": null
   },
   {
     "url_num": 262,
@@ -4215,7 +4655,11 @@
     "academic_highest_level": "3 Upper Secondary (A. Levels)",
     "professional_qualifications": null,
     "vote_20th_amendment": "Voted: In Favour",
-    "asset_declaration_years": ""
+    "asset_declaration_years": "",
+    "attendance_9th_present": 132,
+    "attendance_9th_absent": 27,
+    "attendance_8th_present": 202,
+    "attendance_8th_absent": 50
   },
   {
     "url_num": 169,
@@ -4253,7 +4697,11 @@
     "academic_highest_level": "6 Bachelors",
     "professional_qualifications": null,
     "vote_20th_amendment": "Voted: In Favour",
-    "asset_declaration_years": ""
+    "asset_declaration_years": "",
+    "attendance_9th_present": 110,
+    "attendance_9th_absent": 49,
+    "attendance_8th_present": 109,
+    "attendance_8th_absent": 143
   },
   {
     "url_num": 53,
@@ -4291,7 +4739,11 @@
     "academic_highest_level": "6 Bachelors",
     "professional_qualifications": "Special Training on Management at the Management Institute of Chandigar, India",
     "vote_20th_amendment": "Did Not Vote: Speaker",
-    "asset_declaration_years": ""
+    "asset_declaration_years": "",
+    "attendance_9th_present": 153,
+    "attendance_9th_absent": 6,
+    "attendance_8th_present": 219,
+    "attendance_8th_absent": 33
   },
   {
     "url_num": 58,
@@ -4329,7 +4781,11 @@
     "academic_highest_level": "0 Unknown",
     "professional_qualifications": null,
     "vote_20th_amendment": "Voted: In Favour",
-    "asset_declaration_years": ""
+    "asset_declaration_years": "",
+    "attendance_9th_present": 113,
+    "attendance_9th_absent": 46,
+    "attendance_8th_present": 154,
+    "attendance_8th_absent": 98
   },
   {
     "url_num": 191,
@@ -4367,7 +4823,11 @@
     "academic_highest_level": "4 Post-Secondary",
     "professional_qualifications": "Diploma in Agriculture, Sri Lanka School of Agriculture, Kundasale 1973; Diploma in Political Science, Maxim Gorki Academy, Russia",
     "vote_20th_amendment": "Did Not Vote: Absent",
-    "asset_declaration_years": ""
+    "asset_declaration_years": "",
+    "attendance_9th_present": 140,
+    "attendance_9th_absent": 19,
+    "attendance_8th_present": null,
+    "attendance_8th_absent": null
   },
   {
     "url_num": 3434,
@@ -4405,7 +4865,11 @@
     "academic_highest_level": "6 Bachelors",
     "professional_qualifications": "Teacher Training- Teaching College Anuradhapura",
     "vote_20th_amendment": "Voted: In Favour",
-    "asset_declaration_years": ""
+    "asset_declaration_years": "",
+    "attendance_9th_present": 137,
+    "attendance_9th_absent": 22,
+    "attendance_8th_present": null,
+    "attendance_8th_absent": null
   },
   {
     "url_num": 3207,
@@ -4443,7 +4907,11 @@
     "academic_highest_level": "6 Bachelors",
     "professional_qualifications": "Civil Engineer",
     "vote_20th_amendment": "Did Not Vote: Not MP",
-    "asset_declaration_years": ""
+    "asset_declaration_years": "",
+    "attendance_9th_present": 54,
+    "attendance_9th_absent": 38,
+    "attendance_8th_present": 182,
+    "attendance_8th_absent": 70
   },
   {
     "url_num": 271,
@@ -4481,7 +4949,11 @@
     "academic_highest_level": "4 Post-Secondary",
     "professional_qualifications": "Company Chairman",
     "vote_20th_amendment": "Voted Against",
-    "asset_declaration_years": ""
+    "asset_declaration_years": "",
+    "attendance_9th_present": 99,
+    "attendance_9th_absent": 60,
+    "attendance_8th_present": 129,
+    "attendance_8th_absent": 123
   },
   {
     "url_num": 3172,
@@ -4519,7 +4991,11 @@
     "academic_highest_level": "4 Post-Secondary",
     "professional_qualifications": null,
     "vote_20th_amendment": "Voted Against",
-    "asset_declaration_years": ""
+    "asset_declaration_years": "",
+    "attendance_9th_present": 93,
+    "attendance_9th_absent": 66,
+    "attendance_8th_present": 143,
+    "attendance_8th_absent": 109
   },
   {
     "url_num": 3441,
@@ -4557,7 +5033,11 @@
     "academic_highest_level": "2 Lower Secondary (O. Levels)",
     "professional_qualifications": null,
     "vote_20th_amendment": "Voted: In Favour",
-    "asset_declaration_years": ""
+    "asset_declaration_years": "",
+    "attendance_9th_present": 150,
+    "attendance_9th_absent": 9,
+    "attendance_8th_present": null,
+    "attendance_8th_absent": null
   },
   {
     "url_num": 3228,
@@ -4595,7 +5075,11 @@
     "academic_highest_level": "6 Bachelors",
     "professional_qualifications": "BTEC; National Diploma in Printing; B.Sc. in Printing",
     "vote_20th_amendment": "Voted Against",
-    "asset_declaration_years": ""
+    "asset_declaration_years": "",
+    "attendance_9th_present": 128,
+    "attendance_9th_absent": 31,
+    "attendance_8th_present": 145,
+    "attendance_8th_absent": 107
   },
   {
     "url_num": 3170,
@@ -4633,7 +5117,11 @@
     "academic_highest_level": "6 Bachelors",
     "professional_qualifications": null,
     "vote_20th_amendment": "Voted: In Favour",
-    "asset_declaration_years": ""
+    "asset_declaration_years": "",
+    "attendance_9th_present": 112,
+    "attendance_9th_absent": 47,
+    "attendance_8th_present": 92,
+    "attendance_8th_absent": 160
   },
   {
     "url_num": 1539,
@@ -4671,7 +5159,11 @@
     "academic_highest_level": "3 Upper Secondary (A. Levels)",
     "professional_qualifications": "\u0d8b\u0db4 \u0dc3\u0dc3\u0db7\u0dcf\u0db4\u0dad\u0dd2 \u0da2\u0dcf\u0dad\u0dd2\u0d9a \u0db1\u0dd2\u0dc0\u0dcf\u0dc3 \u0dc3\u0d82\u0dc0\u0dbb\u0dca\u0db0\u0db1 \u0d85\u0db0\u0dd2\u0d9a\u0dcf\u0dbb\u0dd2\u0dba \u0d9a\u0dca\u200d\u0dbb\u0dd2\u0dba\u0dcf\u0d9a\u0dcf\u0dbb\u0dd2 \u0d85\u0db0\u0dca\u200d\u0dba\u0d9a\u0dca\u0dc2 \u0dbb\u0dcf\u0da2\u0dca\u200d\u0dba \u0d89\u0d82\u0da2\u0dd2\u0db1\u0dda\u0dbb\u0dd4 \u0dc3\u0d82\u0dc3\u0dca\u0da8\u0dcf\u0dc0 \u0dc3\u0d82\u0dc3\u0dca\u0da8\u0dcf\u0dc0 \u0d9a\u0dca\u200d\u0dbb\u0dd2\u0dba\u0dcf\u0d9a\u0dcf\u0dbb\u0dd2 \u0d85\u0db0\u0dca\u200d\u0dba\u0d9a\u0dca\u0dc2 \u0d89\u0daf\u0dd2\u0d9a\u0dd2\u0dbb\u0dd3\u0db8\u0dca \u0d85\u0db7\u0dca\u200d\u0dba\u0dcf\u0dc3 \u0dc3\u0d82\u0dc0\u0dbb\u0dca\u0db0\u0db1 \u0d86\u0dba\u0dad\u0db1\u0dba",
     "vote_20th_amendment": "Voted: In Favour",
-    "asset_declaration_years": ""
+    "asset_declaration_years": "",
+    "attendance_9th_present": 150,
+    "attendance_9th_absent": 9,
+    "attendance_8th_present": null,
+    "attendance_8th_absent": null
   },
   {
     "url_num": 3297,
@@ -4709,7 +5201,11 @@
     "academic_highest_level": "4 Post-Secondary",
     "professional_qualifications": "President of the Ratnapura District Netball Association; Acting Chairman Sabaragamuwa Provincial Industrial Development Authority; All Island achivements for Cricket, Netball, Volleyball and Athletic; Sports Teacher (Voluntary)",
     "vote_20th_amendment": "Voted: In Favour",
-    "asset_declaration_years": ""
+    "asset_declaration_years": "",
+    "attendance_9th_present": 144,
+    "attendance_9th_absent": 15,
+    "attendance_8th_present": null,
+    "attendance_8th_absent": null
   },
   {
     "url_num": 3213,
@@ -4747,7 +5243,11 @@
     "academic_highest_level": "6 Bachelors",
     "professional_qualifications": null,
     "vote_20th_amendment": "Voted Against",
-    "asset_declaration_years": ""
+    "asset_declaration_years": "",
+    "attendance_9th_present": 152,
+    "attendance_9th_absent": 7,
+    "attendance_8th_present": 243,
+    "attendance_8th_absent": 9
   },
   {
     "url_num": 3332,
@@ -4785,7 +5285,11 @@
     "academic_highest_level": "8 Doctorate",
     "professional_qualifications": "Honorary Doctorate from International Peace University Germany Doctor of Public Service",
     "vote_20th_amendment": "Voted Against",
-    "asset_declaration_years": ""
+    "asset_declaration_years": "",
+    "attendance_9th_present": 133,
+    "attendance_9th_absent": 26,
+    "attendance_8th_present": null,
+    "attendance_8th_absent": null
   },
   {
     "url_num": 3327,
@@ -4823,7 +5327,11 @@
     "academic_highest_level": "6 Bachelors",
     "professional_qualifications": "Consultant Engineer",
     "vote_20th_amendment": "Voted: In Favour",
-    "asset_declaration_years": ""
+    "asset_declaration_years": "",
+    "attendance_9th_present": 95,
+    "attendance_9th_absent": 64,
+    "attendance_8th_present": null,
+    "attendance_8th_absent": null
   },
   {
     "url_num": 3343,
@@ -4861,7 +5369,11 @@
     "academic_highest_level": "8 Doctorate",
     "professional_qualifications": "FCIM, B.Sc. (Eng.)",
     "vote_20th_amendment": "Voted: In Favour",
-    "asset_declaration_years": ""
+    "asset_declaration_years": "",
+    "attendance_9th_present": 130,
+    "attendance_9th_absent": 29,
+    "attendance_8th_present": null,
+    "attendance_8th_absent": null
   },
   {
     "url_num": 3179,
@@ -4899,7 +5411,11 @@
     "academic_highest_level": "6 Bachelors",
     "professional_qualifications": "Attorney at Law",
     "vote_20th_amendment": "Voted: In Favour",
-    "asset_declaration_years": ""
+    "asset_declaration_years": "",
+    "attendance_9th_present": 106,
+    "attendance_9th_absent": 53,
+    "attendance_8th_present": 96,
+    "attendance_8th_absent": 156
   },
   {
     "url_num": 2494,
@@ -4937,7 +5453,11 @@
     "academic_highest_level": "6 Bachelors",
     "professional_qualifications": "L.L.B. Degree University of Peradeniya Law faculty; Entered in to the law college sworn in as an advocate in 1962.",
     "vote_20th_amendment": "Voted: In Favour",
-    "asset_declaration_years": "2017/18; 2018/19"
+    "asset_declaration_years": "2017/18; 2018/19",
+    "attendance_9th_present": 130,
+    "attendance_9th_absent": 29,
+    "attendance_8th_present": 208,
+    "attendance_8th_absent": 44
   },
   {
     "url_num": 3397,
@@ -4975,7 +5495,11 @@
     "academic_highest_level": "6 Bachelors",
     "professional_qualifications": "BSc in Engineering",
     "vote_20th_amendment": "Voted: In Favour",
-    "asset_declaration_years": ""
+    "asset_declaration_years": "",
+    "attendance_9th_present": 109,
+    "attendance_9th_absent": 50,
+    "attendance_8th_present": null,
+    "attendance_8th_absent": null
   },
   {
     "url_num": 3222,
@@ -5013,7 +5537,11 @@
     "academic_highest_level": "4 Post-Secondary",
     "professional_qualifications": "Tourism and Hospitality Management Diploma, Germany",
     "vote_20th_amendment": "Voted: In Favour",
-    "asset_declaration_years": ""
+    "asset_declaration_years": "",
+    "attendance_9th_present": 128,
+    "attendance_9th_absent": 31,
+    "attendance_8th_present": 127,
+    "attendance_8th_absent": 125
   },
   {
     "url_num": 3331,
@@ -5051,7 +5579,11 @@
     "academic_highest_level": "6 Bachelors",
     "professional_qualifications": "Experience in Journalism; 2 years Experience as a Pradeshiya Sabha Member; 3 years Experience in Provincial Council Member; Carried out a 5 years Service as the Minister of Agriculture, Youth Affairs, Irrigation in Central Province Council.",
     "vote_20th_amendment": "Voted: In Favour",
-    "asset_declaration_years": ""
+    "asset_declaration_years": "",
+    "attendance_9th_present": 151,
+    "attendance_9th_absent": 8,
+    "attendance_8th_present": null,
+    "attendance_8th_absent": null
   },
   {
     "url_num": 108,
@@ -5089,7 +5621,11 @@
     "academic_highest_level": "6 Bachelors",
     "professional_qualifications": null,
     "vote_20th_amendment": "Voted: In Favour",
-    "asset_declaration_years": ""
+    "asset_declaration_years": "",
+    "attendance_9th_present": 150,
+    "attendance_9th_absent": 9,
+    "attendance_8th_present": 187,
+    "attendance_8th_absent": 65
   },
   {
     "url_num": 3336,
@@ -5127,7 +5663,11 @@
     "academic_highest_level": "6 Bachelors",
     "professional_qualifications": null,
     "vote_20th_amendment": "Voted: In Favour",
-    "asset_declaration_years": ""
+    "asset_declaration_years": "",
+    "attendance_9th_present": 114,
+    "attendance_9th_absent": 45,
+    "attendance_8th_present": null,
+    "attendance_8th_absent": null
   },
   {
     "url_num": 3152,
@@ -5165,7 +5705,11 @@
     "academic_highest_level": "7 Masters",
     "professional_qualifications": null,
     "vote_20th_amendment": "Voted Against",
-    "asset_declaration_years": ""
+    "asset_declaration_years": "",
+    "attendance_9th_present": 146,
+    "attendance_9th_absent": 13,
+    "attendance_8th_present": 188,
+    "attendance_8th_absent": 64
   },
   {
     "url_num": 3160,
@@ -5203,7 +5747,11 @@
     "academic_highest_level": "2 Lower Secondary (O. Levels)",
     "professional_qualifications": "Ex.Minister - Ministry of Hill Country New Villages Infrastructure & Community Development Ex. Minister - Ministry of Estate Infrastructure Ex. Deputy Minister - Ministry of National Languages and Social Integration",
     "vote_20th_amendment": "Voted Against",
-    "asset_declaration_years": ""
+    "asset_declaration_years": "",
+    "attendance_9th_present": 40,
+    "attendance_9th_absent": 119,
+    "attendance_8th_present": 119,
+    "attendance_8th_absent": 133
   },
   {
     "url_num": 174,
@@ -5241,7 +5789,11 @@
     "academic_highest_level": "6 Bachelors",
     "professional_qualifications": "Attorney-at-Law",
     "vote_20th_amendment": "Voted: In Favour",
-    "asset_declaration_years": ""
+    "asset_declaration_years": "",
+    "attendance_9th_present": 94,
+    "attendance_9th_absent": 65,
+    "attendance_8th_present": 110,
+    "attendance_8th_absent": 142
   },
   {
     "url_num": 3226,
@@ -5279,7 +5831,11 @@
     "academic_highest_level": "0 Unknown",
     "professional_qualifications": null,
     "vote_20th_amendment": "Voted: In Favour",
-    "asset_declaration_years": ""
+    "asset_declaration_years": "",
+    "attendance_9th_present": 92,
+    "attendance_9th_absent": 67,
+    "attendance_8th_present": 138,
+    "attendance_8th_absent": 114
   },
   {
     "url_num": 1579,
@@ -5317,7 +5873,11 @@
     "academic_highest_level": "3 Upper Secondary (A. Levels)",
     "professional_qualifications": null,
     "vote_20th_amendment": "Voted: In Favour",
-    "asset_declaration_years": ""
+    "asset_declaration_years": "",
+    "attendance_9th_present": 146,
+    "attendance_9th_absent": 13,
+    "attendance_8th_present": 198,
+    "attendance_8th_absent": 54
   },
   {
     "url_num": 3356,
@@ -5355,7 +5915,11 @@
     "academic_highest_level": "7 Masters",
     "professional_qualifications": "As mentioned above.",
     "vote_20th_amendment": "Voted: In Favour",
-    "asset_declaration_years": ""
+    "asset_declaration_years": "",
+    "attendance_9th_present": 148,
+    "attendance_9th_absent": 11,
+    "attendance_8th_present": null,
+    "attendance_8th_absent": null
   },
   {
     "url_num": 3221,
@@ -5393,7 +5957,11 @@
     "academic_highest_level": "3 Upper Secondary (A. Levels)",
     "professional_qualifications": null,
     "vote_20th_amendment": "Voted: In Favour",
-    "asset_declaration_years": ""
+    "asset_declaration_years": "",
+    "attendance_9th_present": 118,
+    "attendance_9th_absent": 41,
+    "attendance_8th_present": 179,
+    "attendance_8th_absent": 73
   },
   {
     "url_num": 140,
@@ -5431,7 +5999,11 @@
     "academic_highest_level": "6 Bachelors",
     "professional_qualifications": null,
     "vote_20th_amendment": "Voted Against",
-    "asset_declaration_years": ""
+    "asset_declaration_years": "",
+    "attendance_9th_present": 130,
+    "attendance_9th_absent": 29,
+    "attendance_8th_present": 86,
+    "attendance_8th_absent": 166
   },
   {
     "url_num": 225,
@@ -5469,7 +6041,11 @@
     "academic_highest_level": "3 Upper Secondary (A. Levels)",
     "professional_qualifications": null,
     "vote_20th_amendment": "Voted: In Favour",
-    "asset_declaration_years": ""
+    "asset_declaration_years": "",
+    "attendance_9th_present": 93,
+    "attendance_9th_absent": 66,
+    "attendance_8th_present": 39,
+    "attendance_8th_absent": 213
   },
   {
     "url_num": 3328,
@@ -5507,7 +6083,11 @@
     "academic_highest_level": "7 Masters",
     "professional_qualifications": null,
     "vote_20th_amendment": "Voted: In Favour",
-    "asset_declaration_years": ""
+    "asset_declaration_years": "",
+    "attendance_9th_present": 142,
+    "attendance_9th_absent": 17,
+    "attendance_8th_present": null,
+    "attendance_8th_absent": null
   },
   {
     "url_num": 3341,
@@ -5545,7 +6125,11 @@
     "academic_highest_level": "0 Unknown",
     "professional_qualifications": null,
     "vote_20th_amendment": "Voted: In Favour",
-    "asset_declaration_years": ""
+    "asset_declaration_years": "",
+    "attendance_9th_present": 148,
+    "attendance_9th_absent": 11,
+    "attendance_8th_present": null,
+    "attendance_8th_absent": null
   },
   {
     "url_num": 148,
@@ -5583,7 +6167,11 @@
     "academic_highest_level": "3 Upper Secondary (A. Levels)",
     "professional_qualifications": null,
     "vote_20th_amendment": "Voted Against",
-    "asset_declaration_years": ""
+    "asset_declaration_years": "",
+    "attendance_9th_present": 130,
+    "attendance_9th_absent": 29,
+    "attendance_8th_present": 132,
+    "attendance_8th_absent": 120
   },
   {
     "url_num": 309,
@@ -5621,7 +6209,11 @@
     "academic_highest_level": "6 Bachelors",
     "professional_qualifications": "Attorney at Law",
     "vote_20th_amendment": "Voted Against",
-    "asset_declaration_years": ""
+    "asset_declaration_years": "",
+    "attendance_9th_present": 29,
+    "attendance_9th_absent": 130,
+    "attendance_8th_present": 152,
+    "attendance_8th_absent": 100
   },
   {
     "url_num": 3428,
@@ -5659,7 +6251,11 @@
     "academic_highest_level": "4 Post-Secondary",
     "professional_qualifications": "Nursing",
     "vote_20th_amendment": "Voted: In Favour",
-    "asset_declaration_years": ""
+    "asset_declaration_years": "",
+    "attendance_9th_present": 137,
+    "attendance_9th_absent": 22,
+    "attendance_8th_present": null,
+    "attendance_8th_absent": null
   },
   {
     "url_num": 198,
@@ -5697,7 +6293,11 @@
     "academic_highest_level": "8 Doctorate",
     "professional_qualifications": "Bachelor of Dental Surgery (University of Peradeniya) / Fellowship of ICCDE (International College of Continuing Dental Education) / Doctor of Science (Russia) / PHD in Political Science (Russia)",
     "vote_20th_amendment": "Voted Against",
-    "asset_declaration_years": ""
+    "asset_declaration_years": "",
+    "attendance_9th_present": 118,
+    "attendance_9th_absent": 41,
+    "attendance_8th_present": 139,
+    "attendance_8th_absent": 113
   },
   {
     "url_num": 3167,
@@ -5735,7 +6335,11 @@
     "academic_highest_level": "7 Masters",
     "professional_qualifications": null,
     "vote_20th_amendment": "Voted: In Favour",
-    "asset_declaration_years": ""
+    "asset_declaration_years": "",
+    "attendance_9th_present": 118,
+    "attendance_9th_absent": 41,
+    "attendance_8th_present": 165,
+    "attendance_8th_absent": 87
   },
   {
     "url_num": 3220,
@@ -5773,7 +6377,11 @@
     "academic_highest_level": "4 Post-Secondary",
     "professional_qualifications": "No",
     "vote_20th_amendment": "Voted: In Favour",
-    "asset_declaration_years": ""
+    "asset_declaration_years": "",
+    "attendance_9th_present": 131,
+    "attendance_9th_absent": 28,
+    "attendance_8th_present": 174,
+    "attendance_8th_absent": 78
   },
   {
     "url_num": 3076,
@@ -5811,7 +6419,11 @@
     "academic_highest_level": "6 Bachelors",
     "professional_qualifications": "Electrical Engineer",
     "vote_20th_amendment": "Voted Against",
-    "asset_declaration_years": ""
+    "asset_declaration_years": "",
+    "attendance_9th_present": 95,
+    "attendance_9th_absent": 64,
+    "attendance_8th_present": 109,
+    "attendance_8th_absent": 143
   },
   {
     "url_num": 3435,
@@ -5849,7 +6461,11 @@
     "academic_highest_level": "8 Doctorate",
     "professional_qualifications": null,
     "vote_20th_amendment": "Voted: In Favour",
-    "asset_declaration_years": ""
+    "asset_declaration_years": "",
+    "attendance_9th_present": 127,
+    "attendance_9th_absent": 32,
+    "attendance_8th_present": null,
+    "attendance_8th_absent": null
   },
   {
     "url_num": 189,
@@ -5887,7 +6503,11 @@
     "academic_highest_level": "0 Unknown",
     "professional_qualifications": null,
     "vote_20th_amendment": "Voted: In Favour",
-    "asset_declaration_years": ""
+    "asset_declaration_years": "",
+    "attendance_9th_present": 129,
+    "attendance_9th_absent": 30,
+    "attendance_8th_present": 82,
+    "attendance_8th_absent": 170
   },
   {
     "url_num": 1431,
@@ -5925,7 +6545,11 @@
     "academic_highest_level": "0 Unknown",
     "professional_qualifications": null,
     "vote_20th_amendment": "Did Not Vote: Not MP",
-    "asset_declaration_years": ""
+    "asset_declaration_years": "",
+    "attendance_9th_present": 89,
+    "attendance_9th_absent": 26,
+    "attendance_8th_present": 104,
+    "attendance_8th_absent": 148
   },
   {
     "url_num": 200,
@@ -5963,7 +6587,11 @@
     "academic_highest_level": "7 Masters",
     "professional_qualifications": "i. Attorney at Law",
     "vote_20th_amendment": "Voted Against",
-    "asset_declaration_years": ""
+    "asset_declaration_years": "",
+    "attendance_9th_present": 136,
+    "attendance_9th_absent": 23,
+    "attendance_8th_present": 206,
+    "attendance_8th_absent": 46
   },
   {
     "url_num": 293,
@@ -6001,7 +6629,11 @@
     "academic_highest_level": "4 Post-Secondary",
     "professional_qualifications": "Member of Institution of Incorporated Engineers of Sri Lanka, Graduate City and Guilds Institute (London)",
     "vote_20th_amendment": "Voted Against",
-    "asset_declaration_years": ""
+    "asset_declaration_years": "",
+    "attendance_9th_present": 95,
+    "attendance_9th_absent": 64,
+    "attendance_8th_present": 149,
+    "attendance_8th_absent": 103
   },
   {
     "url_num": 3305,
@@ -6039,7 +6671,11 @@
     "academic_highest_level": "3 Upper Secondary (A. Levels)",
     "professional_qualifications": null,
     "vote_20th_amendment": "Voted Against",
-    "asset_declaration_years": ""
+    "asset_declaration_years": "",
+    "attendance_9th_present": 135,
+    "attendance_9th_absent": 24,
+    "attendance_8th_present": null,
+    "attendance_8th_absent": null
   },
   {
     "url_num": 1436,
@@ -6077,7 +6713,11 @@
     "academic_highest_level": "2 Lower Secondary (O. Levels)",
     "professional_qualifications": "A knowledge of business management. worked as a assistant accountant.",
     "vote_20th_amendment": "Voted: In Favour",
-    "asset_declaration_years": ""
+    "asset_declaration_years": "",
+    "attendance_9th_present": 116,
+    "attendance_9th_absent": 43,
+    "attendance_8th_present": null,
+    "attendance_8th_absent": null
   },
   {
     "url_num": 3233,
@@ -6115,7 +6755,11 @@
     "academic_highest_level": "3 Upper Secondary (A. Levels)",
     "professional_qualifications": "Teacher Training",
     "vote_20th_amendment": "Voted Against",
-    "asset_declaration_years": ""
+    "asset_declaration_years": "",
+    "attendance_9th_present": 143,
+    "attendance_9th_absent": 16,
+    "attendance_8th_present": 200,
+    "attendance_8th_absent": 52
   },
   {
     "url_num": 234,
@@ -6153,7 +6797,11 @@
     "academic_highest_level": "0 Unknown",
     "professional_qualifications": null,
     "vote_20th_amendment": "Voted: In Favour",
-    "asset_declaration_years": ""
+    "asset_declaration_years": "",
+    "attendance_9th_present": 102,
+    "attendance_9th_absent": 57,
+    "attendance_8th_present": 113,
+    "attendance_8th_absent": 139
   },
   {
     "url_num": 3156,
@@ -6191,7 +6839,11 @@
     "academic_highest_level": "4 Post-Secondary",
     "professional_qualifications": "Diploma in Business Management Founder and Chairman of Euronippon Group of Companies. Started in Wadduwa and expanded branch network in to Panadura, Dambulla, Matara, Welisara, Ampara locally and Japan, United Kingdom and South Africa Internationaly",
     "vote_20th_amendment": "Voted: In Favour",
-    "asset_declaration_years": ""
+    "asset_declaration_years": "",
+    "attendance_9th_present": 95,
+    "attendance_9th_absent": 64,
+    "attendance_8th_present": 66,
+    "attendance_8th_absent": 186
   },
   {
     "url_num": 114,
@@ -6229,7 +6881,11 @@
     "academic_highest_level": "0 Unknown",
     "professional_qualifications": null,
     "vote_20th_amendment": "Voted: In Favour",
-    "asset_declaration_years": ""
+    "asset_declaration_years": "",
+    "attendance_9th_present": 108,
+    "attendance_9th_absent": 51,
+    "attendance_8th_present": 132,
+    "attendance_8th_absent": 120
   },
   {
     "url_num": 276,
@@ -6267,7 +6923,11 @@
     "academic_highest_level": "3 Upper Secondary (A. Levels)",
     "professional_qualifications": null,
     "vote_20th_amendment": "Voted: In Favour",
-    "asset_declaration_years": ""
+    "asset_declaration_years": "",
+    "attendance_9th_present": 133,
+    "attendance_9th_absent": 26,
+    "attendance_8th_present": 181,
+    "attendance_8th_absent": 71
   },
   {
     "url_num": 3323,
@@ -6305,7 +6965,11 @@
     "academic_highest_level": "7 Masters",
     "professional_qualifications": "Attorney-at-Law",
     "vote_20th_amendment": "Voted Against",
-    "asset_declaration_years": ""
+    "asset_declaration_years": "",
+    "attendance_9th_present": 136,
+    "attendance_9th_absent": 23,
+    "attendance_8th_present": null,
+    "attendance_8th_absent": null
   },
   {
     "url_num": 3212,
@@ -6343,7 +7007,11 @@
     "academic_highest_level": "3 Upper Secondary (A. Levels)",
     "professional_qualifications": null,
     "vote_20th_amendment": "Voted Against",
-    "asset_declaration_years": ""
+    "asset_declaration_years": "",
+    "attendance_9th_present": 115,
+    "attendance_9th_absent": 44,
+    "attendance_8th_present": 206,
+    "attendance_8th_absent": 46
   },
   {
     "url_num": 1452,
@@ -6381,7 +7049,11 @@
     "academic_highest_level": "3 Upper Secondary (A. Levels)",
     "professional_qualifications": null,
     "vote_20th_amendment": "Voted Against",
-    "asset_declaration_years": ""
+    "asset_declaration_years": "",
+    "attendance_9th_present": 75,
+    "attendance_9th_absent": 84,
+    "attendance_8th_present": null,
+    "attendance_8th_absent": null
   },
   {
     "url_num": 3251,
@@ -6419,7 +7091,11 @@
     "academic_highest_level": "0 Unknown",
     "professional_qualifications": null,
     "vote_20th_amendment": "Voted: In Favour",
-    "asset_declaration_years": ""
+    "asset_declaration_years": "",
+    "attendance_9th_present": 105,
+    "attendance_9th_absent": 54,
+    "attendance_8th_present": 106,
+    "attendance_8th_absent": 146
   },
   {
     "url_num": 3430,
@@ -6457,7 +7133,11 @@
     "academic_highest_level": "6 Bachelors",
     "professional_qualifications": "Attorney at Law",
     "vote_20th_amendment": "Voted: In Favour",
-    "asset_declaration_years": ""
+    "asset_declaration_years": "",
+    "attendance_9th_present": 154,
+    "attendance_9th_absent": 5,
+    "attendance_8th_present": null,
+    "attendance_8th_absent": null
   },
   {
     "url_num": 3358,
@@ -6495,7 +7175,11 @@
     "academic_highest_level": "0 Unknown",
     "professional_qualifications": null,
     "vote_20th_amendment": "Voted: In Favour",
-    "asset_declaration_years": ""
+    "asset_declaration_years": "",
+    "attendance_9th_present": 147,
+    "attendance_9th_absent": 12,
+    "attendance_8th_present": null,
+    "attendance_8th_absent": null
   },
   {
     "url_num": 3333,
@@ -6533,7 +7217,11 @@
     "academic_highest_level": "0 Unknown",
     "professional_qualifications": null,
     "vote_20th_amendment": "Voted: In Favour",
-    "asset_declaration_years": ""
+    "asset_declaration_years": "",
+    "attendance_9th_present": 131,
+    "attendance_9th_absent": 28,
+    "attendance_8th_present": null,
+    "attendance_8th_absent": null
   },
   {
     "url_num": 3261,
@@ -6571,7 +7259,11 @@
     "academic_highest_level": "3 Upper Secondary (A. Levels)",
     "professional_qualifications": null,
     "vote_20th_amendment": "Voted: In Favour",
-    "asset_declaration_years": ""
+    "asset_declaration_years": "",
+    "attendance_9th_present": 131,
+    "attendance_9th_absent": 28,
+    "attendance_8th_present": 142,
+    "attendance_8th_absent": 110
   },
   {
     "url_num": 3349,
@@ -6609,7 +7301,11 @@
     "academic_highest_level": "0 Unknown",
     "professional_qualifications": null,
     "vote_20th_amendment": "Voted: In Favour",
-    "asset_declaration_years": ""
+    "asset_declaration_years": "",
+    "attendance_9th_present": 150,
+    "attendance_9th_absent": 9,
+    "attendance_8th_present": null,
+    "attendance_8th_absent": null
   },
   {
     "url_num": 3274,
@@ -6647,7 +7343,11 @@
     "academic_highest_level": "6 Bachelors",
     "professional_qualifications": "Attorney-at -law - Sri lanka Law college",
     "vote_20th_amendment": "Voted: In Favour",
-    "asset_declaration_years": ""
+    "asset_declaration_years": "",
+    "attendance_9th_present": 99,
+    "attendance_9th_absent": 60,
+    "attendance_8th_present": 105,
+    "attendance_8th_absent": 147
   },
   {
     "url_num": 3440,
@@ -6685,7 +7385,11 @@
     "academic_highest_level": "8 Doctorate",
     "professional_qualifications": "MBBS (Sri Jayawardanepura) 2003 MD (Otorhinolaryngology) 2011 - University of Colombo DOHNS (England)- 2014",
     "vote_20th_amendment": "Voted: In Favour",
-    "asset_declaration_years": ""
+    "asset_declaration_years": "",
+    "attendance_9th_present": 117,
+    "attendance_9th_absent": 42,
+    "attendance_8th_present": null,
+    "attendance_8th_absent": null
   },
   {
     "url_num": 1247,
@@ -6723,7 +7427,11 @@
     "academic_highest_level": "3 Upper Secondary (A. Levels)",
     "professional_qualifications": null,
     "vote_20th_amendment": "Voted Against",
-    "asset_declaration_years": ""
+    "asset_declaration_years": "",
+    "attendance_9th_present": 113,
+    "attendance_9th_absent": 46,
+    "attendance_8th_present": 221,
+    "attendance_8th_absent": 31
   },
   {
     "url_num": 1446,
@@ -6761,7 +7469,11 @@
     "academic_highest_level": "6 Bachelors",
     "professional_qualifications": "Project Director at a NGO for 10 years",
     "vote_20th_amendment": "Voted Against",
-    "asset_declaration_years": ""
+    "asset_declaration_years": "",
+    "attendance_9th_present": 129,
+    "attendance_9th_absent": 30,
+    "attendance_8th_present": null,
+    "attendance_8th_absent": null
   },
   {
     "url_num": 3385,
@@ -6799,7 +7511,11 @@
     "academic_highest_level": "0 Unknown",
     "professional_qualifications": null,
     "vote_20th_amendment": "Voted: In Favour",
-    "asset_declaration_years": ""
+    "asset_declaration_years": "",
+    "attendance_9th_present": 129,
+    "attendance_9th_absent": 30,
+    "attendance_8th_present": null,
+    "attendance_8th_absent": null
   },
   {
     "url_num": 3394,
@@ -6837,7 +7553,11 @@
     "academic_highest_level": "6 Bachelors",
     "professional_qualifications": null,
     "vote_20th_amendment": "Voted Against",
-    "asset_declaration_years": ""
+    "asset_declaration_years": "",
+    "attendance_9th_present": 117,
+    "attendance_9th_absent": 42,
+    "attendance_8th_present": null,
+    "attendance_8th_absent": null
   },
   {
     "url_num": 3129,
@@ -6875,7 +7595,11 @@
     "academic_highest_level": "0 Unknown",
     "professional_qualifications": null,
     "vote_20th_amendment": "Voted: In Favour",
-    "asset_declaration_years": ""
+    "asset_declaration_years": "",
+    "attendance_9th_present": 157,
+    "attendance_9th_absent": 2,
+    "attendance_8th_present": 62,
+    "attendance_8th_absent": 30
   },
   {
     "url_num": 3291,
@@ -6913,7 +7637,11 @@
     "academic_highest_level": "6 Bachelors",
     "professional_qualifications": null,
     "vote_20th_amendment": "Voted: In Favour",
-    "asset_declaration_years": ""
+    "asset_declaration_years": "",
+    "attendance_9th_present": 127,
+    "attendance_9th_absent": 32,
+    "attendance_8th_present": null,
+    "attendance_8th_absent": null
   },
   {
     "url_num": 3151,
@@ -6951,7 +7679,11 @@
     "academic_highest_level": "7 Masters",
     "professional_qualifications": null,
     "vote_20th_amendment": "Voted: In Favour",
-    "asset_declaration_years": ""
+    "asset_declaration_years": "",
+    "attendance_9th_present": 132,
+    "attendance_9th_absent": 27,
+    "attendance_8th_present": 172,
+    "attendance_8th_absent": 80
   },
   {
     "url_num": 1473,
@@ -6989,7 +7721,11 @@
     "academic_highest_level": "2 Lower Secondary (O. Levels)",
     "professional_qualifications": null,
     "vote_20th_amendment": "Voted: In Favour",
-    "asset_declaration_years": ""
+    "asset_declaration_years": "",
+    "attendance_9th_present": 114,
+    "attendance_9th_absent": 45,
+    "attendance_8th_present": 88,
+    "attendance_8th_absent": 164
   },
   {
     "url_num": 3223,
@@ -7027,7 +7763,11 @@
     "academic_highest_level": "6 Bachelors",
     "professional_qualifications": "LLB Sri Lanka ( Attorney at Law )",
     "vote_20th_amendment": "Voted: In Favour",
-    "asset_declaration_years": ""
+    "asset_declaration_years": "",
+    "attendance_9th_present": 137,
+    "attendance_9th_absent": 22,
+    "attendance_8th_present": 211,
+    "attendance_8th_absent": 41
   },
   {
     "url_num": 3183,
@@ -7065,7 +7805,11 @@
     "academic_highest_level": "7 Masters",
     "professional_qualifications": "PGDE (Merite) SP.TR (Ag), PGDEM 20 Years Teacher and Principal Service 1990-2010",
     "vote_20th_amendment": "Voted Against",
-    "asset_declaration_years": "2021/22"
+    "asset_declaration_years": "2021/22",
+    "attendance_9th_present": 142,
+    "attendance_9th_absent": 17,
+    "attendance_8th_present": 194,
+    "attendance_8th_absent": 58
   },
   {
     "url_num": 3396,
@@ -7103,7 +7847,11 @@
     "academic_highest_level": "0 Unknown",
     "professional_qualifications": null,
     "vote_20th_amendment": "Voted: In Favour",
-    "asset_declaration_years": ""
+    "asset_declaration_years": "",
+    "attendance_9th_present": 113,
+    "attendance_9th_absent": 46,
+    "attendance_8th_present": null,
+    "attendance_8th_absent": null
   },
   {
     "url_num": 3308,
@@ -7141,7 +7889,11 @@
     "academic_highest_level": "0 Unknown",
     "professional_qualifications": null,
     "vote_20th_amendment": "Voted: In Favour",
-    "asset_declaration_years": ""
+    "asset_declaration_years": "",
+    "attendance_9th_present": 149,
+    "attendance_9th_absent": 10,
+    "attendance_8th_present": null,
+    "attendance_8th_absent": null
   },
   {
     "url_num": 3136,
@@ -7179,7 +7931,11 @@
     "academic_highest_level": "8 Doctorate",
     "professional_qualifications": null,
     "vote_20th_amendment": "Voted: In Favour",
-    "asset_declaration_years": ""
+    "asset_declaration_years": "",
+    "attendance_9th_present": 122,
+    "attendance_9th_absent": 37,
+    "attendance_8th_present": 152,
+    "attendance_8th_absent": 100
   },
   {
     "url_num": 3300,
@@ -7217,7 +7973,11 @@
     "academic_highest_level": "0 Unknown",
     "professional_qualifications": null,
     "vote_20th_amendment": "Voted: In Favour",
-    "asset_declaration_years": ""
+    "asset_declaration_years": "",
+    "attendance_9th_present": 155,
+    "attendance_9th_absent": 4,
+    "attendance_8th_present": null,
+    "attendance_8th_absent": null
   },
   {
     "url_num": 3439,
@@ -7255,7 +8015,11 @@
     "academic_highest_level": "8 Doctorate",
     "professional_qualifications": "FCIM: Fellow- Chartered Institute of Marketing -UK Post Grad Diploma in Marketing",
     "vote_20th_amendment": "Voted: In Favour",
-    "asset_declaration_years": ""
+    "asset_declaration_years": "",
+    "attendance_9th_present": 132,
+    "attendance_9th_absent": 27,
+    "attendance_8th_present": null,
+    "attendance_8th_absent": null
   },
   {
     "url_num": 138,
@@ -7293,7 +8057,11 @@
     "academic_highest_level": "8 Doctorate",
     "professional_qualifications": "Attorney-at-Law, Law College of Sri Lanka 1985 Other: Part I and Part II Examinations of the Institute of Bankers Sri Lanka, 1982 Followed Short Term Leadership Program at Kennedy School of Government, Harvard University, USA 2007 Attended Regional workshops in Singapore and Malaysia in 2017 and 2018 to introduce STEM education.",
     "vote_20th_amendment": "Voted: In Favour",
-    "asset_declaration_years": ""
+    "asset_declaration_years": "",
+    "attendance_9th_present": 151,
+    "attendance_9th_absent": 8,
+    "attendance_8th_present": 185,
+    "attendance_8th_absent": 67
   },
   {
     "url_num": 1482,
@@ -7331,7 +8099,11 @@
     "academic_highest_level": "6 Bachelors",
     "professional_qualifications": "Attorney At Law",
     "vote_20th_amendment": "Voted Against",
-    "asset_declaration_years": ""
+    "asset_declaration_years": "",
+    "attendance_9th_present": 97,
+    "attendance_9th_absent": 62,
+    "attendance_8th_present": 144,
+    "attendance_8th_absent": 108
   },
   {
     "url_num": 3273,
@@ -7369,7 +8141,11 @@
     "academic_highest_level": "7 Masters",
     "professional_qualifications": null,
     "vote_20th_amendment": "Voted: In Favour",
-    "asset_declaration_years": "2017/18; 2018/19"
+    "asset_declaration_years": "2017/18; 2018/19",
+    "attendance_9th_present": 111,
+    "attendance_9th_absent": 48,
+    "attendance_8th_present": 205,
+    "attendance_8th_absent": 47
   },
   {
     "url_num": 3443,
@@ -7407,7 +8183,11 @@
     "academic_highest_level": "0 Unknown",
     "professional_qualifications": null,
     "vote_20th_amendment": "Voted Against",
-    "asset_declaration_years": ""
+    "asset_declaration_years": "",
+    "attendance_9th_present": 117,
+    "attendance_9th_absent": 42,
+    "attendance_8th_present": null,
+    "attendance_8th_absent": null
   },
   {
     "url_num": 3163,
@@ -7445,7 +8225,11 @@
     "academic_highest_level": "0 Unknown",
     "professional_qualifications": null,
     "vote_20th_amendment": "Voted: In Favour",
-    "asset_declaration_years": ""
+    "asset_declaration_years": "",
+    "attendance_9th_present": 115,
+    "attendance_9th_absent": 44,
+    "attendance_8th_present": 128,
+    "attendance_8th_absent": 124
   },
   {
     "url_num": 3322,
@@ -7483,7 +8267,11 @@
     "academic_highest_level": "8 Doctorate",
     "professional_qualifications": "MEDICAL OFFICER INCHARGE - PMCU AMBAGAHAWELLA (2004-2007) MEDICAL OFFICER OF HEALTH AMPARA ( 2007 - 2013) MEDICAL OFFICER PLANNING - RDHS OFFICE AMPARA (2013-2015) REGIONAL DIRECTOR OF HEALTH SERVICES AMPARA (2015-2020)",
     "vote_20th_amendment": "Voted: In Favour",
-    "asset_declaration_years": ""
+    "asset_declaration_years": "",
+    "attendance_9th_present": 134,
+    "attendance_9th_absent": 25,
+    "attendance_8th_present": null,
+    "attendance_8th_absent": null
   },
   {
     "url_num": 3310,
@@ -7521,7 +8309,11 @@
     "academic_highest_level": "4 Post-Secondary",
     "professional_qualifications": "Diploma in Social Development",
     "vote_20th_amendment": "Voted: In Favour",
-    "asset_declaration_years": ""
+    "asset_declaration_years": "",
+    "attendance_9th_present": 127,
+    "attendance_9th_absent": 32,
+    "attendance_8th_present": null,
+    "attendance_8th_absent": null
   },
   {
     "url_num": 3257,
@@ -7559,7 +8351,11 @@
     "academic_highest_level": "6 Bachelors",
     "professional_qualifications": null,
     "vote_20th_amendment": "Voted Against",
-    "asset_declaration_years": ""
+    "asset_declaration_years": "",
+    "attendance_9th_present": 130,
+    "attendance_9th_absent": 29,
+    "attendance_8th_present": 199,
+    "attendance_8th_absent": 53
   },
   {
     "url_num": 3205,
@@ -7597,7 +8393,11 @@
     "academic_highest_level": "4 Post-Secondary",
     "professional_qualifications": "N/A",
     "vote_20th_amendment": "Voted: In Favour",
-    "asset_declaration_years": ""
+    "asset_declaration_years": "",
+    "attendance_9th_present": 56,
+    "attendance_9th_absent": 103,
+    "attendance_8th_present": null,
+    "attendance_8th_absent": null
   },
   {
     "url_num": 1246,
@@ -7635,7 +8435,11 @@
     "academic_highest_level": "6 Bachelors",
     "professional_qualifications": null,
     "vote_20th_amendment": "Voted Against",
-    "asset_declaration_years": ""
+    "asset_declaration_years": "",
+    "attendance_9th_present": 155,
+    "attendance_9th_absent": 4,
+    "attendance_8th_present": null,
+    "attendance_8th_absent": null
   },
   {
     "url_num": 1488,
@@ -7673,7 +8477,11 @@
     "academic_highest_level": "8 Doctorate",
     "professional_qualifications": null,
     "vote_20th_amendment": "Voted: In Favour",
-    "asset_declaration_years": ""
+    "asset_declaration_years": "",
+    "attendance_9th_present": 123,
+    "attendance_9th_absent": 36,
+    "attendance_8th_present": null,
+    "attendance_8th_absent": null
   },
   {
     "url_num": 3314,
@@ -7711,7 +8519,11 @@
     "academic_highest_level": "0 Unknown",
     "professional_qualifications": null,
     "vote_20th_amendment": "Voted: In Favour",
-    "asset_declaration_years": ""
+    "asset_declaration_years": "",
+    "attendance_9th_present": 150,
+    "attendance_9th_absent": 9,
+    "attendance_8th_present": null,
+    "attendance_8th_absent": null
   },
   {
     "url_num": 3299,
@@ -7749,7 +8561,11 @@
     "academic_highest_level": "0 Unknown",
     "professional_qualifications": null,
     "vote_20th_amendment": "Voted: In Favour",
-    "asset_declaration_years": ""
+    "asset_declaration_years": "",
+    "attendance_9th_present": 118,
+    "attendance_9th_absent": 41,
+    "attendance_8th_present": null,
+    "attendance_8th_absent": null
   },
   {
     "url_num": 3354,
@@ -7787,7 +8603,11 @@
     "academic_highest_level": "6 Bachelors",
     "professional_qualifications": "Short Course in Company Law (Institute for the Development of Commercial Law and Practice); Advanced Certificate in Tourism Operation (Certificate Holder of the Open University of Sri Lanka), (Organization & Marketing)",
     "vote_20th_amendment": "Voted: In Favour",
-    "asset_declaration_years": ""
+    "asset_declaration_years": "",
+    "attendance_9th_present": 147,
+    "attendance_9th_absent": 12,
+    "attendance_8th_present": null,
+    "attendance_8th_absent": null
   },
   {
     "url_num": 3410,
@@ -7825,7 +8645,11 @@
     "academic_highest_level": "3 Upper Secondary (A. Levels)",
     "professional_qualifications": null,
     "vote_20th_amendment": "Voted: In Favour",
-    "asset_declaration_years": ""
+    "asset_declaration_years": "",
+    "attendance_9th_present": 113,
+    "attendance_9th_absent": 46,
+    "attendance_8th_present": null,
+    "attendance_8th_absent": null
   },
   {
     "url_num": 3324,
@@ -7863,7 +8687,11 @@
     "academic_highest_level": "6 Bachelors",
     "professional_qualifications": "MBBS(Ruhuna)",
     "vote_20th_amendment": "Voted: In Favour",
-    "asset_declaration_years": ""
+    "asset_declaration_years": "",
+    "attendance_9th_present": 154,
+    "attendance_9th_absent": 5,
+    "attendance_8th_present": null,
+    "attendance_8th_absent": null
   },
   {
     "url_num": 3348,
@@ -7901,7 +8729,11 @@
     "academic_highest_level": "0 Unknown",
     "professional_qualifications": null,
     "vote_20th_amendment": "Voted: In Favour",
-    "asset_declaration_years": ""
+    "asset_declaration_years": "",
+    "attendance_9th_present": 159,
+    "attendance_9th_absent": 0,
+    "attendance_8th_present": null,
+    "attendance_8th_absent": null
   },
   {
     "url_num": 3153,
@@ -7939,7 +8771,11 @@
     "academic_highest_level": "8 Doctorate",
     "professional_qualifications": null,
     "vote_20th_amendment": "Voted Against",
-    "asset_declaration_years": ""
+    "asset_declaration_years": "",
+    "attendance_9th_present": 119,
+    "attendance_9th_absent": 40,
+    "attendance_8th_present": 161,
+    "attendance_8th_absent": 91
   },
   {
     "url_num": 1476,
@@ -7977,7 +8813,11 @@
     "academic_highest_level": "4 Post-Secondary",
     "professional_qualifications": "Hotel School degree holder, General Secretary of Trade Union , Ceylon Hotel School Lectrurer , English teacher, Geneva - ILO Member",
     "vote_20th_amendment": "Voted Against",
-    "asset_declaration_years": ""
+    "asset_declaration_years": "",
+    "attendance_9th_present": 141,
+    "attendance_9th_absent": 18,
+    "attendance_8th_present": 201,
+    "attendance_8th_absent": 51
   },
   {
     "url_num": 3230,
@@ -8015,7 +8855,11 @@
     "academic_highest_level": "7 Masters",
     "professional_qualifications": "CMA",
     "vote_20th_amendment": "Voted Against",
-    "asset_declaration_years": ""
+    "asset_declaration_years": "",
+    "attendance_9th_present": 131,
+    "attendance_9th_absent": 28,
+    "attendance_8th_present": 157,
+    "attendance_8th_absent": 95
   },
   {
     "url_num": 3141,
@@ -8053,7 +8897,11 @@
     "academic_highest_level": "0 Unknown",
     "professional_qualifications": null,
     "vote_20th_amendment": "Voted: In Favour",
-    "asset_declaration_years": "2017/18; 2018/19"
+    "asset_declaration_years": "2017/18; 2018/19",
+    "attendance_9th_present": 114,
+    "attendance_9th_absent": 45,
+    "attendance_8th_present": 153,
+    "attendance_8th_absent": 99
   },
   {
     "url_num": 3166,
@@ -8091,7 +8939,11 @@
     "academic_highest_level": "7 Masters",
     "professional_qualifications": "Postgraduate Diploma in Education M Ed.",
     "vote_20th_amendment": "Voted: In Favour",
-    "asset_declaration_years": ""
+    "asset_declaration_years": "",
+    "attendance_9th_present": 140,
+    "attendance_9th_absent": 19,
+    "attendance_8th_present": 179,
+    "attendance_8th_absent": 73
   },
   {
     "url_num": 205,
@@ -8129,7 +8981,11 @@
     "academic_highest_level": "6 Bachelors",
     "professional_qualifications": null,
     "vote_20th_amendment": "Voted Against",
-    "asset_declaration_years": ""
+    "asset_declaration_years": "",
+    "attendance_9th_present": 97,
+    "attendance_9th_absent": 62,
+    "attendance_8th_present": 153,
+    "attendance_8th_absent": 99
   },
   {
     "url_num": 3294,
@@ -8167,7 +9023,11 @@
     "academic_highest_level": "3 Upper Secondary (A. Levels)",
     "professional_qualifications": "In business more than two decades",
     "vote_20th_amendment": "Voted Against",
-    "asset_declaration_years": ""
+    "asset_declaration_years": "",
+    "attendance_9th_present": 144,
+    "attendance_9th_absent": 15,
+    "attendance_8th_present": null,
+    "attendance_8th_absent": null
   },
   {
     "url_num": 3287,
@@ -8205,7 +9065,11 @@
     "academic_highest_level": "0 Unknown",
     "professional_qualifications": null,
     "vote_20th_amendment": "Voted Against",
-    "asset_declaration_years": ""
+    "asset_declaration_years": "",
+    "attendance_9th_present": 91,
+    "attendance_9th_absent": 68,
+    "attendance_8th_present": 10,
+    "attendance_8th_absent": 4
   },
   {
     "url_num": 3352,
@@ -8243,7 +9107,11 @@
     "academic_highest_level": "7 Masters",
     "professional_qualifications": "L.L.B ( Sri Lanka ); Attorney - At -Law; Notary Public Commissioner of Oaths",
     "vote_20th_amendment": "Voted: In Favour",
-    "asset_declaration_years": ""
+    "asset_declaration_years": "",
+    "attendance_9th_present": 150,
+    "attendance_9th_absent": 9,
+    "attendance_8th_present": null,
+    "attendance_8th_absent": null
   },
   {
     "url_num": 3187,
@@ -8281,7 +9149,11 @@
     "academic_highest_level": "7 Masters",
     "professional_qualifications": "Sub Lt Technical Course ( India); Naval Staff College Degree (USA); National Defense Degree (New Delhi India); Diploma in Security Studies ( Hawaii USA); Senior Executive Course ( Washington DC USA); Senior Executive Course ( Czech Republic) Fast Attack Course ( Israel); Honorary Doctorate ( University of Kelaniya) First Squadron Commander Fast Attack Craft",
     "vote_20th_amendment": "Voted: In Favour",
-    "asset_declaration_years": ""
+    "asset_declaration_years": "",
+    "attendance_9th_present": 137,
+    "attendance_9th_absent": 22,
+    "attendance_8th_present": null,
+    "attendance_8th_absent": null
   },
   {
     "url_num": 3338,
@@ -8319,7 +9191,11 @@
     "academic_highest_level": "4 Post-Secondary",
     "professional_qualifications": "Special Courses - China, Cuba, Malaysia, Philippines, Spain, Vietnam",
     "vote_20th_amendment": "Voted: In Favour",
-    "asset_declaration_years": ""
+    "asset_declaration_years": "",
+    "attendance_9th_present": 156,
+    "attendance_9th_absent": 3,
+    "attendance_8th_present": null,
+    "attendance_8th_absent": null
   },
   {
     "url_num": 180,
@@ -8357,7 +9233,11 @@
     "academic_highest_level": "0 Unknown",
     "professional_qualifications": null,
     "vote_20th_amendment": "Voted: In Favour",
-    "asset_declaration_years": ""
+    "asset_declaration_years": "",
+    "attendance_9th_present": 58,
+    "attendance_9th_absent": 101,
+    "attendance_8th_present": 121,
+    "attendance_8th_absent": 131
   },
   {
     "url_num": 1244,
@@ -8395,7 +9275,11 @@
     "academic_highest_level": "6 Bachelors",
     "professional_qualifications": "Attorney-at-Law; Advocate",
     "vote_20th_amendment": "Did Not Vote: Not MP",
-    "asset_declaration_years": ""
+    "asset_declaration_years": "",
+    "attendance_9th_present": 61,
+    "attendance_9th_absent": 19,
+    "attendance_8th_present": 208,
+    "attendance_8th_absent": 44
   },
   {
     "url_num": 1521,
@@ -8433,7 +9317,11 @@
     "academic_highest_level": "8 Doctorate",
     "professional_qualifications": "President's Counsel",
     "vote_20th_amendment": "Voted: In Favour",
-    "asset_declaration_years": ""
+    "asset_declaration_years": "",
+    "attendance_9th_present": 50,
+    "attendance_9th_absent": 109,
+    "attendance_8th_present": 67,
+    "attendance_8th_absent": 185
   },
   {
     "url_num": 3254,
@@ -8471,7 +9359,11 @@
     "academic_highest_level": "7 Masters",
     "professional_qualifications": null,
     "vote_20th_amendment": "Voted: In Favour",
-    "asset_declaration_years": "2018/19"
+    "asset_declaration_years": "2018/19",
+    "attendance_9th_present": 84,
+    "attendance_9th_absent": 75,
+    "attendance_8th_present": 143,
+    "attendance_8th_absent": 109
   },
   {
     "url_num": 3347,
@@ -8509,7 +9401,11 @@
     "academic_highest_level": "3 Upper Secondary (A. Levels)",
     "professional_qualifications": "diploma in naval engineering",
     "vote_20th_amendment": "Voted: In Favour",
-    "asset_declaration_years": ""
+    "asset_declaration_years": "",
+    "attendance_9th_present": 150,
+    "attendance_9th_absent": 9,
+    "attendance_8th_present": null,
+    "attendance_8th_absent": null
   },
   {
     "url_num": 3438,
@@ -8547,6 +9443,10 @@
     "academic_highest_level": "0 Unknown",
     "professional_qualifications": null,
     "vote_20th_amendment": "Voted: In Favour",
-    "asset_declaration_years": ""
+    "asset_declaration_years": "",
+    "attendance_9th_present": 158,
+    "attendance_9th_absent": 1,
+    "attendance_8th_present": null,
+    "attendance_8th_absent": null
   }
 ]
