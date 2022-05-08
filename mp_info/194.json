@@ -15,5 +15,9 @@
   "email": "senevirathne_wdj@parliament.lk",
   "source_url": "https://www.parliament.lk/en/members-of-parliament/directory-of-members/viewMember/194",
   "academic_qualifications": "G.C.E. (A/L), London (A/L) Attorney-at-Law",
-  "professional_qualifications": "Advocate ot the Supreme Court of Sri Lanka"
+  "professional_qualifications": "Advocate ot the Supreme Court of Sri Lanka",
+  "attendance_9th_present": 99,
+  "attendance_9th_absent": 60,
+  "attendance_8th_present": 122,
+  "attendance_8th_absent": 130
 }
