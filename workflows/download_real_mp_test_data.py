@@ -32,6 +32,7 @@ def download(driver, url_num):
     filex.write(html_file, html)
     n_html_k = len(html) / 1000
     print(f'Wrote {n_html_k}KB to {html_file}')
+    os.system(f'open -a firefox "{url}"')
 
 
 def main():
