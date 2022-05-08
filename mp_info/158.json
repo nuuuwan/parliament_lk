@@ -15,5 +15,9 @@
   "email": "yapa_a@parliament.lk",
   "source_url": "https://www.parliament.lk/en/members-of-parliament/directory-of-members/viewMember/158",
   "academic_qualifications": "Sri Lanka Law College",
-  "professional_qualifications": null
+  "professional_qualifications": null,
+  "attendance_9th_present": 123,
+  "attendance_9th_absent": 36,
+  "attendance_8th_present": 156,
+  "attendance_8th_absent": 96
 }

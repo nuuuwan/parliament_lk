@@ -15,5 +15,9 @@
   "email": "anupa_p@parliament.lk",
   "source_url": "https://www.parliament.lk/en/members-of-parliament/directory-of-members/viewMember/3350",
   "academic_qualifications": "B.Sc. (Chemistry)",
-  "professional_qualifications": "Environmental Specialist"
+  "professional_qualifications": "Environmental Specialist",
+  "attendance_9th_present": 137,
+  "attendance_9th_absent": 22,
+  "attendance_8th_present": null,
+  "attendance_8th_absent": null
 }
