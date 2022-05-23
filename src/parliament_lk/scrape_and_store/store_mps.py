@@ -12,7 +12,7 @@ DIR_GIT_DATA = '/tmp/parliament_lk.data'
 DIR_MP_INFO = os.path.join(DIR_GIT_DATA, 'mp_info')
 DIR_MP_IMAGES = os.path.join(DIR_GIT_DATA, 'mp_images')
 GIT_UPLOAD_FREQUENCY = 10
-MAX_THREADS = 3
+MAX_THREADS = 5
 
 MP_LIST_JSON_FILE = os.path.join(DIR_GIT_DATA, 'mp_list.json')
 MP_LIST_FILE = os.path.join(DIR_GIT_DATA, 'mp_list.tsv')
