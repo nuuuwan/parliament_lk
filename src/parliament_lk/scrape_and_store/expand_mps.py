@@ -15,6 +15,9 @@ from parliament_lk.scrape_and_store.expand_mps_helpers.regions import \
 from parliament_lk.scrape_and_store.expand_mps_helpers.validate import validate
 from parliament_lk.scrape_and_store.expand_mps_helpers.voting import \
     parse_vote_20th_amendment
+from parliament_lk.scrape_and_store.expand_mps_helpers.cabinets import \
+    parse_cabinet_201911, parse_cabinet_202008, parse_cabinet_202204
+
 
 EXPANDED_MP_LIST_JSON_FILE = os.path.join(
     store_mps.DIR_GIT_DATA, 'expanded_mp_list.json',
@@ -50,14 +53,13 @@ def parse_date_of_birth(date_of_birth, url_num):
     try:
         date_of_birth_ut = timex.parse_time(date_of_birth, '%d-%m-%Y')
         date_of_birth_norm = timex.format_time(date_of_birth_ut, '%Y-%m-%d')
-    except:
+    except BaseException:
         log.error(
-            f"Could not parsed date_of_birth for {url_num}: " \
+            f"Could not parsed date_of_birth for {url_num}: "
             + str(date_of_birth),
         )
 
     return date_of_birth, date_of_birth_ut, date_of_birth_norm
-
 
 
 def parse_religion_cleaned(religion):
@@ -136,6 +138,10 @@ def expand_single_mp(mp):
 
     asset_declaration_years = parse_asset_declaration_years(name_cleaned)
 
+    cabinet_201911 = parse_cabinet_201911(name_cleaned)
+    cabinet_202008 = parse_cabinet_202008(name_cleaned)
+    cabinet_202204 = parse_cabinet_202204(name_cleaned)
+
     return dict(
         url_num=mp['url_num'],
         id=mp['url_num'],
@@ -189,11 +195,14 @@ def expand_single_mp(mp):
         vote_20th_amendment=vote_20th_amendment,
         asset_declaration_years=asset_declaration_years,
 
-        attendance_9th_present=mp['attendance_9th_present'],
-        attendance_9th_absent=mp['attendance_9th_absent'],
         attendance_8th_present=mp['attendance_8th_present'],
         attendance_8th_absent=mp['attendance_8th_absent'],
-
+        attendance_9th_present=mp['attendance_9th_present'],
+        attendance_9th_absent=mp['attendance_9th_absent'],
+        
+        cabinet_201911=cabinet_201911,
+        cabinet_202008=cabinet_202008,
+        cabinet_202204=cabinet_202204,
     )
 
 
@@ -205,6 +214,8 @@ def expand_mps(prod_mode):
     for mp in mp_list:
         expanded_mp = expand_single_mp(mp)
         expanded_mp_list.append(expanded_mp)
+        name_cleaned = expanded_mp['name_cleaned']
+        print(f'"{name_cleaned}": "Unknown",')
 
     if not prod_mode:
         validate(expanded_mp_list)
