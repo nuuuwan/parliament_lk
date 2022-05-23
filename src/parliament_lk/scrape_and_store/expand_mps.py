@@ -6,6 +6,8 @@ from parliament_lk._utils import log
 from parliament_lk.scrape_and_store import store_mps
 from parliament_lk.scrape_and_store.expand_mps_helpers.academics import \
     parse_academic_highest_level
+from parliament_lk.scrape_and_store.expand_mps_helpers.cabinets import (
+    parse_cabinet_201911, parse_cabinet_202008, parse_cabinet_202204, parse_cabinet_202205)
 from parliament_lk.scrape_and_store.expand_mps_helpers.corruption import \
     parse_asset_declaration_years
 from parliament_lk.scrape_and_store.expand_mps_helpers.name import (
@@ -15,9 +17,6 @@ from parliament_lk.scrape_and_store.expand_mps_helpers.regions import \
 from parliament_lk.scrape_and_store.expand_mps_helpers.validate import validate
 from parliament_lk.scrape_and_store.expand_mps_helpers.voting import \
     parse_vote_20th_amendment
-from parliament_lk.scrape_and_store.expand_mps_helpers.cabinets import \
-    parse_cabinet_201911, parse_cabinet_202008, parse_cabinet_202204
-
 
 EXPANDED_MP_LIST_JSON_FILE = os.path.join(
     store_mps.DIR_GIT_DATA, 'expanded_mp_list.json',
@@ -141,6 +140,7 @@ def expand_single_mp(mp):
     cabinet_201911 = parse_cabinet_201911(name_cleaned)
     cabinet_202008 = parse_cabinet_202008(name_cleaned)
     cabinet_202204 = parse_cabinet_202204(name_cleaned)
+    cabinet_202205 = parse_cabinet_202205(name_cleaned)
 
     return dict(
         url_num=mp['url_num'],
@@ -199,10 +199,11 @@ def expand_single_mp(mp):
         attendance_8th_absent=mp['attendance_8th_absent'],
         attendance_9th_present=mp['attendance_9th_present'],
         attendance_9th_absent=mp['attendance_9th_absent'],
-        
+
         cabinet_201911=cabinet_201911,
         cabinet_202008=cabinet_202008,
         cabinet_202204=cabinet_202204,
+        cabinet_202205=cabinet_202205,
     )
 
 
