@@ -11,8 +11,8 @@ def validate(expanded_mp_list):
 
     subset_list = sorted(list(map(
         lambda mp: [
-            mp['civil_status_cleaned'],
-            str(mp['civil_status']),
+            mp['cabinet_202204'],
+            str(mp['cabinet_202204']),
         ],
         expanded_mp_list,
     )), key=lambda x: str(x[0]))
