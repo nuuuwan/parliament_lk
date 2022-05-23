@@ -39,7 +39,7 @@ class TestCase(unittest.TestCase):
                 academic_qualifications='LLB.;',
                 professional_qualifications='Attorney-at-Law; Advocate',
 
-                attendance_9th_present=61,
+                attendance_9th_present=66,
                 attendance_9th_absent=19,
                 attendance_8th_present=208,
                 attendance_8th_absent=44,
@@ -71,8 +71,8 @@ class TestCase(unittest.TestCase):
                 + ' G.C.E. (A/L); G.C.E. (O/L)',
                 professional_qualifications='Attorney At Law',
 
-                attendance_9th_present=97,
-                attendance_9th_absent=62,
+                attendance_9th_present=101,
+                attendance_9th_absent=63,
                 attendance_8th_present=144,
                 attendance_8th_absent=108,
             )],
@@ -98,44 +98,13 @@ class TestCase(unittest.TestCase):
                 + '/en/members-of-parliament'
                 + '/directory-of-members/viewMember/3179',
 
-                academic_qualifications='LLB, Attorney -at- Law',
-                professional_qualifications='Attorney at Law',
+                academic_qualifications='LLB, Attorney-at-Law',
+                professional_qualifications='Attorney-at-Law',
 
-                attendance_9th_present=106,
+                attendance_9th_present=111,
                 attendance_9th_absent=53,
                 attendance_8th_present=96,
                 attendance_8th_absent=156,
-            )],
-            [3306, dict(
-                url_num=3306,
-                name='Hon. Amarakeerthi Athukorala, M.P.',
-                image_url='https://www.parliament.lk'
-                + '/uploads/images/members/profile_images/thumbs/3306.jpg',
-                party='Sri Lanka Podujana Peramuna (SLPP)',
-                electoral_district='Polonnaruwa',
-
-                date_of_birth='23-12-1964',
-                civil_status='Married',
-                religion='Buddhism',
-                profession=None,
-
-                phone='0773929655',
-                address='D S Senanayake Road,New Town,Polonnaruwa.',
-                phone_sitting='0272223282',
-                address_sitting=None,
-                email='amarakeerthi_a@parliament.lk',
-                source_url='https://www.parliament.lk'
-                + '/en/members-of-parliament'
-                + '/directory-of-members/viewMember/3306',
-
-                academic_qualifications='Open University Degree',
-                professional_qualifications='2008 To 2017 North Central'
-                + ' province Council Member',
-
-                attendance_9th_present=147,
-                attendance_9th_absent=12,
-                attendance_8th_present=None,
-                attendance_8th_absent=None,
             )],
             [3438, dict(
                 url_num=3438,
@@ -162,7 +131,7 @@ class TestCase(unittest.TestCase):
                 academic_qualifications=None,
                 professional_qualifications=None,
 
-                attendance_9th_present=158,
+                attendance_9th_present=163,
                 attendance_9th_absent=1,
                 attendance_8th_present=None,
                 attendance_8th_absent=None,
@@ -181,7 +150,7 @@ class TestCase(unittest.TestCase):
                 profession='University Lecturer',
 
                 phone=None,
-                address='No. 33B" Janatha Mawatha,Mirihana,Kotte.',
+                address='No. 33B, Janatha Mawatha,Mirihana,Kotte.',
                 phone_sitting='0112829722',
                 address_sitting='No. 464/20, Pannipitiya Road,'
                 + 'Pelawatte,Battaramulla.',
@@ -195,8 +164,8 @@ class TestCase(unittest.TestCase):
                 + ' PHD, Social Anthropology',
                 professional_qualifications='University Lecturer',
 
-                attendance_9th_present=124,
-                attendance_9th_absent=35,
+                attendance_9th_present=127,
+                attendance_9th_absent=37,
                 attendance_8th_present=None,
                 attendance_8th_absent=None,
             )],
