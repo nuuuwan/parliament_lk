@@ -40,14 +40,24 @@ def parse_date_of_birth(date_of_birth, url_num):
             1575: "27-04-1951",  # Basil Rohana Rajapaksa
             3451: "01-10-1971",  # Jagath Kumara Sumithraarachchi
             3364: "07-10-1974",  # Lalith Varna Kumara
+            3452: "01-01-1980",  # Jagath Samarawickrama
         }.get(url_num)
 
     if not date_of_birth:
         log.error(url_num)
 
-    date_of_birth_ut = timex.parse_time(date_of_birth, '%d-%m-%Y')
-    date_of_birth_norm = timex.format_time(date_of_birth_ut, '%Y-%m-%d')
+    date_of_birth_ut, date_of_birth_norm = None, None
+    try:
+        date_of_birth_ut = timex.parse_time(date_of_birth, '%d-%m-%Y')
+        date_of_birth_norm = timex.format_time(date_of_birth_ut, '%Y-%m-%d')
+    except:
+        log.error(
+            f"Could not parsed date_of_birth for {url_num}: " \
+            + str(date_of_birth),
+        )
+
     return date_of_birth, date_of_birth_ut, date_of_birth_norm
+
 
 
 def parse_religion_cleaned(religion):
@@ -191,7 +201,10 @@ def expand_mps(prod_mode):
     if prod_mode:
         git = store_mps.git_download()
     mp_list = jsonx.read(store_mps.MP_LIST_JSON_FILE)
-    expanded_mp_list = list(map(expand_single_mp, mp_list))
+    expanded_mp_list = []
+    for mp in mp_list:
+        expanded_mp = expand_single_mp(mp)
+        expanded_mp_list.append(expanded_mp)
 
     if not prod_mode:
         validate(expanded_mp_list)
