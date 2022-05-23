@@ -69,7 +69,6 @@ def build_dictionary():
 
             word_target = translate(word_source_use)
 
-
             if word_source.isalnum():
                 word_source_str = word_source
             else:
