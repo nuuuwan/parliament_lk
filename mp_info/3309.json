@@ -9,15 +9,15 @@
   "religion": null,
   "profession": null,
   "phone": null,
-  "address": "No. 13,Gangabada Road,Badulla.",
+  "address": null,
   "phone_sitting": "0773435836",
   "address_sitting": null,
   "email": "chamara_sampath@parliament.lk",
   "source_url": "https://www.parliament.lk/en/members-of-parliament/directory-of-members/viewMember/3309",
   "academic_qualifications": null,
   "professional_qualifications": null,
-  "attendance_9th_present": 140,
-  "attendance_9th_absent": 24,
+  "attendance_9th_present": 173,
+  "attendance_9th_absent": 30,
   "attendance_8th_present": null,
   "attendance_8th_absent": null
 }

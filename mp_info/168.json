@@ -9,15 +9,15 @@
   "religion": "Buddhism",
   "profession": "Landed Proprietor",
   "phone": "0472257030",
-  "address": "B 90,Gregory's Road,Colombo 07.",
+  "address": null,
   "phone_sitting": "0112871324",
   "address_sitting": null,
   "email": "rajapaksa_c@parliament.lk",
   "source_url": "https://www.parliament.lk/en/members-of-parliament/directory-of-members/viewMember/168",
   "academic_qualifications": "G.C.E. (A/L)",
   "professional_qualifications": null,
-  "attendance_9th_present": 121,
-  "attendance_9th_absent": 43,
+  "attendance_9th_present": 148,
+  "attendance_9th_absent": 55,
   "attendance_8th_present": 167,
   "attendance_8th_absent": 85
 }
