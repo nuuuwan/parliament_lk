@@ -9,15 +9,15 @@
   "religion": "Roman Catholicism",
   "profession": "Engineer",
   "phone": "0112587494",
-  "address": "\"Preethika\"Wennappuwa.",
+  "address": null,
   "phone_sitting": "0312255213",
   "address_sitting": null,
   "email": "niroshan_p@parliament.lk",
   "source_url": "https://www.parliament.lk/en/members-of-parliament/directory-of-members/viewMember/3152",
   "academic_qualifications": "M.Sc. Electronic Engineering; B.Sc. Electronic Engineering",
   "professional_qualifications": null,
-  "attendance_9th_present": 151,
-  "attendance_9th_absent": 13,
+  "attendance_9th_present": 186,
+  "attendance_9th_absent": 17,
   "attendance_8th_present": 188,
   "attendance_8th_absent": 64
 }

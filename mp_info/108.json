@@ -1,6 +1,6 @@
 {
   "url_num": 108,
-  "name": "Hon. Nimal Siripala de Silva, M.P.",
+  "name": "Hon. Nimal Siripala de Silva, Attorney at Law, M.P.",
   "image_url": "https://www.parliament.lk/uploads/images/members/profile_images/thumbs/108.jpg",
   "party": "Sri Lanka Podujana Peramuna (SLPP)",
   "electoral_district": "Badulla",
@@ -9,15 +9,15 @@
   "religion": "Other",
   "profession": "Attorney-at-Law",
   "phone": "0552229892",
-  "address": "No. 24/18,R.M. Gunawardena Mawatha,Badulla.",
+  "address": null,
   "phone_sitting": "0112695600",
-  "address_sitting": "No. 93/20,Elvitigala Mawatha,Colombo 08.",
+  "address_sitting": null,
   "email": "nimalsiripala@parliament.lk",
   "source_url": "https://www.parliament.lk/en/members-of-parliament/directory-of-members/viewMember/108",
   "academic_qualifications": "Attorney-at-Law; Solicitor of the United Kingdom; G.C.E. (A/L); G.C.E. (O/L)",
   "professional_qualifications": null,
-  "attendance_9th_present": 154,
-  "attendance_9th_absent": 10,
+  "attendance_9th_present": 188,
+  "attendance_9th_absent": 15,
   "attendance_8th_present": 187,
   "attendance_8th_absent": 65
 }

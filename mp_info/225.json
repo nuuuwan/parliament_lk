@@ -9,15 +9,15 @@
   "religion": "Buddhism",
   "profession": "Businessman",
   "phone": "0452279173",
-  "address": "\u201cGampathi Nivasa\u201d,Halkandaliya,Nivithigala.",
+  "address": null,
   "phone_sitting": "0452279173",
   "address_sitting": null,
   "email": "jayasekara_p@parliament.lk",
   "source_url": "https://www.parliament.lk/en/members-of-parliament/directory-of-members/viewMember/225",
   "academic_qualifications": "upto G.C.E. A/L; G.C.E. O/L",
   "professional_qualifications": null,
-  "attendance_9th_present": 95,
-  "attendance_9th_absent": 69,
+  "attendance_9th_present": 109,
+  "attendance_9th_absent": 94,
   "attendance_8th_present": 39,
   "attendance_8th_absent": 213
 }
