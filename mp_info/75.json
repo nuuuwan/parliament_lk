@@ -1,6 +1,6 @@
 {
   "url_num": 75,
-  "name": "Hon. Lakshman Kiriella, M.P.",
+  "name": "Hon. Lakshman Kiriella, Attorney at Law, M.P.",
   "image_url": "https://www.parliament.lk/uploads/images/members/profile_images/thumbs/75.jpg",
   "party": "Samagi Jana Balawegaya (SJB)",
   "electoral_district": "Mahanuwara",
@@ -9,15 +9,15 @@
   "religion": "Buddhism",
   "profession": "Attorney-at-Law",
   "phone": "0812203008",
-  "address": "No.121/1, Pahalawela Road,Palawatta,Battaramulla.",
+  "address": null,
   "phone_sitting": "0813848600",
   "address_sitting": null,
   "email": "kiriella_l@parliament.lk",
   "source_url": "https://www.parliament.lk/en/members-of-parliament/directory-of-members/viewMember/75",
   "academic_qualifications": null,
   "professional_qualifications": "Attorney-at-Law",
-  "attendance_9th_present": 162,
-  "attendance_9th_absent": 2,
+  "attendance_9th_present": 200,
+  "attendance_9th_absent": 3,
   "attendance_8th_present": 233,
   "attendance_8th_absent": 19
 }

@@ -9,15 +9,15 @@
   "religion": "Buddhism",
   "profession": "Businessman",
   "phone": "0112348757",
-  "address": "No. 157/10A, Kottawa Road,Honnanthara,Piliyandala.",
+  "address": null,
   "phone_sitting": "0112700277",
   "address_sitting": null,
   "email": "lokuge_g@parliament.lk",
   "source_url": "https://www.parliament.lk/en/members-of-parliament/directory-of-members/viewMember/172",
   "academic_qualifications": "G.C.E. (A/L); G.C.E. (O/L)",
   "professional_qualifications": null,
-  "attendance_9th_present": 130,
-  "attendance_9th_absent": 34,
+  "attendance_9th_present": 165,
+  "attendance_9th_absent": 38,
   "attendance_8th_present": 197,
   "attendance_8th_absent": 55
 }
