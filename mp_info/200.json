@@ -1,6 +1,6 @@
 {
   "url_num": 200,
-  "name": "Hon. Rauff Hakeem, M.P.",
+  "name": "Hon. Rauff Hakeem, Attorney at Law, M.P.",
   "image_url": "https://www.parliament.lk/uploads/images/members/profile_images/thumbs/200.jpg",
   "party": "Samagi Jana Balawegaya (SJB)",
   "electoral_district": "Mahanuwara",
@@ -9,15 +9,15 @@
   "religion": "Islam",
   "profession": "Attorney-at-Law",
   "phone": null,
-  "address": "51,Vauxhall Lane,Colombo 02.",
+  "address": null,
   "phone_sitting": "0112436752",
-  "address_sitting": "263,Galle Road,Colombo 03.",
+  "address_sitting": null,
   "email": "hakeem_r@parliament.lk",
   "source_url": "https://www.parliament.lk/en/members-of-parliament/directory-of-members/viewMember/200",
   "academic_qualifications": "LLM, University of Colombo",
   "professional_qualifications": "Attorney-at-Law",
-  "attendance_9th_present": 141,
-  "attendance_9th_absent": 23,
+  "attendance_9th_present": 175,
+  "attendance_9th_absent": 28,
   "attendance_8th_present": 206,
   "attendance_8th_absent": 46
 }
