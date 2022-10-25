@@ -9,15 +9,15 @@
   "religion": "Buddhism",
   "profession": "Engineer",
   "phone": "0112866125",
-  "address": "No. 1/88,Jayanthipura Road,Battaramulla.",
+  "address": null,
   "phone_sitting": "0112866125",
   "address_sitting": null,
   "email": "ranawaka_p@parliament.lk",
   "source_url": "https://www.parliament.lk/en/members-of-parliament/directory-of-members/viewMember/3076",
   "academic_qualifications": "B.Sc. (Eng.) - Electrical Engineering; G.C.E. (A/L) (Maths Stream); G.C.E. (O/L)",
   "professional_qualifications": "Chartered Engineer",
-  "attendance_9th_present": 98,
-  "attendance_9th_absent": 66,
+  "attendance_9th_present": 129,
+  "attendance_9th_absent": 74,
   "attendance_8th_present": 109,
   "attendance_8th_absent": 143
 }

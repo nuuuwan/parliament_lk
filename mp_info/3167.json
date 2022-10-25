@@ -9,15 +9,15 @@
   "religion": "Buddhism",
   "profession": "Medical Practitioner",
   "phone": "0777743187",
-  "address": "\"Silverine\",Kithulampitiya Road,Galle.",
+  "address": null,
   "phone_sitting": "0112773811",
   "address_sitting": null,
   "email": "pathirana_r@parliament.lk",
   "source_url": "https://www.parliament.lk/en/members-of-parliament/directory-of-members/viewMember/3167",
   "academic_qualifications": "M.B.B.S.; M.B.A",
   "professional_qualifications": null,
-  "attendance_9th_present": 122,
-  "attendance_9th_absent": 42,
+  "attendance_9th_present": 154,
+  "attendance_9th_absent": 49,
   "attendance_8th_present": 165,
   "attendance_8th_absent": 87
 }
