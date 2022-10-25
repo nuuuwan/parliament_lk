@@ -16,8 +16,8 @@ from parliament_lk.scrape_and_store.expand_mps_helpers.name import (
 from parliament_lk.scrape_and_store.expand_mps_helpers.regions import \
     parse_ed_info
 from parliament_lk.scrape_and_store.expand_mps_helpers.validate import validate
-from parliament_lk.scrape_and_store.expand_mps_helpers.voting import \
-    parse_vote_20th_amendment
+from parliament_lk.scrape_and_store.expand_mps_helpers.voting import (
+    parse_vote_20th_amendment, parse_vote_22nd_amendment)
 
 EXPANDED_MP_LIST_JSON_FILE = os.path.join(
     store_mps.DIR_GIT_DATA,
@@ -139,6 +139,11 @@ def expand_single_mp(mp):
         name_cleaned,
     )
 
+    vote_22nd_amendment = parse_vote_22nd_amendment(
+        party_short,
+        name_cleaned,
+    )
+
     asset_declaration_years = parse_asset_declaration_years(name_cleaned)
 
     cabinet_201911 = parse_cabinet_201911(name_cleaned)
@@ -182,6 +187,7 @@ def expand_single_mp(mp):
         academic_highest_level=academic_highest_level,
         professional_qualifications=mp['professional_qualifications'],
         vote_20th_amendment=vote_20th_amendment,
+        vote_22nd_amendment=vote_22nd_amendment,
         asset_declaration_years=asset_declaration_years,
         attendance_8th_present=mp['attendance_8th_present'],
         attendance_8th_absent=mp['attendance_8th_absent'],
@@ -202,8 +208,7 @@ def expand_mps(prod_mode):
     for mp in mp_list:
         expanded_mp = expand_single_mp(mp)
         expanded_mp_list.append(expanded_mp)
-        name_cleaned = expanded_mp['name_cleaned']
-        print(f'"{name_cleaned}": "Unknown",')
+        expanded_mp['name_cleaned']
 
     if not prod_mode:
         validate(expanded_mp_list)
