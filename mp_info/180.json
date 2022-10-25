@@ -9,15 +9,15 @@
   "religion": "Buddhism",
   "profession": "Politician",
   "phone": "0112890670",
-  "address": "No. 342/1/4, E. W. Perera Mawatha,Kotte Road,Pitakotte.",
+  "address": null,
   "phone_sitting": "0112435248",
   "address_sitting": null,
   "email": "weerawansha_w@parliament.lk",
   "source_url": "https://www.parliament.lk/en/members-of-parliament/directory-of-members/viewMember/180",
   "academic_qualifications": null,
   "professional_qualifications": null,
-  "attendance_9th_present": 60,
-  "attendance_9th_absent": 104,
+  "attendance_9th_present": 80,
+  "attendance_9th_absent": 123,
   "attendance_8th_present": 121,
   "attendance_8th_absent": 131
 }
