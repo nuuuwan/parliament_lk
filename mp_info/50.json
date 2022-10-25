@@ -9,15 +9,15 @@
   "religion": "Islam",
   "profession": "Bank Officer",
   "phone": "0812213305",
-  "address": "No. 16/2 B, Fowziya Garden,Mawilmada Road,Kandy.",
+  "address": null,
   "phone_sitting": "0812213200",
   "address_sitting": null,
   "email": "haleem_a@parliament.lk",
   "source_url": "https://www.parliament.lk/en/members-of-parliament/directory-of-members/viewMember/50",
   "academic_qualifications": "Diploma in Banking",
   "professional_qualifications": "Banker- worked for Dubai Bank Ltd, Dubai",
-  "attendance_9th_present": 98,
-  "attendance_9th_absent": 66,
+  "attendance_9th_present": 115,
+  "attendance_9th_absent": 88,
   "attendance_8th_present": 152,
   "attendance_8th_absent": 100
 }
