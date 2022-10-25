@@ -9,15 +9,15 @@
   "religion": "Buddhism",
   "profession": "Businessman",
   "phone": "0412222798",
-  "address": "6, Middle Road,Fort,Matara.",
+  "address": null,
   "phone_sitting": "0412222798",
   "address_sitting": null,
   "email": "kanchana_w@parliament.lk",
   "source_url": "https://www.parliament.lk/en/members-of-parliament/directory-of-members/viewMember/3239",
   "academic_qualifications": "B. Com. (Economics); Diploma in Architecture; Diploma in Business & Commerce",
   "professional_qualifications": null,
-  "attendance_9th_present": 138,
-  "attendance_9th_absent": 26,
+  "attendance_9th_present": 173,
+  "attendance_9th_absent": 30,
   "attendance_8th_present": 174,
   "attendance_8th_absent": 78
 }

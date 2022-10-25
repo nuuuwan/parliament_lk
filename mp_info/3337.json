@@ -9,15 +9,15 @@
   "religion": "Buddhism",
   "profession": null,
   "phone": null,
-  "address": "No. 27,Pediris Road,Colombo 03.",
+  "address": null,
   "phone_sitting": "0412283444",
   "address_sitting": null,
   "email": "karunadasa_k@parliament.lk",
   "source_url": "https://www.parliament.lk/en/members-of-parliament/directory-of-members/viewMember/3337",
   "academic_qualifications": "N.C.G. Exam (Grade 9)",
   "professional_qualifications": "Garment Manufacturing Business for 35 years",
-  "attendance_9th_present": 151,
-  "attendance_9th_absent": 13,
+  "attendance_9th_present": 178,
+  "attendance_9th_absent": 25,
   "attendance_8th_present": null,
   "attendance_8th_absent": null
 }

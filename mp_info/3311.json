@@ -9,15 +9,15 @@
   "religion": null,
   "profession": null,
   "phone": null,
-  "address": "No 15,Parakrama Mawatha,Kanthale.",
+  "address": null,
   "phone_sitting": null,
   "address_sitting": null,
   "email": "kapila_a@parliament.lk",
   "source_url": "https://www.parliament.lk/en/members-of-parliament/directory-of-members/viewMember/3311",
   "academic_qualifications": "GCE advanced Level",
   "professional_qualifications": null,
-  "attendance_9th_present": 109,
-  "attendance_9th_absent": 55,
+  "attendance_9th_present": 133,
+  "attendance_9th_absent": 70,
   "attendance_8th_present": null,
   "attendance_8th_absent": null
 }
