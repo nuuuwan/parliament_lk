@@ -9,15 +9,15 @@
   "religion": "Buddhism",
   "profession": "Economist",
   "phone": "0112597769",
-  "address": "No. 29 A, 1st Lane,Narahenpita Road,Nawala.",
+  "address": null,
   "phone_sitting": "0112806769",
   "address_sitting": null,
   "email": "desilva_h@parliament.lk",
   "source_url": "https://www.parliament.lk/en/members-of-parliament/directory-of-members/viewMember/3201",
   "academic_qualifications": "Ph.D; MA; B. Sc.",
   "professional_qualifications": null,
-  "attendance_9th_present": 152,
-  "attendance_9th_absent": 12,
+  "attendance_9th_present": 188,
+  "attendance_9th_absent": 15,
   "attendance_8th_present": 196,
   "attendance_8th_absent": 56
 }

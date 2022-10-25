@@ -9,15 +9,15 @@
   "religion": "Buddhism",
   "profession": "Businessman",
   "phone": "0112931627",
-  "address": "No. 276/4,Negombo Road,Wattala.",
+  "address": null,
   "phone_sitting": "0552224012",
   "address_sitting": null,
   "email": "fernando_h@parliament.lk",
   "source_url": "https://www.parliament.lk/en/members-of-parliament/directory-of-members/viewMember/3164",
   "academic_qualifications": "B.A. (Political Science/ Sociology); G.C.E. (A/L)",
   "professional_qualifications": null,
-  "attendance_9th_present": 79,
-  "attendance_9th_absent": 85,
+  "attendance_9th_present": 94,
+  "attendance_9th_absent": 109,
   "attendance_8th_present": 86,
   "attendance_8th_absent": 166
 }
