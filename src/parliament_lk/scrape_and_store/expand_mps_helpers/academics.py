@@ -1,6 +1,6 @@
 def parse_academic_highest_level(
-        academic_qualifications,
-        professional_qualifications):
+    academic_qualifications, professional_qualifications
+):
     if not academic_qualifications and not professional_qualifications:
         return '0 Unknown'
     s = str(professional_qualifications) + ' ' + str(academic_qualifications)

@@ -66,10 +66,12 @@ class MP:
     def __str__(self):
         return f'[MP-{self.url_num}] {self.name_clean} ({self.party_short})'
 
-    @ staticmethod
+    @staticmethod
     def loadMPs():
         mp_info_list = www.read_tsv(URL_MP_IDX)
-        return list(map(
-            lambda mp_info: MP(mp_info),
-            mp_info_list,
-        ))
+        return list(
+            map(
+                lambda mp_info: MP(mp_info),
+                mp_info_list,
+            )
+        )

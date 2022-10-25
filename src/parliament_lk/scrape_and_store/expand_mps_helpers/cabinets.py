@@ -5,9 +5,7 @@ from utils import jsonx
 NA = "NA"
 
 DIR_CABINETS = os.path.join(
-    "src/parliament_lk",
-    "scrape_and_store/expand_mps_helpers",
-    "cabinets"
+    "src/parliament_lk", "scrape_and_store/expand_mps_helpers", "cabinets"
 )
 
 

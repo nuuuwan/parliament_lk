@@ -1,4 +1,3 @@
-
 import unittest
 from unittest.mock import MagicMock
 
@@ -19,10 +18,7 @@ class TestCase(unittest.TestCase):
         www.read = MagicMock(return_value=TEST_HTML)
 
     def test_get_url(self):
-        self.assertEqual(
-            TEST_URL,
-            scrape_mp.get_url(TEST_URL_NUM)
-        )
+        self.assertEqual(TEST_URL, scrape_mp.get_url(TEST_URL_NUM))
 
     def test_clean(self):
         for [s, expected_output] in [
@@ -105,24 +101,20 @@ class TestCase(unittest.TestCase):
                 image_url='profile.png',
                 party='United National Party (UNP)',
                 electoral_district='Colombo',
-
                 date_of_birth='1234-05-06',
                 civil_status='Married',
                 religion='Catholic',
                 profession='Physicist',
-
                 phone='0123456789',
                 address='Princeton, NJ',
                 phone_sitting='0149779419',
                 address_sitting='123 Home Street Princeton, NJ',
                 email='albert@einstein.org',
                 source_url='www.albert.com',
-
                 academic_qualifications=''
                 + 'Federal polytechnic school in Zurich;'
                 + ' University of Zurich (PhD);',
                 professional_qualifications='General relativity; Can sing;',
-
                 attendance_9th_present=56,
                 attendance_9th_absent=44,
                 attendance_8th_present=11,

@@ -1,4 +1,3 @@
-
 import unittest
 from unittest.mock import MagicMock
 
@@ -15,9 +14,10 @@ class TestCase(unittest.TestCase):
 
     def test_get_url(self):
         self.assertEqual(
-            'https://www.parliament.lk' +
-            '/en/members-of-parliament/directory-of-members/?cletter=A',
-            scrape_mp_idx.get_url('A'))
+            'https://www.parliament.lk'
+            + '/en/members-of-parliament/directory-of-members/?cletter=A',
+            scrape_mp_idx.get_url('A'),
+        )
 
     def test_scrape_html(self):
         html = scrape_mp_idx.scrape_html('A')

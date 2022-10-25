@@ -26,7 +26,7 @@ def main():
         for y in range(height):
             (r, g, b, a) = pixels[x, y]
 
-            if ((r + g + b) / 3 < 224):
+            if (r + g + b) / 3 < 224:
                 (r, g, b) = random.choice(FLAG_COLORS)
             else:
                 (r, g, b, a) = (255, 255, 255, 0)
@@ -40,10 +40,9 @@ def main():
         ['logo192.png', 192],
         ['logo512.png', 512],
     ]:
-        im.resize(
-            (dim, dim)).save(
-            os.path.join(
-                DIR_RECOLORED_IMAGES, file_only))
+        im.resize((dim, dim)).save(
+            os.path.join(DIR_RECOLORED_IMAGES, file_only)
+        )
 
 
 if __name__ == '__main__':

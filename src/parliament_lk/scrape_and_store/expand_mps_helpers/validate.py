@@ -9,13 +9,18 @@ def validate(expanded_mp_list):
         if 'Tharaka' in mp['name_cleaned']:
             print(json.dumps(mp, indent=2))
 
-    subset_list = sorted(list(map(
-        lambda mp: [
-            mp['cabinet_202204'],
-            str(mp['cabinet_202204']),
-        ],
-        expanded_mp_list,
-    )), key=lambda x: str(x[0]))
+    subset_list = sorted(
+        list(
+            map(
+                lambda mp: [
+                    mp['cabinet_202204'],
+                    str(mp['cabinet_202204']),
+                ],
+                expanded_mp_list,
+            )
+        ),
+        key=lambda x: str(x[0]),
+    )
 
     x0_to_list = {}
     for x in subset_list:

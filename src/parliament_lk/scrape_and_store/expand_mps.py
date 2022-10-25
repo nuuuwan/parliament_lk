@@ -7,7 +7,8 @@ from parliament_lk.scrape_and_store import store_mps
 from parliament_lk.scrape_and_store.expand_mps_helpers.academics import \
     parse_academic_highest_level
 from parliament_lk.scrape_and_store.expand_mps_helpers.cabinets import (
-    parse_cabinet_201911, parse_cabinet_202008, parse_cabinet_202204, parse_cabinet_202205)
+    parse_cabinet_201911, parse_cabinet_202008, parse_cabinet_202204,
+    parse_cabinet_202205)
 from parliament_lk.scrape_and_store.expand_mps_helpers.corruption import \
     parse_asset_declaration_years
 from parliament_lk.scrape_and_store.expand_mps_helpers.name import (
@@ -19,10 +20,12 @@ from parliament_lk.scrape_and_store.expand_mps_helpers.voting import \
     parse_vote_20th_amendment
 
 EXPANDED_MP_LIST_JSON_FILE = os.path.join(
-    store_mps.DIR_GIT_DATA, 'expanded_mp_list.json',
+    store_mps.DIR_GIT_DATA,
+    'expanded_mp_list.json',
 )
 EXPANDED_MP_LIST_TSV_FILE = os.path.join(
-    store_mps.DIR_GIT_DATA, 'expanded_mp_list.tsv',
+    store_mps.DIR_GIT_DATA,
+    'expanded_mp_list.tsv',
 )
 
 
@@ -68,7 +71,6 @@ def parse_religion_cleaned(religion):
         'Hindu': 'Hinduism',
         'Roman Catholicism': 'Christianity (All)',
         'Christianity': 'Christianity (All)',
-
     }.get(religion, 'Other or Unknown')
 
 
@@ -84,11 +86,13 @@ def parse_phone_norm(phone):
     if len(phone) != 10:
         log.error(phone)
 
-    return '-'.join([
-        phone[:3],
-        phone[3:6],
-        phone[6:10],
-    ])
+    return '-'.join(
+        [
+            phone[:3],
+            phone[3:6],
+            phone[6:10],
+        ]
+    )
 
 
 def parse_civil_status_cleaned(civil_status):
@@ -104,7 +108,8 @@ def expand_single_mp(mp):
     party_short = parse_party_short(mp['party'])
 
     date_of_birth, date_of_birth_ut, date_of_birth_norm = parse_date_of_birth(
-        mp['date_of_birth'], mp['url_num'])
+        mp['date_of_birth'], mp['url_num']
+    )
 
     ed_id, ed_name, province_id, province_name = parse_ed_info(
         mp['electoral_district'],
@@ -123,10 +128,9 @@ def expand_single_mp(mp):
         mp['professional_qualifications'],
     )
 
-    if (int)(academic_highest_level[0]) < 6 \
-        and mp['profession'] in [
-            'Attorney-at-Law',
-            'Accountant',
+    if (int)(academic_highest_level[0]) < 6 and mp['profession'] in [
+        'Attorney-at-Law',
+        'Accountant',
     ]:
         academic_highest_level = '6 Bachelors'
 
@@ -145,61 +149,44 @@ def expand_single_mp(mp):
     return dict(
         url_num=mp['url_num'],
         id=mp['url_num'],
-
         name=mp['name'],
         name_cleaned=name_cleaned,
         first_names=first_names,
         last_name=last_name,
-
         gender=gender,
-
         image_url=mp['image_url'],
-
         party=mp['party'],
         party_short=party_short,
-
         electoral_district=mp['electoral_district'],
         ed_id=ed_id,
         ed_name=ed_name,
         province_id=province_id,
         province_name=province_name,
-
         date_of_birth=date_of_birth,
         date_of_birth_ut=date_of_birth_ut,
         date_of_birth_norm=date_of_birth_norm,
-
         civil_status=mp['civil_status'],
         civil_status_cleaned=civil_status_cleaned,
-
         religion=mp['religion'],
         religion_cleaned=religion_cleaned,
         profession=mp['profession'],
-
         phone=mp['phone'],
         phone_norm=phone_norm,
-
         address=mp['address'],
-
         phone_sitting=mp['phone_sitting'],
         phone_sitting_norm=phone_sitting_norm,
-
         address_sitting=mp['address_sitting'],
-
         email=mp['email'],
         source_url=mp['source_url'],
-
         academic_qualifications=mp['academic_qualifications'],
         academic_highest_level=academic_highest_level,
         professional_qualifications=mp['professional_qualifications'],
-
         vote_20th_amendment=vote_20th_amendment,
         asset_declaration_years=asset_declaration_years,
-
         attendance_8th_present=mp['attendance_8th_present'],
         attendance_8th_absent=mp['attendance_8th_absent'],
         attendance_9th_present=mp['attendance_9th_present'],
         attendance_9th_absent=mp['attendance_9th_absent'],
-
         cabinet_201911=cabinet_201911,
         cabinet_202008=cabinet_202008,
         cabinet_202204=cabinet_202204,

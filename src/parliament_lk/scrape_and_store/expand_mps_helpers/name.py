@@ -33,5 +33,7 @@ def parse_first_and_last_names(name_cleaned):
     if names[-2].lower() in ['ali', 'de', 'bakeer']:
         n_last_name_words = 2
 
-    return ' '.join(names[:-n_last_name_words]
-                    ), ' '.join(names[-n_last_name_words:]).title()
+    return (
+        ' '.join(names[:-n_last_name_words]),
+        ' '.join(names[-n_last_name_words:]).title(),
+    )

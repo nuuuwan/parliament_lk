@@ -1,10 +1,11 @@
-
 from parliament_lk.scrape_and_store import scrape_mp
 
 TEST_URL_NUM = 1234
-TEST_URL = 'https://www.parliament.lk' \
-    + '/en/members-of-parliament'\
+TEST_URL = (
+    'https://www.parliament.lk'
+    + '/en/members-of-parliament'
     + f'/directory-of-members/viewMember/{TEST_URL_NUM}'
+)
 
 TEST_HTML_PARTY = '''
 <tr>

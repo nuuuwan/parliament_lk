@@ -19,19 +19,23 @@ class Git:
     def clone_and_checkout(self):
         self.cleanup()
 
-        Git.run([
-            f'git clone {self.url_git} {self.dir_git}',
-            self.cmd_cd,
-            f'git checkout {self.branch_name}',
-        ])
+        Git.run(
+            [
+                f'git clone {self.url_git} {self.dir_git}',
+                self.cmd_cd,
+                f'git checkout {self.branch_name}',
+            ]
+        )
 
     def stage_commit_and_push(self, message):
-        Git.run([
-            self.cmd_cd,
-            'git add .',
-            f'git commit -m "{message}"',
-            f'git push origin {self.branch_name}',
-        ])
+        Git.run(
+            [
+                self.cmd_cd,
+                'git add .',
+                f'git commit -m "{message}"',
+                f'git push origin {self.branch_name}',
+            ]
+        )
 
     def cleanup(self):
         if os.path.exists(self.dir_git):

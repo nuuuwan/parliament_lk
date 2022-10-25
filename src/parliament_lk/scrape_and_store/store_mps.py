@@ -1,7 +1,7 @@
 import os
 import threading
 
-from utils import jsonx, mr, timex, tsv, www
+from utils import jsonx, mr, timex, tsv
 
 from parliament_lk._constants import URL_GIT
 from parliament_lk._utils import log
@@ -69,7 +69,7 @@ def download_and_store_image(mp_info, FORCE_SCRAPE):
         return
 
     image_url = mp_info['image_url']
-    www.download_binary(image_url, image_file)
+    download_binary_HACK(image_url, image_file)
 
 
 def store_all(FORCE_SCRAPE):
@@ -78,19 +78,13 @@ def store_all(FORCE_SCRAPE):
     git_upload(git)
 
     n_mps = len(mp_idx_info_list)
-    git_lock = threading.Lock()
+    threading.Lock()
 
     def store_all_item(i, info):
         log.debug(f'{i}/{n_mps}')
         url_num = info['url_num']
         mp_info = scrape_and_store_mp(url_num, FORCE_SCRAPE)
         download_and_store_image(mp_info, FORCE_SCRAPE)
-
-        if i % GIT_UPLOAD_FREQUENCY == 0:
-            git_lock.acquire()
-            git_upload(git)
-            git_lock.release()
-
         return mp_info
 
     mp_info_list = mr.map_parallel(

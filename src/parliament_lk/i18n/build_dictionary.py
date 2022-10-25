@@ -30,13 +30,21 @@ HARD_CODED_CHANGES = {
 
 
 def build_dictionary():
-    word_list = sorted(list(set(filter(
-        lambda x: x,
-        list(map(
-            lambda x: x.strip(),
-            filex.read(WORDLIST_FILE).split('\n'),
-        ))
-    ))))
+    word_list = sorted(
+        list(
+            set(
+                filter(
+                    lambda x: x,
+                    list(
+                        map(
+                            lambda x: x.strip(),
+                            filex.read(WORDLIST_FILE).split('\n'),
+                        )
+                    ),
+                )
+            )
+        )
+    )
 
     filex.write(WORDLIST_FILE, '\n'.join(word_list))
 

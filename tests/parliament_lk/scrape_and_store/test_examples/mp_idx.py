@@ -1,4 +1,3 @@
-
 TEST_LI = '''
 <li id="Albert Einstein">
     <a href="member/1234">Test</a>

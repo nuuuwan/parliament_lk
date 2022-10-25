@@ -33,7 +33,7 @@ def get_url(url_num):
         'members-of-parliament',
         'directory-of-members',
         'viewMember',
-        f'{url_num}'
+        f'{url_num}',
     )
 
 
@@ -153,10 +153,12 @@ def parse_html(html, source_url, url_num):
         elif subtitle == 'Attendance':
             table = div_bottom.find('table')
             for tr in table.find_all('tr'):
-                text_list = list(map(
-                    lambda td: td.text.strip(),
-                    tr.find_all('td'),
-                ))
+                text_list = list(
+                    map(
+                        lambda td: td.text.strip(),
+                        tr.find_all('td'),
+                    )
+                )
                 if 'Ninth' in text_list[0]:
                     attendance_9th_present = (int)(text_list[1])
                     attendance_9th_absent = (int)(text_list[2])
@@ -174,17 +176,14 @@ def parse_html(html, source_url, url_num):
         civil_status=d.get('Civil Status'),
         religion=d.get('Religion'),
         profession=d.get('Profession / Occupation'),
-
         phone=d.get('0-' + IMG_SRC_PHONE),
         address=d.get('0-' + IMG_SRC_ADDRESS),
         phone_sitting=d.get('1-' + IMG_SRC_PHONE),
         address_sitting=d.get('1-' + IMG_SRC_ADDRESS),
         email=d.get(IMG_SRC_EMAIL),
         source_url=source_url,
-
         academic_qualifications=academic_qualifications,
         professional_qualifications=professional_qualifications,
-
         attendance_9th_present=attendance_9th_present,
         attendance_9th_absent=attendance_9th_absent,
         attendance_8th_present=attendance_8th_present,

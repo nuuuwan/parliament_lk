@@ -26,7 +26,6 @@ def parse_vote_20th_amendment(party_short, name):
 
     if name in [
         'Maithreepala Sirisena',
-
     ]:
         return 'Did Not Vote: Absent'
 
@@ -36,19 +35,14 @@ def parse_vote_20th_amendment(party_short, name):
     if party_short in [
         'SJB',
         'UNP',
-
         'JJB',
-
         'AITC',
         'ITAK',
         'ACMC',
         'TMTK',
         'TMVP',
-
         'SLMC',
         'MNA',
-
-
     ]:
         return 'Voted Against'
 

@@ -1,4 +1,3 @@
-
 from gig import ents
 
 from parliament_lk._utils import log
@@ -24,7 +23,8 @@ def search_ed(electoral_district):
 
 def parse_ed_info(electoral_district, name_cleaned):
     if electoral_district == 'National List' or name_cleaned in [
-            'Ranil Wickremesinghe']:
+        'Ranil Wickremesinghe'
+    ]:
         return 'LK', 'National List', 'LK', 'National List'
 
     matched_ed = search_ed(electoral_district)
