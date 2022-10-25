@@ -9,15 +9,15 @@
   "religion": "Buddhism",
   "profession": "Attorney-at-Law",
   "phone": "0552222813",
-  "address": "30, Bandaranayake Mawatha.Badulla.",
+  "address": null,
   "phone_sitting": "0552222813",
   "address_sitting": null,
   "email": "perera_d@parliament.lk",
   "source_url": "https://www.parliament.lk/en/members-of-parliament/directory-of-members/viewMember/128",
   "academic_qualifications": "B.com (Special), University of Kelaniya; G.C.E. (A/L); G.C.E. (O/L)",
   "professional_qualifications": "Attorney - at - law, Sri Lanka Law College",
-  "attendance_9th_present": 127,
-  "attendance_9th_absent": 37,
+  "attendance_9th_present": 155,
+  "attendance_9th_absent": 48,
   "attendance_8th_present": 99,
   "attendance_8th_absent": 153
 }
