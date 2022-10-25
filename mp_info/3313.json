@@ -9,15 +9,15 @@
   "religion": "Buddhism",
   "profession": "Politician",
   "phone": null,
-  "address": "No. 25, Linkwood Place,Wehera,Kurunegala.",
+  "address": null,
   "phone_sitting": "0372229993",
   "address_sitting": null,
   "email": "navarathna_a@parliament.lk",
   "source_url": "https://www.parliament.lk/en/members-of-parliament/directory-of-members/viewMember/3313",
   "academic_qualifications": "B.C.A (Under Graduate) Dip. in Computer Studies",
   "professional_qualifications": "PCM (SLIM); Diploma in HR",
-  "attendance_9th_present": 130,
-  "attendance_9th_absent": 34,
+  "attendance_9th_present": 160,
+  "attendance_9th_absent": 43,
   "attendance_8th_present": null,
   "attendance_8th_absent": null
 }
