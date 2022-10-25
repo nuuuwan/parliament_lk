@@ -18,6 +18,10 @@ MP_LIST_JSON_FILE = os.path.join(DIR_GIT_DATA, 'mp_list.json')
 MP_LIST_FILE = os.path.join(DIR_GIT_DATA, 'mp_list.tsv')
 
 
+def download_binary_HACK(image_url, image_file):
+    os.system(f'wget -O "{image_file}" "{image_url}"')
+
+
 def git_download():
     git = Git(URL_GIT, 'data', DIR_GIT_DATA)
     git.clone_and_checkout()
