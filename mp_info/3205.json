@@ -9,15 +9,15 @@
   "religion": "Buddhism",
   "profession": "Company Chairman",
   "phone": "0112469769",
-  "address": "99/6,Rosmead Place,Colombo 07.",
+  "address": null,
   "phone_sitting": "2469769",
   "address_sitting": null,
   "email": "alles_t@parliament.lk",
   "source_url": "https://www.parliament.lk/en/members-of-parliament/directory-of-members/viewMember/3205",
   "academic_qualifications": "BEC National Diploma in Business Studies (First Year)",
   "professional_qualifications": "N/A",
-  "attendance_9th_present": 57,
-  "attendance_9th_absent": 107,
+  "attendance_9th_present": 75,
+  "attendance_9th_absent": 128,
   "attendance_8th_present": null,
   "attendance_8th_absent": null
 }
