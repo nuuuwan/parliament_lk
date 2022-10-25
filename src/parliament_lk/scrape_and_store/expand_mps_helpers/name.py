@@ -14,6 +14,8 @@ def parse_name_cleaned(name):
         "Thero",
         "(Ven.) ",
         "(Prof.)",
+        ', Attorney at Law',
+        ',',
     ]:
         name = name.replace(k, ' ')
     name = re.sub(r'\s+', ' ', name).strip()
