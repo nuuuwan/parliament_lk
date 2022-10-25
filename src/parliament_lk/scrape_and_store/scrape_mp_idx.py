@@ -48,6 +48,14 @@ def scrape_all_indices():
         log.debug(f'Scraped {n_members} infos for {c}')
         mp_idx_info_list += mp_idx_info_list_for_letter
 
+    # HACK!
+    mp_idx_info_list.append(
+        dict(
+            name='Wijeyadasa Rajapakshe',
+            url_num=1521,
+        )
+    )
+
     n_members = len(mp_idx_info_list)
     log.info(f'Scraped {n_members} infos in total')
     return mp_idx_info_list
