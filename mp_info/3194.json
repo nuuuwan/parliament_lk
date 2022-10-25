@@ -9,15 +9,15 @@
   "religion": "Christianity",
   "profession": "Attorney-at-Law",
   "phone": "0112559352",
-  "address": "3/1,Daya Road,Colombo 06.",
+  "address": null,
   "phone_sitting": "0112366314",
   "address_sitting": null,
   "email": "sumanthiran_m@parliament.lk",
   "source_url": "https://www.parliament.lk/en/members-of-parliament/directory-of-members/viewMember/3194",
   "academic_qualifications": "B Sc (Physics), LLM (Internet and Electronic Law); G.C.E. (A/L); G.C.E. (O/L)",
   "professional_qualifications": "Attorney at Law",
-  "attendance_9th_present": 122,
-  "attendance_9th_absent": 42,
+  "attendance_9th_present": 155,
+  "attendance_9th_absent": 48,
   "attendance_8th_present": 196,
   "attendance_8th_absent": 56
 }

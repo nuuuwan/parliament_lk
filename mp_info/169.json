@@ -9,15 +9,15 @@
   "religion": "Buddhism",
   "profession": "Attorney-at-Law",
   "phone": null,
-  "address": "No. 117,Wijerama Mawatha,Colombo 07.",
+  "address": null,
   "phone_sitting": "0472240332",
   "address_sitting": null,
   "email": "rajapaksa_m@parliament.lk",
   "source_url": "https://www.parliament.lk/en/members-of-parliament/directory-of-members/viewMember/169",
   "academic_qualifications": null,
   "professional_qualifications": null,
-  "attendance_9th_present": 113,
-  "attendance_9th_absent": 51,
+  "attendance_9th_present": 147,
+  "attendance_9th_absent": 56,
   "attendance_8th_present": 109,
   "attendance_8th_absent": 143
 }
