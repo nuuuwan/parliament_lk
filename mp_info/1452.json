@@ -9,15 +9,15 @@
   "religion": "Hindu",
   "profession": null,
   "phone": "0242225123",
-  "address": "No. 37/10,Katkuli,Vavuniya.",
+  "address": null,
   "phone_sitting": "0242222977",
   "address_sitting": null,
   "email": "vino_s@parliament.lk",
   "source_url": "https://www.parliament.lk/en/members-of-parliament/directory-of-members/viewMember/1452",
   "academic_qualifications": "G.C.E. (A/L)",
   "professional_qualifications": null,
-  "attendance_9th_present": 77,
-  "attendance_9th_absent": 87,
+  "attendance_9th_present": 92,
+  "attendance_9th_absent": 111,
   "attendance_8th_present": null,
   "attendance_8th_absent": null
 }

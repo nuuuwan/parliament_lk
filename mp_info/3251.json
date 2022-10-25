@@ -9,15 +9,15 @@
   "religion": "Hindu",
   "profession": null,
   "phone": null,
-  "address": "No:10,Dias Lane,Batticaloa.",
+  "address": null,
   "phone_sitting": "0774595807",
   "address_sitting": null,
   "email": "viyalanderan_s@parliament.lk",
   "source_url": "https://www.parliament.lk/en/members-of-parliament/directory-of-members/viewMember/3251",
   "academic_qualifications": null,
   "professional_qualifications": null,
-  "attendance_9th_present": 110,
-  "attendance_9th_absent": 54,
+  "attendance_9th_present": 138,
+  "attendance_9th_absent": 65,
   "attendance_8th_present": 106,
   "attendance_8th_absent": 146
 }
