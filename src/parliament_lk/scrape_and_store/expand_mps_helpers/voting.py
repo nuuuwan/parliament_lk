@@ -52,8 +52,13 @@ def parse_vote_20th_amendment(party_short, name):
 def parse_vote_22nd_amendment(party_short, name):
     print(name)
 
-    if name == 'Sarath Weerasekera':
+    if name in [ 'Sarath Weerasekera']:
         return 'Voted Against'
+
+    if name in [
+        'Mahinda Yapa Abeywardana',
+    ]:
+        return 'Did Not Vote: Speaker'
 
     if name in [
         'Rajavarothiam Sampanthan',
