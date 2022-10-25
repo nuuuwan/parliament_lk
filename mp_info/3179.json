@@ -1,6 +1,6 @@
 {
   "url_num": 3179,
-  "name": "Hon. Namal Rajapaksa, M.P.",
+  "name": "Hon. Namal Rajapaksa, Attorney at Law, M.P.",
   "image_url": "https://www.parliament.lk/uploads/images/members/profile_images/thumbs/3179.jpg",
   "party": "Sri Lanka Podujana Peramuna (SLPP)",
   "electoral_district": "Hambantota",
@@ -9,15 +9,15 @@
   "religion": "Buddhism",
   "profession": null,
   "phone": null,
-  "address": "Carlton House,Mahawela Road,Tangalle.",
+  "address": null,
   "phone_sitting": "0472240332",
-  "address_sitting": "260/12,Torrington avenue,Colombo 05.",
+  "address_sitting": null,
   "email": "rajapaksa_n@parliament.lk",
   "source_url": "https://www.parliament.lk/en/members-of-parliament/directory-of-members/viewMember/3179",
   "academic_qualifications": "LLB, Attorney-at-Law",
   "professional_qualifications": "Attorney-at-Law",
-  "attendance_9th_present": 111,
-  "attendance_9th_absent": 53,
+  "attendance_9th_present": 138,
+  "attendance_9th_absent": 65,
   "attendance_8th_present": 96,
   "attendance_8th_absent": 156
 }
