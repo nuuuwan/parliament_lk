@@ -1,8 +1,8 @@
-import os
 from dataclasses import dataclass
-from functools import cached_property
 
-from utils import JSONFile, Log
+from utils import Log
+
+from utils_future import PersonName
 
 log = Log("Member")
 
@@ -10,6 +10,7 @@ log = Log("Member")
 @dataclass
 class Member:
     mp_id: str
+    name: PersonName
     district: str
     date_of_birth: str
     religion: str
@@ -26,6 +27,7 @@ class Member:
     def to_dict(self):
         return {
             "mp_id": self.mp_id,
+            "name": self.name.to_dict(),
             "district": self.district,
             "date_of_birth": self.date_of_birth,
             "religion": self.religion,
@@ -44,6 +46,7 @@ class Member:
     def from_dict(Class, d):
         return Class(
             mp_id=d["mp_id"],
+            name=PersonName.from_dict(d["name"]),
             district=d["district"],
             date_of_birth=d["date_of_birth"],
             religion=d["religion"],

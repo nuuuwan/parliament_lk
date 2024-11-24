@@ -10,13 +10,13 @@ log = Log("MemberPage")
 
 
 class MemberPage(WebPage):
-    def __init__(self, mp_id):
+    def __init__(self, member_short_info):
         super().__init__(
             "https://beta.parliament.lk"
             + "/en/members-of-parliament/mp-profile"
-            + f"/{mp_id}"
+            + f"/{member_short_info.mp_id}"
         )
-        self.mp_id = mp_id
+        self.member_short_info = member_short_info
 
     @classmethod
     def get_dir_data(cls):
@@ -26,7 +26,7 @@ class MemberPage(WebPage):
     def json_path(self):
         dir_data = self.get_dir_data()
         os.makedirs(dir_data, exist_ok=True)
-        return os.path.join(dir_data, f"{self.mp_id}.json")
+        return os.path.join(dir_data, f"{self.member_short_info.mp_id}.json")
 
     @cached_property
     def json_file(self):
@@ -44,7 +44,8 @@ class MemberPage(WebPage):
             d[k] = v
 
         return Member(
-            mp_id=self.mp_id,
+            mp_id=self.member_short_info.mp_id,
+            name=self.member_short_info.name,
             district=d.get("District"),
             date_of_birth=d.get("Date of Birth"),
             religion=d.get("Religion"),

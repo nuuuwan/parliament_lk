@@ -128,7 +128,3 @@ class MemberDirectoryPage(WebPage):
 
         Parallel.run(workers)
         return MemberDirectoryPage.aggregate()
-
-
-if __name__ == "__main__":
-    MemberDirectoryPage.list_all()
