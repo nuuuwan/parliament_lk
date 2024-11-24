@@ -51,13 +51,16 @@ class MemberDirectoryPage(WebPage):
         member_short_info_list = []
         for div_member in div_member_list:
             a = div_member.find("a")
-            if not a or "members-of-parliament/mp-profile" not in a.get("href"):
+            if not a or "members-of-parliament/mp-profile" not in a.get(
+                "href"
+            ):
                 continue
 
             mp_id = a.get("href").split("/")[-1]
 
             div_name = div_member.find(
-                "div", class_="pmp_name_div" if self.is_past else "mp_name_div"
+                "div",
+                class_="pmp_name_div" if self.is_past else "mp_name_div",
             )
             p_name = div_name.find("p")
             raw_full_name = p_name.text.strip()
