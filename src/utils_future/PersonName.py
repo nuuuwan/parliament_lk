@@ -13,13 +13,23 @@ class PersonName:
             ", M.P.",
             ", M.P",
             ", MP",
+            ", PC",
             "(Alhaj)",
             "(Dr.)",
+            "(Mr.)",
             "(Mrs.)",
+            "(Ms. )",
+            "(Prof.)",
             "(Ven.)",
+            "Attorney at Law",
             "Hon.",
+            "Mr.",
+            "Mr",
+            "Mrs",
             "Thero",
             "THERO",
+            "Ven.",
+            "Ven",
         ]:
             x = x.replace(k, "")
 
@@ -29,15 +39,15 @@ class PersonName:
         x = x.strip().title()
 
         lastname, _, firstnames = x.partition(",")
-        names = firstnames.strip().split(" ") + lastname.strip().split(" ")
+        names = firstnames.replace(",", " ").strip().split(
+            " "
+        ) + lastname.strip().split(" ")
         names = [n for n in names if n]
         return PersonName(names)
 
     def to_dict(self):
-        return {
-            "names": self.names,
-        }
+        return " ".join(self.names)
 
     @classmethod
     def from_dict(Class, d):
-        return Class(**d)
+        return Class(names=d.split(" "))

@@ -42,6 +42,7 @@ class WebPage:
     @cached_property
     def html(self):
         if not self.html_file.exists:
+            log.debug(f"🌏 Downloading {self.url}")
             response = requests.get(self.url)
             html = response.text
             n_html = len(html)
