@@ -7,30 +7,32 @@ class PersonName:
 
     names: list[str]
 
+    REPLACE_KEY_LIST = [
+        ", M.P.",
+        ", M.P",
+        ", MP",
+        ", PC",
+        "(Alhaj)",
+        "(Dr.)",
+        "(Mr.)",
+        "(Mrs.)",
+        "(Ms. )",
+        "(Prof.)",
+        "(Ven.)",
+        "Attorney at Law",
+        "Hon.",
+        "Mr.",
+        "Mr",
+        "Mrs",
+        "Thero",
+        "THERO",
+        "Ven.",
+        "Ven",
+    ]
+
     @classmethod
     def from_str(Class, x):
-        for k in [
-            ", M.P.",
-            ", M.P",
-            ", MP",
-            ", PC",
-            "(Alhaj)",
-            "(Dr.)",
-            "(Mr.)",
-            "(Mrs.)",
-            "(Ms. )",
-            "(Prof.)",
-            "(Ven.)",
-            "Attorney at Law",
-            "Hon.",
-            "Mr.",
-            "Mr",
-            "Mrs",
-            "Thero",
-            "THERO",
-            "Ven.",
-            "Ven",
-        ]:
+        for k in Class.REPLACE_KEY_LIST:
             x = x.replace(k, "")
 
         x = x.replace(".", " ")
@@ -43,7 +45,7 @@ class PersonName:
             " "
         ) + lastname.strip().split(" ")
         names = [n for n in names if n]
-        return PersonName(names)
+        return Class(names)
 
     def to_dict(self):
         return " ".join(self.names)
